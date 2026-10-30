@@ -9,6 +9,7 @@ import datetime as dt, html, json, math, re, shutil, sys
 from pathlib import Path
 from email.utils import format_datetime
 import markdown, yaml
+from pins import make_pin
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 ROOT = Path(__file__).parent
@@ -105,6 +106,11 @@ def main():
            "categories": sorted({p["category"]: p["cat_url"] for p in posts}.items()),
            "themes": THEMES, "default_theme": DEFAULT_THEME}
 
+    pin_dir = OUT / "img" / "pins"
+    pin_dir.mkdir(parents=True, exist_ok=True)
+    for p in posts:
+        make_pin(p["title"], p["category"], p["slug"], pin_dir)
+        p["pin"] = f"/img/pins/{p['slug']}.jpg"
     for p in posts:
         write(p["url"], env.get_template("post.html").render(**ctx, post=p, related=related(p, posts)))
 
