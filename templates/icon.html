@@ -1,0 +1,11 @@
+{%- set k = icon -%}
+<svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+{%- if k == "plate" -%}<circle cx="26" cy="25" r="13"/><circle cx="26" cy="25" r="7"/><path d="M7 8v10a3 3 0 0 0 3 3v19M7 8v8M13 8v8"/>
+{%- elif k == "info" -%}<circle cx="24" cy="24" r="17"/><path d="M24 22v11M24 15.5v.5"/>
+{%- elif k == "heart" -%}<path d="M24 40S7 30 7 18a9 9 0 0 1 17-4 9 9 0 0 1 17 4c0 12-17 22-17 22z"/><path d="M12 24h6l3-5 4 10 3-5h8"/>
+{%- elif k == "shield" -%}<path d="M24 6l15 6v10c0 10-7 17-15 20C16 39 9 32 9 22V12z"/><path d="M24 16v10M24 31v.5"/>
+{%- elif k == "bowl" -%}<path d="M6 24h36a18 18 0 0 1-36 0z"/><path d="M17 17c0-4 4-4 4-8M25 17c0-4 4-4 4-8"/>
+{%- elif k == "bag" -%}<path d="M10 16h28l-2 24H12z"/><path d="M18 16v-3a6 6 0 0 1 12 0v3"/>
+{%- elif k == "star" -%}<path d="M24 6l5.5 11.5L42 19l-9 8.5 2.3 12.5L24 34l-11.3 6 2.3-12.5L6 19l12.5-1.5z"/>
+{%- else -%}<path d="M10 38C10 20 22 9 40 8c0 18-11 30-28 30z"/><path d="M10 38L28 20"/>
+{%- endif -%}</svg>

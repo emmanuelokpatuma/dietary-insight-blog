@@ -18,6 +18,20 @@ env = Environment(loader=FileSystemLoader(ROOT / "templates"), autoescape=select
 MD = markdown.Markdown(extensions=["extra", "toc", "sane_lists", "smarty"], extension_configs={"toc": {"permalink": False}})
 
 
+THEMES = {
+    "Diabetes and food": ("#2f8f46", "#e7f4e4", "plate"),
+    "Diabetes basics": ("#2563a8", "#e4eef9", "info"),
+    "Blood pressure": ("#c2410c", "#fdeee2", "heart"),
+    "Heart health": ("#be123c", "#fde7ec", "heart"),
+    "Food allergies": ("#7c3aed", "#efe8fd", "shield"),
+    "African and Caribbean food": ("#b45309", "#fdf1dc", "bowl"),
+    "Eating out": ("#0f766e", "#dff4f1", "bag"),
+    "Healthy eating": ("#4d7c0f", "#eef6dc", "leaf"),
+    "Seasonal": ("#a21caf", "#f8e6fa", "star"),
+}
+DEFAULT_THEME = ("#0e5a3a", "#e7f2ea", "leaf")
+
+
 def slugify(s):
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
 
@@ -58,6 +72,7 @@ def load_posts():
         meta["url"] = f"/{meta['slug']}/"
         meta["category"] = meta.get("category", "Healthy eating")
         meta["cat_url"] = f"/topics/{slugify(meta['category'])}/"
+        meta["theme"] = THEMES.get(meta["category"], DEFAULT_THEME)
         for k, lim in (("title", 65), ("description", 160)):
             if len(meta.get(k, "")) > lim:
                 print(f"WARN {p.name}: {k} is {len(meta[k])} chars (aim <= {lim})")
@@ -87,7 +102,8 @@ def main():
     shutil.copytree(ROOT / "static", OUT)
     posts = load_posts()
     ctx = {"site": SITE, "links": app_links(), "year": dt.date.today().year,
-           "categories": sorted({p["category"]: p["cat_url"] for p in posts}.items())}
+           "categories": sorted({p["category"]: p["cat_url"] for p in posts}.items()),
+           "themes": THEMES, "default_theme": DEFAULT_THEME}
 
     for p in posts:
         write(p["url"], env.get_template("post.html").render(**ctx, post=p, related=related(p, posts)))

@@ -12,9 +12,21 @@
     <h1 class="list-h">{{ heading }}</h1>
   {% elif page == 1 %}
   <section class="hero">
-    <h1>Eat well with diabetes, high blood pressure and food allergies</h1>
-    <p>{{ site.description }} A new guide every day.</p>
-    <p class="cta-btns"><a class="btn" href="{{ links.play }}" rel="noopener">Get it on Google Play</a><a class="btn alt" href="{{ links.ios }}" rel="noopener">Download on the App Store</a></p>
+    <div class="hero-copy">
+      <p class="eyebrow">A new guide every day</p>
+      <h1>Eat well with diabetes, <em>high blood pressure</em> and food allergies</h1>
+      <p class="hero-sub">Practical, UK-focused food guides checked against NHS and Diabetes UK advice, from the team behind the Dietary Insight app.</p>
+      <p class="cta-btns"><a class="btn" href="{{ links.play }}" rel="noopener">{% include "play.svg" %}Get it on Google Play</a><a class="btn alt" href="{{ links.ios }}" rel="noopener">{% include "apple.svg" %}Download on the App Store</a></p>
+      <ul class="chips">{% for name, url in categories %}<li><a href="{{ url }}">{{ name }}</a></li>{% endfor %}</ul>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="blob"></div>
+      <div class="phone"><img src="/img/app-result.webp" alt="" width="420" height="910"></div>
+      <div class="float f1"><img src="/img/app-swaps.webp" alt="" width="420" height="533" loading="lazy"></div>
+      <div class="float f2"><img src="/img/app-harm.webp" alt="" width="420" height="533" loading="lazy"></div>
+      <div class="pill p1"><span class="dot"></span>Allergen check</div>
+      <div class="pill p2"><span class="dot g"></span>Healthier swap found</div>
+    </div>
   </section>
   <h2 class="list-h">Latest articles</h2>
   {% else %}

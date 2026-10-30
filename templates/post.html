@@ -31,15 +31,22 @@
 {% endif %}
 {% endblock %}
 {% block main %}
-<article class="wrap post">
+<header class="post-head" style="--c:{{ post.theme[0] }};--cs:{{ post.theme[1] }}">
+ <div class="wrap post-head-in">
+  <div>
   <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Articles</a> › <a href="{{ post.cat_url }}">{{ post.category }}</a></nav>
   <h1>{{ post.title }}</h1>
   <p class="lede">{{ post.description }}</p>
-  <p class="meta">By <a href="/about/">{{ site.author.name }}</a> · <time datetime="{{ post.date }}">{{ post.date.strftime('%-d %B %Y') }}</time>{% if post.updated != post.date %} · Updated <time datetime="{{ post.updated }}">{{ post.updated.strftime('%-d %B %Y') }}</time>{% endif %} · {{ post.minutes }} min read</p>
+  <p class="meta"><img class="avatar" src="/img/icon-180.png" alt="" width="36" height="36">By <a href="/about/">{{ site.author.name }}</a> · <time datetime="{{ post.date }}">{{ post.date.strftime('%-d %B %Y') }}</time>{% if post.updated != post.date %} · Updated <time datetime="{{ post.updated }}">{{ post.updated.strftime('%-d %B %Y') }}</time>{% endif %} · {{ post.minutes }} min read</p>
+  </div>
+  {% set icon = post.theme[2] %}<div class="post-ico" aria-hidden="true">{% include "icon.html" %}</div>
+ </div>
+</header>
+<article class="wrap post">
 
   {% if post.toc|length > 2 %}
   <details class="toc" open><summary>In this article</summary><ol>
-    {% for h in post.toc %}<li><a href="#{{ h.id }}">{{ h.name }}</a></li>{% endfor %}
+    {% for h in post.toc %}<li><a href="#{{ h.id }}">{{ h.name|safe }}</a></li>{% endfor %}
   </ol></details>
   {% endif %}
 
@@ -52,12 +59,13 @@
   {% endif %}
 
   <aside class="cta" aria-label="Get the Dietary Insight app">
-    <img src="/img/logo.png" alt="Dietary Insight app logo" width="72" height="74" loading="lazy">
-    <div>
+    <div class="cta-copy">
+      <img class="cta-logo" src="/img/logo.png" alt="Dietary Insight app logo" width="56" height="58" loading="lazy">
       <p class="cta-h">Not sure what's on your plate?</p>
       <p>Snap a photo of any meal. Dietary Insight checks it against your allergies and health goals, flags sugar, salt and fat, and suggests a healthier swap. Free to download, with 7 days of Premium included.</p>
-      <p class="cta-btns"><a class="btn" href="{{ links.play }}" rel="noopener">Get it on Google Play</a><a class="btn alt" href="{{ links.ios }}" rel="noopener">Download on the App Store</a></p>
+      <p class="cta-btns"><a class="btn" href="{{ links.play }}" rel="noopener">{% include "play.svg" %}Google Play</a><a class="btn alt" href="{{ links.ios }}" rel="noopener">{% include "apple.svg" %}App Store</a></p>
     </div>
+    <img class="cta-shot" src="/img/app-swaps.webp" alt="Dietary Insight app showing healthier food swaps" width="420" height="533" loading="lazy">
   </aside>
 
   {% if post.sources %}

@@ -1,6 +1,8 @@
-{% set c = r if r is defined else p %}<a class="card" href="{{ c.url }}">
-  <span class="tag">{{ c.category }}</span>
-  <span class="card-t">{{ c.title }}</span>
-  <span class="card-d">{{ c.description }}</span>
-  <span class="card-m"><time datetime="{{ c.date }}">{{ c.date.strftime('%-d %b %Y') }}</time> · {{ c.minutes }} min read</span>
+{% set c = r if r is defined else p %}{% set icon = c.theme[2] %}<a class="card" href="{{ c.url }}" style="--c:{{ c.theme[0] }};--cs:{{ c.theme[1] }}">
+  <span class="card-art">{% include "icon.html" %}<span class="tag">{{ c.category }}</span></span>
+  <span class="card-in">
+    <span class="card-t">{{ c.title }}</span>
+    <span class="card-d">{{ c.description }}</span>
+    <span class="card-m"><time datetime="{{ c.date }}">{{ c.date.strftime('%-d %b %Y') }}</time> · {{ c.minutes }} min read <span class="arrow">→</span></span>
+  </span>
 </a>
