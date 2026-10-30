@@ -14,7 +14,7 @@ https://blog.simplerlivez.com/diabetes-friendly-breakfast-ideas/?utm_source=face
 A good breakfast for type 2 diabetes mixes slow-release carbs, fibre and some protein. https://blog.simplerlivez.com/diabetes-friendly-breakfast-ideas/?utm_source=threads&utm_medium=social
 
 ## linkedin
-Breakfast is where my blood sugar used to go wrong. Fruit juice and sugary cereal look healthy but aren't. Here are 12 simple diabetes-friendly breakfasts that keep you full until lunch.
+Fruit juice and sugary cereal look like healthy breakfasts, but they can send blood sugar up fast. Here are 12 simple diabetes-friendly breakfasts that keep you full until lunch.
 
 I built Dietary Insight because I live with type 2 diabetes and high blood pressure, and I wanted a faster way to know what's on my plate. The full guide is in the comments.
 
