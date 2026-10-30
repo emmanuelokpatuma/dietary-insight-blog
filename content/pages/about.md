@@ -6,7 +6,7 @@ The Dietary Insight Blog publishes a short, practical guide every day on eating 
 
 ## Why we write it
 
-Emmanuel Okpatuma founded SimplerLivez and built the [Dietary Insight](/) app because he lives with type 2 diabetes and high blood pressure. Deciding at every meal whether a food is right for you is tiring, especially when there is no label. This blog shares what we learn along the way, in plain English.
+Emmanuel founded SimplerLivez and built the [Dietary Insight](/) app because he lives with type 2 diabetes and high blood pressure. Deciding at every meal whether a food is right for you is tiring, especially when there is no label. This blog shares what we learn along the way, in plain English.
 
 ## How we keep it accurate
 
