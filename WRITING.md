@@ -32,3 +32,24 @@ Read this before writing every post. Copy the front matter shape from an existin
 
 ## Voice
 Friendly, practical and calm, like a knowledgeable friend. No fear-mongering, no exclamation marks, no emoji.
+
+## Social posts (write these with every article)
+Create `content/social/<same file name as the post>.md` with these sections. Plain text, no markdown formatting inside the posts, no emoji walls (one or two emoji at most), UK spelling. Every post leads with one genuinely useful fact or tip from the article, not "new blog post!". Use the article URL with tracking, e.g. `https://blog.simplerlivez.com/<slug>/?utm_source=facebook&utm_medium=social` (change utm_source per network).
+
+    ## facebook
+    (60–120 words. Hook fact, 2–3 short lines of value, then "Read the full guide:" and the URL on its own line. Ends with 3 relevant hashtags.)
+
+    ## threads
+    (Under 450 characters. Hook + one tip + URL.)
+
+    ## linkedin
+    (80–150 words, founder voice: Emmanuel built Dietary Insight because he lives with diabetes and high blood pressure. NO URL in the post text.)
+
+    ## linkedin_comment
+    (One line: "Full guide here:" + URL with utm_source=linkedin.)
+
+    ## pinterest_title
+    (Under 100 characters, keyword-led.)
+
+    ## pinterest_description
+    (Under 450 characters, keyword-rich, ends with the URL.)
