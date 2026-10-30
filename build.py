@@ -136,6 +136,9 @@ def main():
     for u, d in urls:
         sm.append(f"<url><loc>{SITE['url']}{u}</loc>" + (f"<lastmod>{d}</lastmod>" if d else "") + "</url>")
     write("/sitemap.xml", "\n".join(sm + ["</urlset>"]))
+    if SITE.get("adsense_client"):
+        pub = SITE["adsense_client"].replace("ca-", "")
+        write("/ads.txt", f"google.com, {pub}, DIRECT, f08c47fec0942fa0\n")
     write("/robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {SITE['url']}/sitemap.xml\n")
     items = []
     for p in posts[:20]:
