@@ -58,6 +58,18 @@
   </section>
   {% endif %}
 
+  <section class="share" aria-label="Share this article">
+    {% set su = (site.url ~ post.url)|urlencode %}{% set st = post.title|urlencode %}
+    <p class="share-h">Know someone this could help? Share it:</p>
+    <div class="share-btns">
+      <a class="sh wa" href="https://wa.me/?text={{ st }}%20{{ su }}" rel="noopener" target="_blank">WhatsApp</a>
+      <a class="sh fb" href="https://www.facebook.com/sharer/sharer.php?u={{ su }}" rel="noopener" target="_blank">Facebook</a>
+      <a class="sh li" href="https://www.linkedin.com/sharing/share-offsite/?url={{ su }}" rel="noopener" target="_blank">LinkedIn</a>
+      <a class="sh x" href="https://twitter.com/intent/tweet?text={{ st }}&url={{ su }}" rel="noopener" target="_blank">X</a>
+      <button class="sh cp" type="button" onclick="navigator.clipboard.writeText('{{ site.url ~ post.url }}');this.textContent='Link copied ✓'">Copy link</button>
+    </div>
+  </section>
+
   <aside class="cta" aria-label="Get the Dietary Insight app">
     <div class="cta-copy">
       <img class="cta-logo" src="/img/logo.png" alt="Dietary Insight app logo" width="56" height="58" loading="lazy">

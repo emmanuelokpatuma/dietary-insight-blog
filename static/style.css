@@ -144,3 +144,9 @@ nav a:not(.btn):hover{color:var(--green-2)}
 .fine{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px;margin-top:24px}
 @media (max-width:640px){.body table{display:block;overflow-x:auto}}
 .btn{white-space:nowrap}
+
+.share{margin:36px 0 0;padding:20px 22px;border:1px solid var(--line);border-radius:18px;background:var(--card)}
+.share-h{font-weight:700;margin:0 0 12px}
+.share-btns{display:flex;flex-wrap:wrap;gap:8px}
+.sh{border:0;cursor:pointer;font:inherit;font-weight:700;font-size:14.5px;padding:10px 16px;border-radius:999px;text-decoration:none;color:#fff!important}
+.sh.wa{background:#1fa855}.sh.fb{background:#1877f2}.sh.li{background:#0a66c2}.sh.x{background:#111}.sh.cp{background:var(--leaf-soft);color:var(--green)!important}
