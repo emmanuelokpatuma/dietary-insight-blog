@@ -53,3 +53,5 @@ Create `content/social/<same file name as the post>.md` with these sections. Pla
 
     ## pinterest_description
     (Under 450 characters, keyword-rich, ends with the URL.)
+
+- Never invent personal experiences or anecdotes for Emmanuel. Only use the facts he has stated: he built Dietary Insight because he lives with type 2 diabetes and high blood pressure.
