@@ -57,4 +57,7 @@ Create `content/social/<same file name as the post>.md` with these sections. Pla
     ## pinterest_description
     (Under 450 characters, keyword-rich, ends with the URL.)
 
+    ## community_answer
+    (For Reddit/Quora. First line: "Where: " + 2 relevant places, e.g. r/diabetes_t2, r/prediabetes, or a Quora question phrased the way people ask it. Then a genuinely helpful 120–220 word answer in plain first-person-plural or neutral voice that fully answers the question on its own, using only facts from the article. End with one optional line: "I wrote a longer guide with the sources here: <URL with utm_source=reddit&utm_medium=community>". Never mention the app. Emmanuel posts these himself and must check each community's self-promotion rules first.)
+
 - Never invent personal experiences or anecdotes for Emmanuel. Only use the facts he has stated: he built Dietary Insight because he lives with type 2 diabetes and high blood pressure.

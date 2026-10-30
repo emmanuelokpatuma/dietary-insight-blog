@@ -155,10 +155,16 @@ def main():
     items = []
     for p in posts[:20]:
         when = format_datetime(dt.datetime.combine(p["date"], dt.time(7), dt.timezone.utc))
+        img = f"{SITE['url']}/img/ig/{p['slug']}.jpg"
         items.append(f"<item><title>{html.escape(p['title'])}</title><link>{SITE['url']}{p['url']}</link>"
                      f"<guid>{SITE['url']}{p['url']}</guid><pubDate>{when}</pubDate>"
-                     f"<description>{html.escape(p['description'])}</description></item>")
-    write("/feed.xml", f'<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>{html.escape(SITE["name"])}</title>'
+                     f"<dc:creator>{html.escape(SITE['author']['name'])}</dc:creator><category>{html.escape(p['category'])}</category>"
+                     f"<description>{html.escape(p['description'])}</description>"
+                     f'<media:content url="{img}" medium="image" type="image/jpeg" width="1080" height="1350"/>'
+                     f'<enclosure url="{img}" type="image/jpeg" length="0"/></item>')
+    write("/feed.xml", f'<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>{html.escape(SITE["name"])}</title>'
+          f'<atom:link href="{SITE["url"]}/feed.xml" rel="self" type="application/rss+xml"/>'
+          f"<image><url>{SITE['url']}/img/icon-180.png</url><title>{html.escape(SITE['name'])}</title><link>{SITE['url']}/</link></image>"
           f"<link>{SITE['url']}/</link><description>{html.escape(SITE['description'])}</description>"
           f"<language>{SITE['lang']}</language>{''.join(items)}</channel></rss>")
     print(f"built {len(posts)} posts -> {OUT}")
