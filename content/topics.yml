@@ -1,0 +1,63 @@
+# Daily topic queue. The daily task takes the first topic with status: todo,
+# writes it, then marks it done with the post's file name.
+# Each topic targets one main search phrase people type into Google.
+- {keyword: "how to read food labels diabetes", category: "Diabetes and food", status: done, post: 2026-10-30-how-to-read-food-labels-diabetes.md}
+- {keyword: "how much salt a day", category: "Blood pressure", status: done, post: 2026-10-30-how-much-salt-a-day-high-blood-pressure.md}
+- {keyword: "diabetes breakfast ideas", category: "Diabetes and food", status: done, post: 2026-10-30-diabetes-friendly-breakfast-ideas.md}
+- {keyword: "what is prediabetes and can it be reversed", category: "Diabetes basics", status: todo}
+- {keyword: "best snacks for type 2 diabetes", category: "Diabetes and food", status: todo}
+- {keyword: "14 major food allergens UK", category: "Food allergies", status: todo}
+- {keyword: "is rice bad for diabetes", category: "Diabetes and food", status: todo}
+- {keyword: "DASH diet UK for high blood pressure", category: "Blood pressure", status: todo}
+- {keyword: "low GI foods list UK", category: "Diabetes and food", status: todo}
+- {keyword: "healthy takeaway options diabetes", category: "Eating out", status: todo}
+- {keyword: "type 2 diabetes symptoms", category: "Diabetes basics", status: todo}
+- {keyword: "what fruit can diabetics eat", category: "Diabetes and food", status: todo}
+- {keyword: "eating out with a food allergy UK", category: "Food allergies", status: todo}
+- {keyword: "foods that lower blood pressure", category: "Blood pressure", status: todo}
+- {keyword: "how much sugar a day UK", category: "Healthy eating", status: todo}
+- {keyword: "jollof rice and diabetes healthier swaps", category: "African and Caribbean food", status: todo}
+- {keyword: "plantain and blood sugar", category: "African and Caribbean food", status: todo}
+- {keyword: "HbA1c levels explained", category: "Diabetes basics", status: todo}
+- {keyword: "best bread for diabetics UK", category: "Diabetes and food", status: todo}
+- {keyword: "saturated fat and cholesterol foods", category: "Heart health", status: todo}
+- {keyword: "hidden salt in bread and cereal", category: "Blood pressure", status: todo}
+- {keyword: "Christmas dinner with diabetes", category: "Seasonal", status: todo}
+- {keyword: "is pasta good for diabetics", category: "Diabetes and food", status: todo}
+- {keyword: "sweeteners and diabetes", category: "Diabetes and food", status: todo}
+- {keyword: "Natasha's law allergen labelling explained", category: "Food allergies", status: todo}
+- {keyword: "alcohol and type 2 diabetes", category: "Diabetes and food", status: todo}
+- {keyword: "high fibre foods UK list", category: "Healthy eating", status: todo}
+- {keyword: "diabetes and potatoes", category: "Diabetes and food", status: todo}
+- {keyword: "cheap healthy meals on a budget UK", category: "Healthy eating", status: todo}
+- {keyword: "meal prep for diabetes", category: "Diabetes and food", status: todo}
+- {keyword: "fufu, eba and blood sugar", category: "African and Caribbean food", status: todo}
+- {keyword: "diabetes friendly dinner ideas", category: "Diabetes and food", status: todo}
+- {keyword: "potassium rich foods blood pressure", category: "Blood pressure", status: todo}
+- {keyword: "portion sizes guide UK plate", category: "Healthy eating", status: todo}
+- {keyword: "milk allergy vs lactose intolerance", category: "Food allergies", status: todo}
+- {keyword: "ultra processed food explained", category: "Healthy eating", status: todo}
+- {keyword: "is honey better than sugar for diabetics", category: "Diabetes and food", status: todo}
+- {keyword: "what to eat after a type 2 diabetes diagnosis", category: "Diabetes basics", status: todo}
+- {keyword: "caffeine and blood pressure", category: "Blood pressure", status: todo}
+- {keyword: "healthy supermarket meal deal choices", category: "Eating out", status: todo}
+- {keyword: "nuts and diabetes", category: "Diabetes and food", status: todo}
+- {keyword: "Ramadan fasting with diabetes food tips", category: "Seasonal", status: todo}
+- {keyword: "peanut allergy hidden sources", category: "Food allergies", status: todo}
+- {keyword: "eggs and cholesterol", category: "Heart health", status: todo}
+- {keyword: "walking after meals blood sugar", category: "Diabetes basics", status: todo}
+- {keyword: "oats and diabetes", category: "Diabetes and food", status: todo}
+- {keyword: "best drinks for diabetics", category: "Diabetes and food", status: todo}
+- {keyword: "soup and salt content", category: "Blood pressure", status: todo}
+- {keyword: "Caribbean food and diabetes swaps", category: "African and Caribbean food", status: todo}
+- {keyword: "gestational diabetes diet basics", category: "Diabetes basics", status: todo}
+- {keyword: "food diary benefits", category: "Healthy eating", status: todo}
+- {keyword: "diabetes and weight loss food tips", category: "Diabetes and food", status: todo}
+- {keyword: "sesame allergy what to avoid", category: "Food allergies", status: todo}
+- {keyword: "healthy fats vs unhealthy fats", category: "Heart health", status: todo}
+- {keyword: "low sugar desserts diabetes", category: "Diabetes and food", status: todo}
+- {keyword: "kids lunchbox low sugar ideas", category: "Healthy eating", status: todo}
+- {keyword: "glycaemic index vs glycaemic load", category: "Diabetes basics", status: todo}
+- {keyword: "pizza and diabetes", category: "Eating out", status: todo}
+- {keyword: "high blood pressure symptoms", category: "Blood pressure", status: todo}
+- {keyword: "festive party food swaps", category: "Seasonal", status: todo}

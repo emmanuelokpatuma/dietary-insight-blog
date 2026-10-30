@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block description %}{{ description }}{% endblock %}
+{% block canonical %}{{ canonical }}{% endblock %}
+{% block schema %}
+<script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "Blog", "name": site.name, "url": site.url ~ "/", "description": site.description, "inLanguage": site.lang, "publisher": {"@type": "Organization", "name": site.publisher.name, "url": site.publisher.url}}|tojson }}</script>
+{% endblock %}
+{% block main %}
+<div class="wrap">
+  {% if heading %}
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Articles</a></nav>
+    <h1 class="list-h">{{ heading }}</h1>
+  {% elif page == 1 %}
+  <section class="hero">
+    <h1>Eat well with diabetes, high blood pressure and food allergies</h1>
+    <p>{{ site.description }} A new guide every day.</p>
+    <p class="cta-btns"><a class="btn" href="{{ links.play }}" rel="noopener">Get it on Google Play</a><a class="btn alt" href="{{ links.ios }}" rel="noopener">Download on the App Store</a></p>
+  </section>
+  <h2 class="list-h">Latest articles</h2>
+  {% else %}
+    <h1 class="list-h">Articles – page {{ page }}</h1>
+  {% endif %}
+  <div class="cards">{% for p in posts %}{% include "card.html" %}{% endfor %}</div>
+  {% if pages > 1 %}<nav class="pager" aria-label="Pages">
+    {% if page > 1 %}<a href="{{ '/' if page == 2 else '/page/' ~ (page - 1) ~ '/' }}">← Newer</a>{% endif %}
+    {% if page < pages %}<a href="/page/{{ page + 1 }}/">Older →</a>{% endif %}
+  </nav>{% endif %}
+</div>
+{% endblock %}

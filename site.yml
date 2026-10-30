@@ -1,0 +1,23 @@
+name: Dietary Insight Blog
+tagline: Food, diabetes and everyday health, made simple.
+description: Practical, evidence-based guides on eating well with diabetes, high blood pressure and food allergies, from the team behind the Dietary Insight app.
+url: https://blog.simplerlivez.com
+lang: en-GB
+locale: en_GB
+author:
+  name: Emmanuel Okpatuma
+  role: Founder, SimplerLivez
+  bio: Emmanuel built Dietary Insight because he lives with type 2 diabetes and high blood pressure himself, and wanted a faster way to know what is on his plate.
+  url: https://simplerlivez.com
+publisher:
+  name: SimplerLivez
+  url: https://simplerlivez.com
+  logo: /img/icon-512.png
+app:
+  name: Dietary Insight
+  # TODO: replace with the real store links
+  play_url: https://play.google.com/store/search?q=Dietary%20Insight&c=apps
+  ios_url: https://apps.apple.com/gb/search?term=Dietary%20Insight
+  ios_app_id: ""   # numeric App Store id, enables the iPhone Smart App Banner
+utm: utm_source=blog&utm_medium=article
+posts_per_page: 12

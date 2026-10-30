@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ site.name }}{% endblock %}</title>
+<meta name="description" content="{% block description %}{{ site.description }}{% endblock %}">
+<link rel="canonical" href="{{ site.url }}{% block canonical %}/{% endblock %}">
+{% block robots %}<meta name="robots" content="index, follow, max-image-preview:large">{% endblock %}
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:locale" content="{{ site.locale }}">
+<meta property="og:title" content="{{ self.title() }}">
+<meta property="og:description" content="{{ self.description() }}">
+<meta property="og:url" content="{{ site.url }}{{ self.canonical() }}">
+<meta property="og:image" content="{{ site.url }}{% block ogimage %}/img/og.png{% endblock %}">
+{% block ogtype %}<meta property="og:type" content="website">{% endblock %}
+<meta name="twitter:card" content="summary_large_image">
+{% if site.app.ios_app_id %}<meta name="apple-itunes-app" content="app-id={{ site.app.ios_app_id }}">{% endif %}
+<meta name="theme-color" content="#0E5A3A">
+<link rel="icon" href="/img/icon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/img/icon-180.png">
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="/feed.xml">
+<link rel="stylesheet" href="/style.css">
+{% block schema %}{% endblock %}
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="/"><img src="/img/logo.png" alt="" width="40" height="41"><span>{{ site.name }}</span></a>
+    <nav aria-label="Main">
+      <a href="/">Articles</a>
+      <a href="/about/">About</a>
+      <a class="btn small" href="{{ links.play }}" rel="noopener">Get the app</a>
+    </nav>
+  </div>
+</header>
+<main id="main">{% block main %}{% endblock %}</main>
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <p class="foot-brand">{{ site.name }}</p>
+        <p>{{ site.tagline }}</p>
+        <p><a href="{{ links.play }}" rel="noopener">Google Play</a> · <a href="{{ links.ios }}" rel="noopener">App Store</a></p>
+      </div>
+      <div>
+        <p class="foot-h">Topics</p>
+        {% for name, url in categories %}<a href="{{ url }}">{{ name }}</a>{% endfor %}
+      </div>
+      <div>
+        <p class="foot-h">About</p>
+        <a href="/about/">About us</a><a href="/medical-disclaimer/">Medical disclaimer</a><a href="{{ site.publisher.url }}">SimplerLivez</a><a href="/feed.xml">RSS feed</a>
+      </div>
+    </div>
+    <p class="fine">This blog shares general information, not medical advice. Always speak to your GP, diabetes nurse or dietitian before changing your diet or medication. © {{ year }} {{ site.publisher.name }}.</p>
+  </div>
+</footer>
+</body>
+</html>

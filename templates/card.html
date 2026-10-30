@@ -1,0 +1,6 @@
+{% set c = r if r is defined else p %}<a class="card" href="{{ c.url }}">
+  <span class="tag">{{ c.category }}</span>
+  <span class="card-t">{{ c.title }}</span>
+  <span class="card-d">{{ c.description }}</span>
+  <span class="card-m"><time datetime="{{ c.date }}">{{ c.date.strftime('%-d %b %Y') }}</time> · {{ c.minutes }} min read</span>
+</a>

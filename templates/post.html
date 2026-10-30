@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block title %}{{ post.title }}{% endblock %}
+{% block description %}{{ post.description }}{% endblock %}
+{% block canonical %}{{ post.url }}{% endblock %}
+{% block ogtype %}<meta property="og:type" content="article">
+<meta property="article:published_time" content="{{ post.date }}">
+<meta property="article:modified_time" content="{{ post.updated }}">
+<meta property="article:section" content="{{ post.category }}">{% endblock %}
+{% block schema %}
+{% set ld = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {"@type": "BlogPosting", "headline": post.title, "description": post.description,
+     "datePublished": post.date|string, "dateModified": post.updated|string,
+     "mainEntityOfPage": site.url ~ post.url, "image": site.url ~ "/img/og.png",
+     "keywords": post.keywords|default([])|join(", "), "articleSection": post.category, "wordCount": post.words,
+     "inLanguage": site.lang,
+     "author": {"@type": "Person", "name": site.author.name, "url": site.author.url, "jobTitle": site.author.role},
+     "publisher": {"@type": "Organization", "name": site.publisher.name, "url": site.publisher.url,
+                   "logo": {"@type": "ImageObject", "url": site.url ~ site.publisher.logo}}},
+    {"@type": "BreadcrumbList", "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Articles", "item": site.url ~ "/"},
+      {"@type": "ListItem", "position": 2, "name": post.category, "item": site.url ~ post.cat_url},
+      {"@type": "ListItem", "position": 3, "name": post.title, "item": site.url ~ post.url}]}
+  ]} %}
+<script type="application/ld+json">{{ ld|tojson }}</script>
+{% if post.faq %}
+{% set faq = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": []} %}
+{% for f in post.faq %}{% set _ = faq.mainEntity.append({"@type": "Question", "name": f.q, "acceptedAnswer": {"@type": "Answer", "text": f.a}}) %}{% endfor %}
+<script type="application/ld+json">{{ faq|tojson }}</script>
+{% endif %}
+{% endblock %}
+{% block main %}
+<article class="wrap post">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Articles</a> › <a href="{{ post.cat_url }}">{{ post.category }}</a></nav>
+  <h1>{{ post.title }}</h1>
+  <p class="lede">{{ post.description }}</p>
+  <p class="meta">By <a href="/about/">{{ site.author.name }}</a> · <time datetime="{{ post.date }}">{{ post.date.strftime('%-d %B %Y') }}</time>{% if post.updated != post.date %} · Updated <time datetime="{{ post.updated }}">{{ post.updated.strftime('%-d %B %Y') }}</time>{% endif %} · {{ post.minutes }} min read</p>
+
+  {% if post.toc|length > 2 %}
+  <details class="toc" open><summary>In this article</summary><ol>
+    {% for h in post.toc %}<li><a href="#{{ h.id }}">{{ h.name }}</a></li>{% endfor %}
+  </ol></details>
+  {% endif %}
+
+  <div class="body">{{ post.html|safe }}</div>
+
+  {% if post.faq %}
+  <section class="faq"><h2 id="faq">Frequently asked questions</h2>
+    {% for f in post.faq %}<details><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>{% endfor %}
+  </section>
+  {% endif %}
+
+  <aside class="cta" aria-label="Get the Dietary Insight app">
+    <img src="/img/logo.png" alt="Dietary Insight app logo" width="72" height="74" loading="lazy">
+    <div>
+      <p class="cta-h">Not sure what's on your plate?</p>
+      <p>Snap a photo of any meal. Dietary Insight checks it against your allergies and health goals, flags sugar, salt and fat, and suggests a healthier swap. Free to download, with 7 days of Premium included.</p>
+      <p class="cta-btns"><a class="btn" href="{{ links.play }}" rel="noopener">Get it on Google Play</a><a class="btn alt" href="{{ links.ios }}" rel="noopener">Download on the App Store</a></p>
+    </div>
+  </aside>
+
+  {% if post.sources %}
+  <section class="sources"><h2 id="sources">Sources</h2><ol>
+    {% for s in post.sources %}<li><a href="{{ s.url }}" rel="noopener">{{ s.title }}</a></li>{% endfor %}
+  </ol></section>
+  {% endif %}
+
+  <p class="disclaimer">This article is general information, not medical advice. If you have diabetes, high blood pressure or a food allergy, speak to your GP, diabetes nurse or a registered dietitian before changing your diet or medication. <a href="/medical-disclaimer/">Read our medical disclaimer</a>.</p>
+
+  <section class="author"><p><strong>{{ site.author.name }}</strong>, {{ site.author.role }}. {{ site.author.bio }}</p></section>
+
+  {% if related %}
+  <section class="related"><h2>Keep reading</h2><div class="cards">
+    {% for r in related %}{% include "card.html" %}{% endfor %}
+  </div></section>
+  {% endif %}
+</article>
+{% endblock %}
