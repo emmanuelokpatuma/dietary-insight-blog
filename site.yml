@@ -22,3 +22,7 @@ utm: utm_source=blog&utm_medium=article
 posts_per_page: 12
 # Google AdSense: paste your publisher id (ca-pub-...) once approved. Empty = no ads.
 adsense_client: "ca-pub-8861960280705077"
+
+social:
+  facebook: "https://www.facebook.com/dietaryinsightapp"
+  instagram: "https://www.instagram.com/dietaryinsightapp/"
