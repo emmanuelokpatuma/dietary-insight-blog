@@ -15,9 +15,8 @@ publisher:
   logo: /img/icon-512.png
 app:
   name: Dietary Insight
-  # TODO: replace with the real store links
-  play_url: https://play.google.com/store/search?q=Dietary%20Insight&c=apps
-  ios_url: https://apps.apple.com/gb/search?term=Dietary%20Insight
-  ios_app_id: ""   # numeric App Store id, enables the iPhone Smart App Banner
+  play_url: https://play.google.com/store/apps/details?id=com.emergent.dietaryinsightcam.wtjahd
+  ios_url: https://apps.apple.com/app/dietary-insight-cam/id6814602853
+  ios_app_id: "6814602853"   # numeric App Store id, enables the iPhone Smart App Banner
 utm: utm_source=blog&utm_medium=article
 posts_per_page: 12
