@@ -1,1 +1,393 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dietary Insight Blog</title><atom:link href="https://blog.simplerlivez.com/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://blog.simplerlivez.com/img/icon-180.png</url><title>Dietary Insight Blog</title><link>https://blog.simplerlivez.com/</link></image><link>https://blog.simplerlivez.com/</link><description>Practical, evidence-based guides on eating well with diabetes, high blood pressure and food allergies, from the team behind the Dietary Insight app.</description><language>en-GB</language><item><title>Best Snacks for Type 2 Diabetes: Easy UK Ideas and Swaps</title><link>https://blog.simplerlivez.com/best-snacks-for-type-2-diabetes/</link><guid>https://blog.simplerlivez.com/best-snacks-for-type-2-diabetes/</guid><pubDate>Fri, 30 Oct 2026 07:00:00 +0000</pubDate><dc:creator>Emmanuel</dc:creator><category>Diabetes and food</category><description>The best snacks for type 2 diabetes are fruit, veg, plain yoghurt and unsalted nuts. See calorie and carb counts plus simple swaps for crisps and sweets.</description><media:content url="https://blog.simplerlivez.com/img/ig/best-snacks-for-type-2-diabetes.jpg" medium="image" type="image/jpeg" width="1080" height="1350"/><enclosure url="https://blog.simplerlivez.com/img/ig/best-snacks-for-type-2-diabetes.jpg" type="image/jpeg" length="0"/></item><item><title>12 Diabetes-Friendly Breakfast Ideas (UK Guide)</title><link>https://blog.simplerlivez.com/diabetes-friendly-breakfast-ideas/</link><guid>https://blog.simplerlivez.com/diabetes-friendly-breakfast-ideas/</guid><pubDate>Fri, 30 Oct 2026 07:00:00 +0000</pubDate><dc:creator>Emmanuel</dc:creator><category>Diabetes and food</category><description>Simple breakfasts for type 2 diabetes built on fibre, protein and wholegrains, plus the cereal and juice traps to avoid. Quick UK ideas inside.</description><media:content url="https://blog.simplerlivez.com/img/ig/diabetes-friendly-breakfast-ideas.jpg" medium="image" type="image/jpeg" width="1080" height="1350"/><enclosure url="https://blog.simplerlivez.com/img/ig/diabetes-friendly-breakfast-ideas.jpg" type="image/jpeg" length="0"/></item><item><title>How Much Salt a Day? A UK Guide for High Blood Pressure</title><link>https://blog.simplerlivez.com/how-much-salt-a-day-high-blood-pressure/</link><guid>https://blog.simplerlivez.com/how-much-salt-a-day-high-blood-pressure/</guid><pubDate>Fri, 30 Oct 2026 07:00:00 +0000</pubDate><dc:creator>Emmanuel</dc:creator><category>Blood pressure</category><description>Adults should have no more than 6g of salt a day. Here&#x27;s where it hides, how to read salt on labels and easy swaps to cut back.</description><media:content url="https://blog.simplerlivez.com/img/ig/how-much-salt-a-day-high-blood-pressure.jpg" medium="image" type="image/jpeg" width="1080" height="1350"/><enclosure url="https://blog.simplerlivez.com/img/ig/how-much-salt-a-day-high-blood-pressure.jpg" type="image/jpeg" length="0"/></item><item><title>How to Read UK Food Labels When You Have Diabetes</title><link>https://blog.simplerlivez.com/how-to-read-food-labels-diabetes/</link><guid>https://blog.simplerlivez.com/how-to-read-food-labels-diabetes/</guid><pubDate>Fri, 30 Oct 2026 07:00:00 +0000</pubDate><dc:creator>Emmanuel</dc:creator><category>Diabetes and food</category><description>A simple guide to UK traffic-light labels, hidden sugar names and per-100g figures, so you can choose better food in the supermarket in seconds.</description><media:content url="https://blog.simplerlivez.com/img/ig/how-to-read-food-labels-diabetes.jpg" medium="image" type="image/jpeg" width="1080" height="1350"/><enclosure url="https://blog.simplerlivez.com/img/ig/how-to-read-food-labels-diabetes.jpg" type="image/jpeg" length="0"/></item><item><title>What Is Prediabetes and Can It Be Reversed? A UK Guide</title><link>https://blog.simplerlivez.com/what-is-prediabetes-can-it-be-reversed/</link><guid>https://blog.simplerlivez.com/what-is-prediabetes-can-it-be-reversed/</guid><pubDate>Fri, 30 Oct 2026 07:00:00 +0000</pubDate><dc:creator>Emmanuel</dc:creator><category>Diabetes basics</category><description>Prediabetes means blood sugar is above normal but below type 2 diabetes. Learn the HbA1c numbers, who is at risk and the changes that can help.</description><media:content url="https://blog.simplerlivez.com/img/ig/what-is-prediabetes-can-it-be-reversed.jpg" medium="image" type="image/jpeg" width="1080" height="1350"/><enclosure url="https://blog.simplerlivez.com/img/ig/what-is-prediabetes-can-it-be-reversed.jpg" type="image/jpeg" length="0"/></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Dietary Insight Blog</title><atom:link href="https://blog.simplerlivez.com/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://blog.simplerlivez.com/img/icon-180.png</url><title>Dietary Insight Blog</title><link>https://blog.simplerlivez.com/</link></image><link>https://blog.simplerlivez.com/</link><description>Practical, evidence-based guides on eating well with diabetes, high blood pressure and food allergies, from the team behind the Dietary Insight app.</description><language>en-GB</language><item><title>Best Snacks for Type 2 Diabetes: Easy UK Ideas and Swaps</title><link>https://blog.simplerlivez.com/best-snacks-for-type-2-diabetes/</link><guid>https://blog.simplerlivez.com/best-snacks-for-type-2-diabetes/</guid><pubDate>Fri, 30 Oct 2026 07:00:00 +0000</pubDate><dc:creator>Emmanuel</dc:creator><category>Diabetes and food</category><description>The best snacks for type 2 diabetes are fruit, veg, plain yoghurt and unsalted nuts. See calorie and carb counts plus simple swaps for crisps and sweets.</description><content:encoded><![CDATA[<p><img src="https://blog.simplerlivez.com/img/ig/best-snacks-for-type-2-diabetes.jpg" alt=""></p><p>The <strong>best snacks for type 2 diabetes</strong> are simple, everyday foods: fresh fruit, vegetable sticks, plain yoghurt, unsalted nuts and seeds, and wholegrain crackers or oatcakes. Diabetes UK says snacks can be part of a healthy, balanced diet, as long as you keep an eye on portions and how often you snack.</p>
+<h2 id="do-people-with-type-2-diabetes-need-to-snack">Do people with type 2 diabetes need to snack?</h2>
+<p>Not always. An NHS diabetes leaflet from Frimley Health advises that it&rsquo;s best to avoid extra snacks, especially if you&rsquo;re trying to lose weight. Eating more wholegrains, fruit, vegetables, beans and pulses at main meals can help you feel fuller for longer.</p>
+<p>If you take insulin or certain medications that can cause hypos, you may need a snack between meals. Diabetes UK says this should contain some starchy carbohydrate. If you find you need frequent snacks to avoid low blood sugar, talk to your GP, diabetes nurse or dietitian.</p>
+<h2 id="what-makes-a-good-diabetes-snack">What makes a good diabetes snack?</h2>
+<p>The Frimley Health leaflet suggests snacks with about 10 to 15g of carbohydrate and a low to medium glycaemic index (GI). Diabetes UK adds a few pointers:</p>
+<ul>
+<li>choose snacks that are lower in saturated fat, sugar and salt</li>
+<li>keep healthier snacks at home and take some out with you</li>
+<li>check whether you&rsquo;re really thirsty, not hungry; water or unsweetened tea or coffee may be all you need</li>
+<li>skip foods labelled &ldquo;diabetic&rdquo;, which have no proven special benefit</li>
+</ul>
+<p>Snack amounts vary by brand and pack size, so check the label on anything pre-packed. Our guide on <a href="/how-to-read-food-labels-diabetes/">how to read food labels with diabetes</a> explains the traffic lights.</p>
+<h2 id="which-snacks-are-under-100-calories">Which snacks are under 100 calories?</h2>
+<p>These figures come from Diabetes UK. They&rsquo;re handy if you&rsquo;re watching your weight as well as your blood sugar.</p>
+<table>
+<thead>
+<tr>
+<th>Snack</th>
+<th>Calories</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 kiwi fruit</td>
+<td>25</td>
+</tr>
+<tr>
+<td>80g blueberries</td>
+<td>32</td>
+</tr>
+<tr>
+<td>1 small apple (about 85g)</td>
+<td>37</td>
+</tr>
+<tr>
+<td>2 satsumas</td>
+<td>44</td>
+</tr>
+<tr>
+<td>1 light cheese triangle and 4 cherry tomatoes</td>
+<td>43</td>
+</tr>
+<tr>
+<td>10 almonds</td>
+<td>61</td>
+</tr>
+<tr>
+<td>1 crispbread, 25g cottage cheese and 4 cherry tomatoes</td>
+<td>75</td>
+</tr>
+<tr>
+<td>50g roasted chickpeas</td>
+<td>79</td>
+</tr>
+<tr>
+<td>100g cherries with 50g natural yoghurt</td>
+<td>87.5</td>
+</tr>
+<tr>
+<td>50g baked plantain chips</td>
+<td>100</td>
+</tr>
+</tbody>
+</table>
+<p>A little more filling, at under 150 calories: 125g natural yoghurt with 80g raspberries (119), or a 25g slice of Edam with a small apple (122).</p>
+<h2 id="which-snacks-are-lowest-in-carbs">Which snacks are lowest in carbs?</h2>
+<p>Diabetes UK lists these snacks with under 10g of carbohydrate:</p>
+<ol>
+<li><strong>1 chopped boiled egg:</strong> 0g carbs, 79 calories</li>
+<li><strong>Half an avocado (70g):</strong> 1g carbs, 133 calories</li>
+<li><strong>115g pot of sugar-free jelly:</strong> 1.2g carbs, 8 calories</li>
+<li><strong>30g almonds:</strong> 2g carbs, 184 calories</li>
+<li><strong>30g houmous with 80g sliced peppers:</strong> 5g carbs, 104 calories</li>
+<li><strong>1 kiwi fruit:</strong> 5g carbs, 25 calories</li>
+<li><strong>Homemade vegetable crisps:</strong> 8.4g carbs, 48 calories</li>
+</ol>
+<p>Low carb doesn&rsquo;t always mean low calorie. Nuts give you fibre and healthy fats, but Diabetes UK suggests watching portions if you&rsquo;re managing your weight.</p>
+<h2 id="what-can-i-swap-for-crisps-chocolate-and-sweets">What can I swap for crisps, chocolate and sweets?</h2>
+<p>You don&rsquo;t have to give up the snacks you love. Diabetes UK suggests these swaps:</p>
+<table>
+<thead>
+<tr>
+<th>Instead of</th>
+<th>Try</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Crisps</td>
+<td>Plain popcorn, with a pinch of cinnamon if you like</td>
+</tr>
+<tr>
+<td>Bombay mix</td>
+<td>A small handful of unsalted pumpkin or sunflower seeds</td>
+</tr>
+<tr>
+<td>White pitta and dips</td>
+<td>Wholemeal pitta, or carrot and celery sticks with homemade hummus</td>
+</tr>
+<tr>
+<td>Milk chocolate</td>
+<td>Two or three squares of dark chocolate</td>
+</tr>
+<tr>
+<td>Ice cream</td>
+<td>Frozen banana, or frozen unsweetened yoghurt with berries</td>
+</tr>
+<tr>
+<td>Chocolate biscuits</td>
+<td>Plain biscuits such as rich tea or plain digestives</td>
+</tr>
+<tr>
+<td>Sweets</td>
+<td>Frozen grapes or frozen blueberries</td>
+</tr>
+<tr>
+<td>Salted nuts</td>
+<td>Unsalted nuts</td>
+</tr>
+<tr>
+<td>Sugary fizzy drinks</td>
+<td>Water flavoured with mint or fresh fruit</td>
+</tr>
+</tbody>
+</table>
+<p>If you enjoy nut butter, check the label. Diabetes UK notes that some contain added sugar, salt or palm oil.</p>
+<h2 id="what-about-plantain-chips-patties-and-other-world-snacks">What about plantain chips, patties and other world snacks?</h2>
+<p>Diabetes UK looked at popular snacks from South Asian, African and Caribbean shops. Some pack a lot of carbs into one bag. For example, a 42.5g bag of sweet plantain chips has 27.7g of carbs and 204 calories, and a 140g jerk chicken patty has 39.3g of carbs and 345.5 calories.</p>
+<p>Diabetes UK says the plantain chips and patty are high in saturated fat and carbs, so keep portions small. As an occasional treat, it says snacks like these can be part of a healthy diet. It suggests measuring out a portion before you reseal the packet and keeping the rest out of sight. For something you can have more often, try spicy roasted chickpeas, baked plantain chips or homemade veg crisps.</p>
+<h2 id="how-do-i-stop-snacking-when-im-not-hungry">How do I stop snacking when I&rsquo;m not hungry?</h2>
+<p>Boredom, emotions, nerves and anxiety can all send us to the snack cupboard. Diabetes UK suggests pausing to ask why you&rsquo;re reaching for food, then trying a distraction such as calling a friend, reading or going for a walk. And if you do snack, don&rsquo;t beat yourself up about it.</p>
+<p>Late-night snacking is worth watching too. You use less energy while you sleep, so Diabetes UK says late-night snacks can lead to weight gain and affect how you manage your diabetes.</p>
+<h2 id="checking-snacks-without-a-label">Checking snacks without a label</h2>
+<p>Packets make portions easy to compare, but a plate of leftovers or a bakery treat rarely comes with numbers. The Dietary Insight app can estimate the carbs and calories in a snack from a photo and suggest a swap, so you can see how it fits into your day. For more ideas earlier in the day, see our <a href="/diabetes-friendly-breakfast-ideas/">diabetes-friendly breakfast ideas</a>.</p><p><a href="https://blog.simplerlivez.com/best-snacks-for-type-2-diabetes/">Read the original article on the Dietary Insight Blog</a>.</p>]]></content:encoded><media:content url="https://blog.simplerlivez.com/img/ig/best-snacks-for-type-2-diabetes.jpg" medium="image" type="image/jpeg" width="1080" height="1350"/><enclosure url="https://blog.simplerlivez.com/img/ig/best-snacks-for-type-2-diabetes.jpg" type="image/jpeg" length="0"/></item><item><title>12 Diabetes-Friendly Breakfast Ideas (UK Guide)</title><link>https://blog.simplerlivez.com/diabetes-friendly-breakfast-ideas/</link><guid>https://blog.simplerlivez.com/diabetes-friendly-breakfast-ideas/</guid><pubDate>Fri, 30 Oct 2026 07:00:00 +0000</pubDate><dc:creator>Emmanuel</dc:creator><category>Diabetes and food</category><description>Simple breakfasts for type 2 diabetes built on fibre, protein and wholegrains, plus the cereal and juice traps to avoid. Quick UK ideas inside.</description><content:encoded><![CDATA[<p><img src="https://blog.simplerlivez.com/img/ig/diabetes-friendly-breakfast-ideas.jpg" alt=""></p><p>A good breakfast for type 2 diabetes combines <strong>slow-release carbs, fibre and some protein</strong>. That mix tends to raise blood sugar more gently and keeps you full until lunch. There&rsquo;s no special &ldquo;diabetes diet&rdquo;, so these are ordinary foods you can buy in any UK supermarket.</p>
+<h2 id="what-makes-a-breakfast-diabetes-friendly">What makes a breakfast diabetes-friendly</h2>
+<ul>
+<li><strong>Low-GI starchy foods:</strong> oats, wholegrain or multigrain bread, and wholegrain cereal instead of white bread or sugary cereal.</li>
+<li><strong>Fibre:</strong> adults should aim for 30g a day, and breakfast is an easy place to start.</li>
+<li><strong>Protein:</strong> eggs, plain yoghurt, milk, nuts or seeds help you stay full.</li>
+<li><strong>Little or no free sugar:</strong> watch the honey, syrup, jam, juice and flavoured yoghurts.</li>
+</ul>
+<h2 id="12-breakfast-ideas">12 breakfast ideas</h2>
+<h3 id="quick-under-5-minutes">Quick (under 5 minutes)</h3>
+<ol>
+<li><strong>Porridge with berries.</strong> Make it with milk or water and add a handful of berries and a pinch of cinnamon instead of sugar.</li>
+<li><strong>Plain Greek yoghurt with fruit and seeds.</strong> Choose unsweetened yoghurt and add berries, sliced apple or a spoon of seeds.</li>
+<li><strong>Wholegrain toast with peanut butter.</strong> Use a thin spread of a no-added-sugar peanut butter.</li>
+<li><strong>Wholegrain cereal with milk.</strong> Pick a cereal with green or amber for sugar, and check the per 100g figure.</li>
+<li><strong>Melon or grapefruit with unsweetened yoghurt.</strong> A light option Diabetes UK suggests.</li>
+<li><strong>Overnight oats.</strong> Oats soaked in milk overnight, topped with berries in the morning.</li>
+</ol>
+<h3 id="when-you-have-more-time">When you have more time</h3>
+<ol start="7">
+<li><strong>Scrambled or poached eggs on wholegrain toast.</strong></li>
+<li><strong>Vegetable omelette.</strong> Peppers, spinach, mushrooms and onions.</li>
+<li><strong>Beans on wholegrain toast.</strong> Choose reduced-sugar and reduced-salt baked beans.</li>
+<li><strong>Smoked salmon with egg.</strong> Keep it as a treat, because smoked fish is salty.</li>
+<li><strong>Shakshuka.</strong> Eggs baked in a spiced tomato and pepper sauce.</li>
+<li><strong>Wholegrain pancakes.</strong> Top with berries and yoghurt instead of syrup.</li>
+</ol>
+<h2 id="breakfast-traps-to-watch">Breakfast traps to watch</h2>
+<table>
+<thead>
+<tr>
+<th>Instead of</th>
+<th>Try</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sugary or chocolate cereal</td>
+<td>Porridge or a plain wholegrain cereal</td>
+</tr>
+<tr>
+<td>Fruit juice or a smoothie</td>
+<td>A piece of whole fruit and a glass of water</td>
+</tr>
+<tr>
+<td>White toast with jam</td>
+<td>Wholegrain toast with eggs or peanut butter</td>
+</tr>
+<tr>
+<td>Flavoured fruit yoghurt</td>
+<td>Plain yoghurt with fresh berries</td>
+</tr>
+<tr>
+<td>Pastries and croissants</td>
+<td>Overnight oats or a vegetable omelette</td>
+</tr>
+</tbody>
+</table>
+<p>Juice and smoothies count as <strong>free sugars</strong>, and they have less fibre than whole fruit. A glass of juice can raise blood sugar quickly, even with &ldquo;no added sugar&rdquo; on the label.</p>
+<h2 id="portions-still-matter">Portions still matter</h2>
+<p>A big bowl of a healthy cereal is still a lot of carbohydrate. Use a measured portion for a week to learn what one looks like. If you use insulin or medicines that can cause low blood sugar, talk to your diabetes team before changing your breakfast routine.</p>
+<h2 id="check-your-breakfast-in-seconds">Check your breakfast in seconds</h2>
+<p>Not sure about a café breakfast or a new cereal? Snap a photo with Dietary Insight to see the sugar, fibre and protein, plus a healthier swap if there&rsquo;s a better option.</p><p><a href="https://blog.simplerlivez.com/diabetes-friendly-breakfast-ideas/">Read the original article on the Dietary Insight Blog</a>.</p>]]></content:encoded><media:content url="https://blog.simplerlivez.com/img/ig/diabetes-friendly-breakfast-ideas.jpg" medium="image" type="image/jpeg" width="1080" height="1350"/><enclosure url="https://blog.simplerlivez.com/img/ig/diabetes-friendly-breakfast-ideas.jpg" type="image/jpeg" length="0"/></item><item><title>How Much Salt a Day? A UK Guide for High Blood Pressure</title><link>https://blog.simplerlivez.com/how-much-salt-a-day-high-blood-pressure/</link><guid>https://blog.simplerlivez.com/how-much-salt-a-day-high-blood-pressure/</guid><pubDate>Fri, 30 Oct 2026 07:00:00 +0000</pubDate><dc:creator>Emmanuel</dc:creator><category>Blood pressure</category><description>Adults should have no more than 6g of salt a day. Here&#x27;s where it hides, how to read salt on labels and easy swaps to cut back.</description><content:encoded><![CDATA[<p><img src="https://blog.simplerlivez.com/img/ig/how-much-salt-a-day-high-blood-pressure.jpg" alt=""></p><p>Adults in the UK should have <strong>no more than 6g of salt a day</strong>, about one level teaspoon. Eating too much salt can raise blood pressure, which increases the risk of heart attacks and strokes. Most of it isn&rsquo;t from the salt shaker.</p>
+<h2 id="where-your-salt-really-comes-from">Where your salt really comes from</h2>
+<p>The NHS says about three quarters of the salt we eat is already in food when we buy it. The biggest sources are everyday foods:</p>
+<ul>
+<li>bread and breakfast cereals</li>
+<li>ham, bacon, sausages and other processed meat</li>
+<li>ready meals, takeaways and restaurant food</li>
+<li>sauces such as soy sauce, gravy granules, ketchup and brown sauce</li>
+<li>cheese, olives, pickles and smoked or cured fish</li>
+</ul>
+<p>None of these tastes especially salty, which is why salt is easy to overdo.</p>
+<h2 id="daily-salt-limits-by-age">Daily salt limits by age</h2>
+<table>
+<thead>
+<tr>
+<th>Age</th>
+<th>Maximum salt a day</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adults and children 11+</td>
+<td>6g</td>
+</tr>
+<tr>
+<td>7 to 10 years</td>
+<td>5g</td>
+</tr>
+<tr>
+<td>4 to 6 years</td>
+<td>3g</td>
+</tr>
+<tr>
+<td>1 to 3 years</td>
+<td>2g</td>
+</tr>
+<tr>
+<td>Under 1 year</td>
+<td>Less than 1g</td>
+</tr>
+</tbody>
+</table>
+<h2 id="salt-or-sodium-do-the-conversion">Salt or sodium? Do the conversion</h2>
+<p>Some labels list <strong>sodium</strong> instead of salt. Multiply sodium by 2.5 to get the salt figure. So 0.6g of sodium is 1.5g of salt, which is already a quarter of an adult&rsquo;s daily limit.</p>
+<h2 id="reading-salt-on-a-food-label">Reading salt on a food label</h2>
+<p>Per 100g of food:</p>
+<ul>
+<li><strong>Low (green):</strong> 0.3g of salt or less</li>
+<li><strong>High (red):</strong> more than 1.5g of salt</li>
+</ul>
+<p>Compare similar products per 100g. Two loaves or two jars of pasta sauce can differ a lot.</p>
+<h2 id="8-easy-swaps-to-cut-back">8 easy swaps to cut back</h2>
+<ol>
+<li>Cook from scratch more often, so you control the salt.</li>
+<li>Flavour food with herbs, spices, garlic, chilli, lemon or black pepper.</li>
+<li>Taste before you add salt at the table, or leave the shaker in the cupboard.</li>
+<li>Choose reduced-salt stock cubes and gravy, and use less.</li>
+<li>Swap processed meat sandwiches for chicken, egg or bean fillings.</li>
+<li>Rinse tinned beans and vegetables canned in brine.</li>
+<li>Ask for sauces on the side when you eat out.</li>
+<li>Snack on unsalted nuts, fruit or veg sticks instead of crisps.</li>
+</ol>
+<p>Your taste buds adjust within a few weeks, and food that once tasted bland starts to taste normal.</p>
+<h2 id="a-word-on-salty-medicines">A word on salty medicines</h2>
+<p>Some dissolvable tablets, such as certain painkillers and vitamins, contain a surprising amount of salt. Don&rsquo;t stop any medicine on your own. Ask your GP or pharmacist whether there&rsquo;s a lower-salt version.</p>
+<h2 id="checking-meals-without-a-label">Checking meals without a label</h2>
+<p>Takeaways and restaurant food are some of the saltiest meals, and they rarely show a figure. An app like Dietary Insight can estimate the salt in a meal from a photo, so you can see when one dish uses up most of your day&rsquo;s allowance.</p><p><a href="https://blog.simplerlivez.com/how-much-salt-a-day-high-blood-pressure/">Read the original article on the Dietary Insight Blog</a>.</p>]]></content:encoded><media:content url="https://blog.simplerlivez.com/img/ig/how-much-salt-a-day-high-blood-pressure.jpg" medium="image" type="image/jpeg" width="1080" height="1350"/><enclosure url="https://blog.simplerlivez.com/img/ig/how-much-salt-a-day-high-blood-pressure.jpg" type="image/jpeg" length="0"/></item><item><title>How to Read UK Food Labels When You Have Diabetes</title><link>https://blog.simplerlivez.com/how-to-read-food-labels-diabetes/</link><guid>https://blog.simplerlivez.com/how-to-read-food-labels-diabetes/</guid><pubDate>Fri, 30 Oct 2026 07:00:00 +0000</pubDate><dc:creator>Emmanuel</dc:creator><category>Diabetes and food</category><description>A simple guide to UK traffic-light labels, hidden sugar names and per-100g figures, so you can choose better food in the supermarket in seconds.</description><content:encoded><![CDATA[<p><img src="https://blog.simplerlivez.com/img/ig/how-to-read-food-labels-diabetes.jpg" alt=""></p><p>Most UK food packs carry a traffic-light label on the front. Learn three numbers and you can judge sugar, fat and salt in a few seconds, without a calculator.</p>
+<h2 id="the-traffic-light-label-in-10-seconds">The traffic-light label in 10 seconds</h2>
+<p>Green means low, amber means medium and red means high. A pack that is mostly green and amber is a good everyday choice. Any red means that food is best eaten less often or in smaller amounts.</p>
+<p>These are the NHS thresholds per 100g of food:</p>
+<table>
+<thead>
+<tr>
+<th>Per 100g</th>
+<th>Low (green)</th>
+<th>High (red)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Total fat</td>
+<td>3g or less</td>
+<td>More than 17.5g</td>
+</tr>
+<tr>
+<td>Saturated fat</td>
+<td>1.5g or less</td>
+<td>More than 5g</td>
+</tr>
+<tr>
+<td>Sugars</td>
+<td>5g or less</td>
+<td>More than 22.5g</td>
+</tr>
+<tr>
+<td>Salt</td>
+<td>0.3g or less</td>
+<td>More than 1.5g</td>
+</tr>
+</tbody>
+</table>
+<p>Anything between the two columns is amber. Drinks use different thresholds, so treat these figures as a guide for food.</p>
+<h2 id="always-compare-per-100g-not-per-portion">Always compare per 100g, not per portion</h2>
+<p>Manufacturers choose their own portion sizes, and they are often smaller than what people really eat. When you compare two cereals or two yoghurts, use the <strong>per 100g</strong> column. It&rsquo;s the only fair comparison.</p>
+<blockquote>
+<p><strong>Quick tip:</strong> if you&rsquo;d eat twice the &ldquo;portion&rdquo; on the pack, double every number on the front label.</p>
+</blockquote>
+<h2 id="spot-hidden-sugar-in-the-ingredients">Spot hidden sugar in the ingredients</h2>
+<p>Ingredients are listed by weight, with the biggest first. Sugar often hides under other names, and a product can use several of them so none appears near the top. Look out for:</p>
+<ul>
+<li>glucose, fructose, sucrose, dextrose, maltose</li>
+<li>corn syrup and high-fructose corn syrup</li>
+<li>honey, molasses, treacle, maple syrup and agave syrup</li>
+<li>fruit juice concentrate and fruit purées</li>
+<li>cane sugar and brown sugar</li>
+</ul>
+<p>UK guidance says adults should have no more than <strong>30g of free sugars a day</strong>, about 7 sugar cubes. Free sugars include sugar added to food and the sugar in honey, syrups and fruit juice. They don&rsquo;t include the sugar naturally found in whole fruit, vegetables and milk.</p>
+<h2 id="why-total-sugars-can-mislead">Why &ldquo;total sugars&rdquo; can mislead</h2>
+<p>The label shows <strong>total sugars</strong>, which mixes natural and added sugar. A plain yoghurt shows some sugar from milk, which is fine. A fruit yoghurt might show double that because of added sugar. Check the ingredients list to tell them apart.</p>
+<h2 id="skip-foods-labelled-diabetic">Skip foods labelled &ldquo;diabetic&rdquo;</h2>
+<p>Diabetes UK advises against foods sold as &ldquo;diabetic&rdquo;. They have no proven benefit, they often cost more, and some are still high in fat and calories. A normal, balanced choice is better.</p>
+<h2 id="when-there-is-no-label">When there is no label</h2>
+<p>Restaurant meals, takeaways and home cooking don&rsquo;t come with a traffic light. That&rsquo;s where most of us guess. Fill half the plate with vegetables or salad, keep starchy carbs to about a quarter, and choose grilled over fried where you can.</p>
+<p>You can also photograph the plate with an app such as Dietary Insight. It estimates the sugar, salt and fat in the meal and flags anything that clashes with your health profile.</p>
+<h2 id="the-3-second-checklist">The 3-second checklist</h2>
+<ol>
+<li>Look for red on the front. More red means &ldquo;sometimes&rdquo;, not &ldquo;every day&rdquo;.</li>
+<li>Compare similar products using the per 100g figures.</li>
+<li>Scan the first three ingredients for sugar under another name.</li>
+</ol><p><a href="https://blog.simplerlivez.com/how-to-read-food-labels-diabetes/">Read the original article on the Dietary Insight Blog</a>.</p>]]></content:encoded><media:content url="https://blog.simplerlivez.com/img/ig/how-to-read-food-labels-diabetes.jpg" medium="image" type="image/jpeg" width="1080" height="1350"/><enclosure url="https://blog.simplerlivez.com/img/ig/how-to-read-food-labels-diabetes.jpg" type="image/jpeg" length="0"/></item><item><title>What Is Prediabetes and Can It Be Reversed? A UK Guide</title><link>https://blog.simplerlivez.com/what-is-prediabetes-can-it-be-reversed/</link><guid>https://blog.simplerlivez.com/what-is-prediabetes-can-it-be-reversed/</guid><pubDate>Fri, 30 Oct 2026 07:00:00 +0000</pubDate><dc:creator>Emmanuel</dc:creator><category>Diabetes basics</category><description>Prediabetes means blood sugar is above normal but below type 2 diabetes. Learn the HbA1c numbers, who is at risk and the changes that can help.</description><content:encoded><![CDATA[<p><img src="https://blog.simplerlivez.com/img/ig/what-is-prediabetes-can-it-be-reversed.jpg" alt=""></p><p><strong>Prediabetes</strong> means your blood sugar is higher than normal but not high enough to be type 2 diabetes. It&rsquo;s sometimes called borderline diabetes. And can it be reversed? Diabetes UK says yes, it&rsquo;s possible: with health changes, many people bring their blood sugar back into the normal range, though there&rsquo;s no guarantee.</p>
+<h2 id="what-is-prediabetes-exactly">What is prediabetes, exactly?</h2>
+<p>Prediabetes is a state where the sugar in your blood is above normal but below the threshold for type 2 diabetes. It&rsquo;s diagnosed with a blood test, and results are often given as an HbA1c number.</p>
+<p>Diabetes UK estimates it affects around one in 12 people. Without changes, it doesn&rsquo;t go away on its own, and it puts you at higher risk of developing type 2 diabetes.</p>
+<h2 id="what-do-the-hba1c-numbers-mean">What do the HbA1c numbers mean?</h2>
+<p>Your result will be given in mmol/mol. Here&rsquo;s how Diabetes UK groups the numbers:</p>
+<table>
+<thead>
+<tr>
+<th>HbA1c result</th>
+<th>What it means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Below 42 mmol/mol</td>
+<td>Normal range</td>
+</tr>
+<tr>
+<td>42 to 47 mmol/mol</td>
+<td>Prediabetes</td>
+</tr>
+<tr>
+<td>48 mmol/mol or above</td>
+<td>Type 2 diabetes range</td>
+</tr>
+</tbody>
+</table>
+<p>If your result is in the prediabetes range, your GP should talk to you about next steps and how often to have it checked again.</p>
+<h2 id="who-is-more-likely-to-get-prediabetes">Who is more likely to get prediabetes?</h2>
+<p>Prediabetes is more common in people living with overweight or obesity, but it can affect people of a healthy weight too. Diabetes UK is clear that weight alone doesn&rsquo;t cause it. It comes from a mix of factors that differ from person to person.</p>
+<p>Some risk factors you can&rsquo;t change:</p>
+<ul>
+<li><strong>Age.</strong></li>
+<li><strong>Family history and genetics.</strong></li>
+<li><strong>Ethnicity:</strong> people of Black African, African Caribbean and South Asian backgrounds have a higher risk of type 2 diabetes than people of White European backgrounds, and may develop it at a younger age or a lower body weight.</li>
+<li><strong>Gestational diabetes:</strong> women who had diabetes in pregnancy are among those at highest risk.</li>
+</ul>
+<p>Others you can work on, such as how active you are, carrying weight around your middle, diet, sleep and smoking.</p>
+<h2 id="can-prediabetes-be-reversed">Can prediabetes be reversed?</h2>
+<p>Diabetes UK says it is possible. In practice, &ldquo;reversing&rdquo; prediabetes means your HbA1c goes back below 42 mmol/mol.</p>
+<p>It&rsquo;s worth being realistic. Diabetes UK says there&rsquo;s no guarantee it will work for everyone, and bringing it down within three months is unlikely. Even if your number doesn&rsquo;t drop all the way, any reduction can help keep it out of the type 2 range and can help with cholesterol and blood pressure too.</p>
+<h2 id="what-changes-can-help">What changes can help?</h2>
+<p>These are the main areas Diabetes UK suggests. Speak to your GP before you make big changes to your diet, weight or activity, especially if you take any medication.</p>
+<ol>
+<li><strong>Lose some weight, if you need to.</strong> If you&rsquo;re living with overweight or obesity, weight loss is likely to have the biggest impact. Diabetes UK says losing around 1% to 9% of your body weight can lower your risk. Not everyone with prediabetes needs to lose weight.</li>
+<li><strong>Eat more whole foods.</strong> Fill up on fruit, vegetables, fibre and wholegrains, such as brown rice and multigrain bread instead of white.</li>
+<li><strong>Cut back on a few things.</strong> Eat less salt, red meat and processed meat, and avoid sugary drinks.</li>
+<li><strong>Move more and sit less.</strong> Start by breaking up long spells of sitting. If you&rsquo;re at a desk or in front of the TV, get up and move every 30 to 45 minutes. Activity that leaves you slightly out of breath, like a brisk walk, is especially helpful.</li>
+<li><strong>Sleep well and stop smoking.</strong> Poor sleep and smoking can both raise your risk of high blood sugar. Your GP can point you to NHS support to quit.</li>
+</ol>
+<p>Pick one change and build from there. Diabetes UK gives the example of swapping sugary fizzy drinks for diet versions for a month. If breakfast is a weak spot, our <a href="/diabetes-friendly-breakfast-ideas/">diabetes-friendly breakfast ideas</a> are a good place to start.</p>
+<h2 id="what-is-the-nhs-healthier-you-programme">What is the NHS Healthier You programme?</h2>
+<p>If you have prediabetes, your GP should refer you to a free type 2 diabetes prevention course or offer prevention advice, depending on where you live. In England, this is the <strong>NHS Healthier You programme</strong>.</p>
+<p>According to NHS England:</p>
+<ul>
+<li>it lasts nine months</li>
+<li>you can do it in face-to-face group sessions or through a digital service with online content, health coaches and peer support</li>
+<li>it covers healthier eating, keeping to a healthy weight and staying active</li>
+<li>nearly one million people in England have started it since 2016</li>
+</ul>
+<p>NHS England reports that participants lost 3.3kg on average, and that a review found completing the programme was linked to a 37% lower chance of developing type 2 diabetes.</p>
+<h2 id="how-do-i-find-out-if-im-at-risk">How do I find out if I&rsquo;m at risk?</h2>
+<p>Because prediabetes usually has no symptoms, a blood test is the only way to know. Diabetes UK has a free online Know Your Risk tool that gives you a personal risk score. If your score is high, or you have any of the risk factors above, ask your GP about an HbA1c test.</p>
+<p>If you&rsquo;ve already been told you have prediabetes, keep going to your follow-up checks so you can see how your changes are working.</p>
+<h2 id="making-everyday-meals-easier-to-judge">Making everyday meals easier to judge</h2>
+<p>Small food changes add up, but it can be hard to know what&rsquo;s in a meal when there&rsquo;s no label to check. If you&rsquo;re buying packaged food, our guide on <a href="/how-to-read-food-labels-diabetes/">how to read food labels with diabetes</a> explains the traffic lights. For home-cooked meals and takeaways, the Dietary Insight app can estimate the carbs and sugar in a dish from a photo and suggest a swap, which can help you spot patterns over time.</p>
+<p>Prediabetes is a warning sign, not a diagnosis of type 2 diabetes. For advice that fits your health, talk to your GP, diabetes nurse or dietitian.</p><p><a href="https://blog.simplerlivez.com/what-is-prediabetes-can-it-be-reversed/">Read the original article on the Dietary Insight Blog</a>.</p>]]></content:encoded><media:content url="https://blog.simplerlivez.com/img/ig/what-is-prediabetes-can-it-be-reversed.jpg" medium="image" type="image/jpeg" width="1080" height="1350"/><enclosure url="https://blog.simplerlivez.com/img/ig/what-is-prediabetes-can-it-be-reversed.jpg" type="image/jpeg" length="0"/></item></channel></rss>
