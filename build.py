@@ -10,7 +10,7 @@ from pathlib import Path
 from email.utils import format_datetime
 import markdown, yaml
 from pins import make_pin
-from ig import make_ig
+from ig import make_ig, make_og
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 ROOT = Path(__file__).parent
@@ -123,12 +123,16 @@ def main():
     pin_dir.mkdir(parents=True, exist_ok=True)
     ig_dir = OUT / "img" / "ig"
     ig_dir.mkdir(parents=True, exist_ok=True)
+    og_dir = OUT / "img" / "og"
+    og_dir.mkdir(parents=True, exist_ok=True)
     make_ig("Know what's on your plate in one photo", "Diabetes and food", "welcome", ig_dir,
             kicker="Now on Instagram", footer="Free on iPhone & Android · link in bio")
     for p in posts:
         make_pin(p["title"], p["category"], p["slug"], pin_dir)
         p["pin"] = f"/img/pins/{p['slug']}.jpg"
         make_ig(p["title"], p["category"], p["slug"], ig_dir)
+        make_og(p["title"], p["category"], p["slug"], og_dir)
+        p["og"] = f"/img/og/{p['slug']}.jpg"
     for p in posts:
         write(p["url"], env.get_template("post.html").render(**ctx, post=p, related=related(p, posts)))
 

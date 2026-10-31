@@ -58,3 +58,38 @@ def make_ig(title, category, slug, out_dir, kicker=None, footer="Link in bio · 
     d.text((176, H - 56), footer, font=font("LiberationSans-Regular.ttf", 30), fill=(214, 240, 201))
     im.save(out, "JPEG", quality=90, optimize=True)
     return out
+
+
+def make_og(title, category, slug, out_dir):
+    """1200x630 link-preview image (Facebook, Flipboard, LinkedIn, X)."""
+    out = out_dir / f"{slug}.jpg"
+    col, soft = THEME.get(category, (GREEN, (231, 242, 234)))
+    W, H = 1200, 630
+    im = Image.new("RGB", (W, H), soft)
+    d = ImageDraw.Draw(im)
+    d.ellipse((820, -260, 1460, 380), fill=tuple(min(255, c + 12) for c in soft))
+    tag = font("LiberationSans-Bold.ttf", 28)
+    label = category.upper()
+    tw = d.textlength(label, font=tag)
+    d.rounded_rectangle((60, 54, 60 + tw + 44, 104), 25, fill=(255, 255, 255))
+    d.text((82, 64), label, font=tag, fill=col)
+    size = 78
+    while True:
+        tf = font("LiberationSerif-Bold.ttf", size)
+        lines = textwrap.wrap(title, width=max(10, int(24 * 78 / size)))
+        if len(lines) * size * 1.12 < 330 or size < 46:
+            break
+        size -= 4
+    y = 135
+    for ln in lines:
+        d.text((60, y), ln, font=tf, fill=(20, 33, 26))
+        y += int(size * 1.12)
+    d.rectangle((0, H - 110, W, H), fill=GREEN)
+    logo = ROOT / "static/img/icon-180.png"
+    if logo.exists():
+        lg = Image.open(logo).convert("RGBA").resize((76, 76))
+        im.paste(lg, (60, H - 93), lg)
+    d.text((156, H - 92), "Dietary Insight Blog", font=font("LiberationSans-Bold.ttf", 36), fill=(255, 255, 255))
+    d.text((156, H - 48), "blog.simplerlivez.com", font=font("LiberationSans-Regular.ttf", 26), fill=(214, 240, 201))
+    im.save(out, "JPEG", quality=88, optimize=True)
+    return out
