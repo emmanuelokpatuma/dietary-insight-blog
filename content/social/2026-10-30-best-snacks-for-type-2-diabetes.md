@@ -13,6 +13,19 @@ https://blog.simplerlivez.com/best-snacks-for-type-2-diabetes/?utm_source=facebo
 ## threads
 10 almonds: 61 calories. 2 satsumas: 44. A kiwi: just 25. https://blog.simplerlivez.com/best-snacks-for-type-2-diabetes/?utm_source=threads&utm_medium=social
 
+## instagram
+10 almonds: 61 calories. 2 satsumas: 44. A kiwi: just 25.
+
+The best snacks for type 2 diabetes are simple everyday foods like fruit, veg sticks, plain yoghurt and unsalted nuts.
+
+Our guide has easy UK snack ideas, calorie counts and swaps for crisps and sweets.
+
+The full guide is on our blog: tap the link in our bio 👆
+
+Not sure what's on your plate? Snap a photo with Dietary Insight to flag sugar, salt and fat and get a healthier swap.
+
+#diabetes #type2diabetes #healthysnacks #diabeticfriendly #bloodsugar #healthyeatinguk #snackideas #dietaryinsight
+
 ## linkedin
 Do you actually need to snack with type 2 diabetes? Often not. But when you do, these simple UK snack ideas, with calorie counts and easy swaps for crisps and sweets, make it much easier.
 
