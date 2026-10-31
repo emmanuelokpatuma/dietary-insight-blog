@@ -153,16 +153,17 @@ def main():
         write("/ads.txt", f"google.com, {pub}, DIRECT, f08c47fec0942fa0\n")
     write("/robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {SITE['url']}/sitemap.xml\n")
     items = []
-    for p in posts[:20]:
+    for p in posts[:50]:
         when = format_datetime(dt.datetime.combine(p["date"], dt.time(7), dt.timezone.utc))
         img = f"{SITE['url']}/img/ig/{p['slug']}.jpg"
         items.append(f"<item><title>{html.escape(p['title'])}</title><link>{SITE['url']}{p['url']}</link>"
                      f"<guid>{SITE['url']}{p['url']}</guid><pubDate>{when}</pubDate>"
                      f"<dc:creator>{html.escape(SITE['author']['name'])}</dc:creator><category>{html.escape(p['category'])}</category>"
                      f"<description>{html.escape(p['description'])}</description>"
+                     f"<content:encoded><![CDATA[<p><img src=\"{img}\" alt=\"\"></p>{p['html']}<p><a href=\"{SITE['url']}{p['url']}\">Read the original article on the Dietary Insight Blog</a>.</p>]]></content:encoded>"
                      f'<media:content url="{img}" medium="image" type="image/jpeg" width="1080" height="1350"/>'
                      f'<enclosure url="{img}" type="image/jpeg" length="0"/></item>')
-    write("/feed.xml", f'<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>{html.escape(SITE["name"])}</title>'
+    write("/feed.xml", f'<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>{html.escape(SITE["name"])}</title>'
           f'<atom:link href="{SITE["url"]}/feed.xml" rel="self" type="application/rss+xml"/>'
           f"<image><url>{SITE['url']}/img/icon-180.png</url><title>{html.escape(SITE['name'])}</title><link>{SITE['url']}/</link></image>"
           f"<link>{SITE['url']}/</link><description>{html.escape(SITE['description'])}</description>"
