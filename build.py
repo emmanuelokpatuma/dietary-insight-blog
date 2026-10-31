@@ -83,6 +83,18 @@ def load_posts():
     return posts
 
 
+def rss_summary(p, target=300):
+    """Description plus the opening of the article, so feed summaries are 300+ characters (Flipboard)."""
+    text = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", p["html"]))).strip()
+    out = p["description"].strip()
+    for sent in re.split(r"(?<=[.!?]) ", text):
+        if len(out) >= target:
+            break
+        if sent and sent not in out:
+            out += " " + sent
+    return out
+
+
 def related(post, posts, n=3):
     kw = set(map(str.lower, post.get("keywords", [])))
     score = lambda o: (o["category"] == post["category"]) * 2 + len(kw & set(map(str.lower, o.get("keywords", []))))
@@ -159,7 +171,7 @@ def main():
         items.append(f"<item><title>{html.escape(p['title'])}</title><link>{SITE['url']}{p['url']}</link>"
                      f"<guid>{SITE['url']}{p['url']}</guid><pubDate>{when}</pubDate>"
                      f"<dc:creator>{html.escape(SITE['author']['name'])}</dc:creator><category>{html.escape(p['category'])}</category>"
-                     f"<description>{html.escape(p['description'])}</description>"
+                     f"<description>{html.escape(rss_summary(p))}</description>"
                      f"<content:encoded><![CDATA[<p><img src=\"{img}\" alt=\"\"></p>{p['html']}<p><a href=\"{SITE['url']}{p['url']}\">Read the original article on the Dietary Insight Blog</a>.</p>]]></content:encoded>"
                      f'<media:content url="{img}" medium="image" type="image/jpeg" width="1080" height="1350"/>'
                      f'<enclosure url="{img}" type="image/jpeg" length="0"/></item>')
