@@ -38,6 +38,31 @@ def slugify(s):
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
 
 
+def table_text(body):
+    """After each table, add a hidden plain-text copy. Medium's importer and some readers drop tables."""
+    def conv(m):
+        tbl = m.group(0)
+        heads = [re.sub(r"<[^>]+>", "", h).strip() for h in re.findall(r"<th[^>]*>(.*?)</th>", tbl, re.S)]
+        rows = []
+        for tr in re.findall(r"<tr>(.*?)</tr>", tbl, re.S):
+            cells = [re.sub(r"<[^>]+>", "", c).strip() for c in re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)]
+            if not cells:
+                continue
+            if len(heads) == len(cells) == 3:
+                rows.append(f"{cells[0]} ({heads[1].lower()} {cells[1]}): {cells[2][:1].lower() + cells[2][1:]}")
+            elif len(heads) == len(cells) and len(cells) > 3:
+                rows.append(cells[0] + ": " + ", ".join(f"{h.lower()}: {c[:1].lower() + c[1:]}" for h, c in zip(heads[1:], cells[1:])))
+            elif len(cells) == 2 and heads and heads[0].lower().startswith("instead"):
+                rows.append(f"Instead of {cells[0][:1].lower() + cells[0][1:]}, try {cells[1][:1].lower() + cells[1][1:]}")
+            elif len(cells) == 2 and re.fullmatch(r"[\d.]+", cells[1]) and len(heads) == 2:
+                rows.append(f"{cells[0]}: {cells[1]} {heads[1].lower()}")
+            else:
+                rows.append(": ".join(cells))
+        alt = "".join(f"<p>{r}</p>" for r in rows)
+        return tbl + f'<div class="table-alt" aria-hidden="true">{alt}</div>'
+    return re.sub(r"<table>.*?</table>", conv, body, flags=re.S)
+
+
 def read_doc(path):
     raw = path.read_text(encoding="utf-8")
     m = re.match(r"^---\n(.*?)\n---\n(.*)$", raw, re.S)
@@ -45,10 +70,10 @@ def read_doc(path):
         sys.exit(f"{path}: missing front matter")
     meta = yaml.safe_load(m.group(1)) or {}
     MD.reset()
-    body = MD.convert(m.group(2))
+    body = table_text(MD.convert(m.group(2)))
     meta["toc"] = getattr(MD, "toc_tokens", [])
     meta["html"] = body
-    meta["words"] = len(re.sub(r"<[^>]+>", " ", body).split())
+    meta["words"] = len(re.sub(r"<[^>]+>", " ", re.sub(r'<div class="table-alt".*?</div>', "", body, flags=re.S)).split())
     meta["minutes"] = max(1, math.ceil(meta["words"] / 220))
     return meta
 
