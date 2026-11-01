@@ -150,3 +150,4 @@ nav a:not(.btn):hover{color:var(--green-2)}
 .share-btns{display:flex;flex-wrap:wrap;gap:8px}
 .sh{border:0;cursor:pointer;font:inherit;font-weight:700;font-size:14.5px;padding:10px 16px;border-radius:999px;text-decoration:none;color:#fff!important}
 .sh.wa{background:#1fa855}.sh.fb{background:#1877f2}.sh.li{background:#0a66c2}.sh.x{background:#111}.sh.cp{background:var(--leaf-soft);color:var(--green)!important}
+.table-alt{display:none}
