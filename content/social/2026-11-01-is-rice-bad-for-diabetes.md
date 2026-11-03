@@ -13,6 +13,12 @@ https://blog.simplerlivez.com/is-rice-bad-for-diabetes/?utm_source=facebook&utm_
 ## threads
 Is rice bad for diabetes? Not on its own. A portion of cooked rice is about what fits in two cupped hands (around 180g), and swapping white for brown basmati adds fibre. Portion size matters more than the type. https://blog.simplerlivez.com/is-rice-bad-for-diabetes/?utm_source=threads&utm_medium=social
 
+## x
+Is rice bad for diabetes? Not on its own. A portion of cooked rice is about two cupped hands, around 180g. Portion size matters most.
+https://blog.simplerlivez.com/is-rice-bad-for-diabetes/?utm_source=x&utm_medium=social
+
+#diabetes #type2diabetes
+
 ## instagram
 A portion of cooked rice is about what fits in two cupped hands, around 180g.
 

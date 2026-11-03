@@ -13,6 +13,12 @@ https://blog.simplerlivez.com/dash-diet-uk-high-blood-pressure/?utm_source=faceb
 ## threads
 The DASH diet was designed to help lower blood pressure: more fruit, veg, wholegrains and low-fat dairy, less salt. Tip: the standard version keeps salt to about 6g a day, and a lower-sodium version to about 4g, which the BHF says may lower blood pressure further. https://blog.simplerlivez.com/dash-diet-uk-high-blood-pressure/?utm_source=threads&utm_medium=social
 
+## x
+The DASH diet was designed to help lower blood pressure: more fruit, veg, wholegrains and low-fat dairy, less salt.
+https://blog.simplerlivez.com/dash-diet-uk-high-blood-pressure/?utm_source=x&utm_medium=social
+
+#bloodpressure #dashdiet
+
 ## instagram
 DASH stands for Dietary Approaches to Stop Hypertension, an eating plan designed to help lower blood pressure.
 

@@ -15,6 +15,12 @@ https://blog.simplerlivez.com/14-major-food-allergens-uk/?utm_source=facebook&ut
 ## threads
 Allergy UK says as many as 60% of manufactured foods contain soya, one of the 14 major UK food allergens. Tip: on prepacked food, allergens must be highlighted in the ingredients list, so check there, not the front of the pack. https://blog.simplerlivez.com/14-major-food-allergens-uk/?utm_source=threads&utm_medium=social
 
+## x
+Allergy UK says as many as 60% of manufactured foods contain soya, one of the 14 major UK allergens. Check the ingredients list, not the front of the pack.
+https://blog.simplerlivez.com/14-major-food-allergens-uk/?utm_source=x&utm_medium=social
+
+#foodallergy #allergens
+
 ## instagram
 Allergy UK says as many as 60% of manufactured foods contain soya, one of the 14 major food allergens in the UK.
 

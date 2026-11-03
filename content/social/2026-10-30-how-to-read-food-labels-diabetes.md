@@ -13,6 +13,12 @@ https://blog.simplerlivez.com/how-to-read-food-labels-diabetes/?utm_source=faceb
 ## threads
 More than 22.5g of sugar per 100g means a food is high in sugar. 5g or less is low. https://blog.simplerlivez.com/how-to-read-food-labels-diabetes/?utm_source=threads&utm_medium=social
 
+## x
+More than 22.5g of sugar per 100g means a food is high in sugar. 5g or less is low. Check the per 100g column.
+https://blog.simplerlivez.com/how-to-read-food-labels-diabetes/?utm_source=x&utm_medium=social
+
+#diabetes #foodlabels
+
 ## linkedin
 UK food labels in 10 seconds: green, amber or red for sugar, salt and fat. I wrote a simple guide to the numbers that matter when you have diabetes, including the names sugar hides under.
 

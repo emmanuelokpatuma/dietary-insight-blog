@@ -13,6 +13,12 @@ https://blog.simplerlivez.com/what-is-prediabetes-can-it-be-reversed/?utm_source
 ## threads
 An HbA1c of 42 to 47 mmol/mol means prediabetes: blood sugar higher than normal, but not yet type 2 diabetes. https://blog.simplerlivez.com/what-is-prediabetes-can-it-be-reversed/?utm_source=threads&utm_medium=social
 
+## x
+An HbA1c of 42 to 47 mmol/mol means prediabetes: higher than normal, but not yet type 2 diabetes. It usually has no symptoms.
+https://blog.simplerlivez.com/what-is-prediabetes-can-it-be-reversed/?utm_source=x&utm_medium=social
+
+#prediabetes #diabetes
+
 ## instagram
 An HbA1c of 42 to 47 mmol/mol means prediabetes: blood sugar higher than normal, but not yet type 2 diabetes.
 

@@ -13,6 +13,12 @@ https://blog.simplerlivez.com/how-much-salt-a-day-high-blood-pressure/?utm_sourc
 ## threads
 Adults in the UK should have no more than 6g of salt a day. That's about one level teaspoon. https://blog.simplerlivez.com/how-much-salt-a-day-high-blood-pressure/?utm_source=threads&utm_medium=social
 
+## x
+Adults in the UK should have no more than 6g of salt a day, about one level teaspoon. Most of it isn't from the salt shaker.
+https://blog.simplerlivez.com/how-much-salt-a-day-high-blood-pressure/?utm_source=x&utm_medium=social
+
+#bloodpressure #salt
+
 ## linkedin
 6g of salt a day sounds like plenty, until you learn that three quarters of it is already in bread, cereal and ready meals. Here is a simple guide to spotting it and cutting back.
 

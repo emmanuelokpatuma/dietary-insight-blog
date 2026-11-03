@@ -42,6 +42,9 @@ Create `content/social/<same file name as the post>.md` with these sections. Pla
     ## threads
     (Under 450 characters. Hook + one tip + URL.)
 
+    ## x
+    (For X/Twitter. Under 260 characters including the URL (a link counts as 23 characters on X). Hook fact + one short tip + URL with utm_source=x on its own line, then 1–2 hashtags. No thread.)
+
     ## instagram
     (The facebook text, but replace "Read the full guide:" and the URL with "The full guide is on our blog: tap the link in our bio 👆", add one line "Not sure what's on your plate? Snap a photo with Dietary Insight to flag sugar, salt and fat and get a healthier swap.", then 8 relevant hashtags ending with #dietaryinsight. No URLs: they aren't clickable on Instagram.)
 
