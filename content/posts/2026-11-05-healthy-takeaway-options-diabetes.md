@@ -19,7 +19,7 @@ sources:
   - title: "British Heart Foundation: How healthy are these 14 popular foods?"
     url: https://www.bhf.org.uk/informationsupport/heart-matters-magazine/nutrition/how-healthy-are-these-popular-foods
 ---
-**Healthy takeaway options for diabetes** usually come down to three things: how the food is cooked, what you have on the side and how big the portion is. Grilled, baked, steamed and tomato-based dishes are generally better choices than fried or creamy ones, and swapping fried rice, naan or large chips for plainer sides makes a big difference.
+**Healthy takeaway options for diabetes** usually come down to three things: how the food is cooked, what you have on the side and how big the portion is. Grilled, baked, steamed and tomato-based dishes are generally better choices than fried or creamy ones, and swapping fried rice, naan or a large portion of chips for plainer sides can help too.
 
 ## Can you eat takeaways with diabetes?
 
@@ -27,7 +27,7 @@ Yes. Diabetes UK's advice on eating out isn't about cutting takeaways out. It's 
 
 It helps to know where the fat and salt hide. The British Heart Foundation (BHF) says most shop-bought or restaurant pizzas are high in saturated fat and can be salty too, and creamy curries like korma are likely to be high in saturated fat.
 
-The NHS says the average man should eat no more than 30g of saturated fat a day and the average woman no more than 20g, so swapping a creamy dish for a lighter one can make a real difference.
+The NHS says the average man should eat no more than 30g of saturated fat a day and the average woman no more than 20g, so it is worth knowing which dishes are richest.
 
 ## What to order: a quick UK takeaway guide
 
