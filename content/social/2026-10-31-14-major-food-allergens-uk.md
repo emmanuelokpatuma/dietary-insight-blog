@@ -41,7 +41,7 @@ Celery, mustard and soya are three of the 14 major food allergens in the UK, and
 
 UK food law requires businesses to highlight these 14 allergens on prepacked labels and to give allergen information in cafés, restaurants and takeaways. Knowing the list, and where to look, makes everyday shopping and eating out much easier.
 
-I built Dietary Insight because I live with type 2 diabetes and high blood pressure, and I know how much it helps to understand what's really on your plate. This plain-English guide covers all 14 allergens, what "may contain" means, and the signs of a serious reaction. Link in the comments.
+I built Dietary Insight because I live with diabetes and high blood pressure, and I know how much it helps to understand what's really on your plate. This plain-English guide covers all 14 allergens, what "may contain" means, and the signs of a serious reaction. Link in the comments.
 
 ## linkedin_comment
 Full guide here: https://blog.simplerlivez.com/14-major-food-allergens-uk/?utm_source=linkedin&utm_medium=social

@@ -22,7 +22,7 @@ https://blog.simplerlivez.com/diabetes-friendly-breakfast-ideas/?utm_source=x&ut
 ## linkedin
 Fruit juice and sugary cereal look like healthy breakfasts, but they can send blood sugar up fast. Here are 12 simple diabetes-friendly breakfasts that keep you full until lunch.
 
-I built Dietary Insight because I live with type 2 diabetes and high blood pressure, and I wanted a faster way to know what's on my plate. The full guide is in the comments.
+I built Dietary Insight because I live with diabetes and high blood pressure, and I wanted a faster way to know what's on my plate. The full guide is in the comments.
 
 ## linkedin_comment
 Full guide here: https://blog.simplerlivez.com/diabetes-friendly-breakfast-ideas/?utm_source=linkedin&utm_medium=social

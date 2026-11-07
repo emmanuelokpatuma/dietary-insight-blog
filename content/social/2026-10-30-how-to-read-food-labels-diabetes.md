@@ -22,7 +22,7 @@ https://blog.simplerlivez.com/how-to-read-food-labels-diabetes/?utm_source=x&utm
 ## linkedin
 UK food labels in 10 seconds: green, amber or red for sugar, salt and fat. I wrote a simple guide to the numbers that matter when you have diabetes, including the names sugar hides under.
 
-I built Dietary Insight because I live with type 2 diabetes and high blood pressure, and I wanted a faster way to know what's on my plate. The full guide is in the comments.
+I built Dietary Insight because I live with diabetes and high blood pressure, and I wanted a faster way to know what's on my plate. The full guide is in the comments.
 
 ## linkedin_comment
 Full guide here: https://blog.simplerlivez.com/how-to-read-food-labels-diabetes/?utm_source=linkedin&utm_medium=social

@@ -37,7 +37,7 @@ Not sure what's on your plate? Snap a photo with Dietary Insight to flag sugar, 
 ## linkedin
 Do you actually need to snack with type 2 diabetes? Often not. But when you do, these simple UK snack ideas, with calorie counts and easy swaps for crisps and sweets, make it much easier.
 
-I built Dietary Insight because I live with type 2 diabetes and high blood pressure, and I wanted a faster way to know what's on my plate. The full guide is in the comments.
+I built Dietary Insight because I live with diabetes and high blood pressure, and I wanted a faster way to know what's on my plate. The full guide is in the comments.
 
 ## linkedin_comment
 Full guide here: https://blog.simplerlivez.com/best-snacks-for-type-2-diabetes/?utm_source=linkedin&utm_medium=social

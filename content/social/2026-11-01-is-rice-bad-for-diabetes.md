@@ -37,7 +37,7 @@ Can you still eat rice with type 2 diabetes? In households where rice is at the 
 
 The answer from Diabetes UK is reassuring: rice can stay on the plate. The total amount of carbohydrate has the biggest effect on blood sugar, so portion size matters most. A portion of cooked rice is about what fits in two cupped hands, around 180g, and choosing brown or brown basmati rice over white adds fibre.
 
-I built Dietary Insight because I live with type 2 diabetes and high blood pressure, and I wanted a faster way to understand what's on my plate. I've put the full guide, with portion tips, swaps and the NHS advice on leftover rice, in the comments.
+I built Dietary Insight because I live with diabetes and high blood pressure, and I wanted a faster way to understand what's on my plate. I've put the full guide, with portion tips, swaps and the NHS advice on leftover rice, in the comments.
 
 ## linkedin_comment
 Full guide here: https://blog.simplerlivez.com/is-rice-bad-for-diabetes/?utm_source=linkedin&utm_medium=social

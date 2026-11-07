@@ -22,7 +22,7 @@ https://blog.simplerlivez.com/how-much-salt-a-day-high-blood-pressure/?utm_sourc
 ## linkedin
 6g of salt a day sounds like plenty, until you learn that three quarters of it is already in bread, cereal and ready meals. Here is a simple guide to spotting it and cutting back.
 
-I built Dietary Insight because I live with type 2 diabetes and high blood pressure, and I wanted a faster way to know what's on my plate. The full guide is in the comments.
+I built Dietary Insight because I live with diabetes and high blood pressure, and I wanted a faster way to know what's on my plate. The full guide is in the comments.
 
 ## linkedin_comment
 Full guide here: https://blog.simplerlivez.com/how-much-salt-a-day-high-blood-pressure/?utm_source=linkedin&utm_medium=social

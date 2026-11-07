@@ -37,7 +37,7 @@ High blood pressure doesn't usually cause any symptoms, so plenty of people only
 
 DASH stands for Dietary Approaches to Stop Hypertension. It's not about special foods: it's more fruit, vegetables, wholegrains and low-fat dairy, with less salt, saturated fat and sugar. The British Heart Foundation says a 2019 review linked it to a 5.2mmHg drop in systolic blood pressure.
 
-I built Dietary Insight because I live with type 2 diabetes and high blood pressure, so this one is close to home. I've put a plain-English UK guide, with the daily servings table, in the comments.
+I built Dietary Insight because I live with diabetes and high blood pressure, so this one is close to home. I've put a plain-English UK guide, with the daily servings table, in the comments.
 
 ## linkedin_comment
 Full guide here: https://blog.simplerlivez.com/dash-diet-uk-high-blood-pressure/?utm_source=linkedin&utm_medium=social

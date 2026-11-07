@@ -37,7 +37,7 @@ Not sure what's on your plate? Snap a photo with Dietary Insight to flag sugar, 
 
 It's a useful tool with real limits. Diabetes UK points out that chocolate is low GI mainly because of its fat, while a baked potato is high GI but still nutritious. The British Dietetic Association says portion size often has the biggest effect on blood glucose.
 
-I built Dietary Insight because I live with type 2 diabetes and high blood pressure, and understanding these numbers makes everyday choices easier. I've put a plain-English UK guide, with a low, medium and high GI foods table, in the comments.
+I built Dietary Insight because I live with diabetes and high blood pressure, and understanding these numbers makes everyday choices easier. I've put a plain-English UK guide, with a low, medium and high GI foods table, in the comments.
 
 ## linkedin_comment
 Full guide here: https://blog.simplerlivez.com/low-gi-foods-list-uk/?utm_source=linkedin&utm_medium=social

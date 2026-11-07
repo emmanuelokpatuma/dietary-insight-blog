@@ -35,7 +35,7 @@ Not sure what's on your plate? Snap a photo with Dietary Insight to flag sugar, 
 ## linkedin
 Prediabetes usually has no symptoms, which is why so many people find out by accident. Here's a plain-English guide to the HbA1c numbers, the risk factors, and the changes that can help bring blood sugar back to normal.
 
-I built Dietary Insight because I live with type 2 diabetes and high blood pressure, and I wanted a faster way to know what's on my plate. The full guide is in the comments.
+I built Dietary Insight because I live with diabetes and high blood pressure, and I wanted a faster way to know what's on my plate. The full guide is in the comments.
 
 ## linkedin_comment
 Full guide here: https://blog.simplerlivez.com/what-is-prediabetes-can-it-be-reversed/?utm_source=linkedin&utm_medium=social
