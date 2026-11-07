@@ -43,7 +43,7 @@ Takeaways are part of life for a lot of us, and a diabetes diagnosis doesn't hav
 
 The swaps are simple: tandoori or tikka instead of creamy curries, boiled rice instead of pilau or fried rice, a thin-base pizza shared with a side salad, a shish kebab instead of a doner. The NHS adds that coconut milk curries are high in saturated fat, so leaving some sauce helps.
 
-I built Dietary Insight because I live with type 2 diabetes and high blood pressure, and takeaway menus rarely come with a label. I've put a plain-English UK guide, with a cuisine-by-cuisine swap table, in the comments.
+I built Dietary Insight because I live with diabetes and high blood pressure, and takeaway menus rarely come with a label. I've put a plain-English UK guide, with a cuisine-by-cuisine swap table, in the comments.
 
 ## linkedin_comment
 Full guide here: https://blog.simplerlivez.com/healthy-takeaway-options-diabetes/?utm_source=linkedin&utm_medium=social
