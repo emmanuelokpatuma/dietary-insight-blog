@@ -39,7 +39,7 @@ Not sure what's on your plate? Snap a photo with Dietary Insight to flag sugar, 
 #takeaway #type2diabetes #diabetesuk #healthyeatinguk #fakeaway #diabetesdiet #eatingout #dietaryinsight
 
 ## linkedin
-Takeaways are part of life for a lot of us, and a diabetes diagnosis doesn't have to end them. Diabetes UK's eating out advice is about choosing well, not cutting out.
+Takeaways are part of life for a lot of us, and a diabetes diagnosis doesn't have to end them. Diabetes UK says having diabetes shouldn't stop you enjoying eating out.
 
 The swaps are simple: tandoori or tikka instead of creamy curries, boiled rice instead of pilau or fried rice, a thin-base pizza shared with a side salad, a shish kebab instead of a doner. The NHS adds that coconut milk curries are high in saturated fat, so leaving some sauce helps.
 
@@ -57,15 +57,15 @@ Healthy takeaway options for diabetes in the UK: what to order from the Indian, 
 ## community_answer
 Where: r/diabetes_t2, or Quora: "What is the healthiest takeaway to order if you have diabetes?"
 
-You don't have to give up takeaways. Diabetes UK's advice is mostly about cooking method, sides and portion size.
+Diabetes UK says having diabetes shouldn't stop you enjoying eating out. Its tips are mostly about cooking method, sides and portion size.
 
 - Indian: tandoori and tikka dishes are baked and lower in fat. The NHS suggests dry or tomato-based curries like madras over creamy ones like korma, pasanda or masala. Boiled rice and chapatti or roti instead of pilau rice and naan.
-- Chinese: steamed fish, chicken chop suey or szechuan prawns (NHS), broth-based soups, steamed rice and veg instead of fried rice and spring rolls.
+- Chinese: steamed fish, chicken chop suey or szechuan prawns (NHS), broth-based soups and steamed rice instead of fried rice and spring rolls.
 - Thai: stir-fried or steamed dishes. Coconut milk curries are high in saturated fat, so leave some of the sauce.
 - Fish and chips: smaller portion, thick-cut chips (they absorb less fat), mushy peas, and ask them to hold the salt.
 - Pizza: thin base, share it, add a side salad, go easy on cheese and processed meat toppings.
 - Kebab: shish with pitta and salad rather than doner.
 
-Larger chains (over 250 employees) have to show calories on menus, which helps you compare. If you use insulin, it's worth asking your diabetes team how to plan for takeaway meals, as Diabetes UK says fatty dishes like pizza, curry and fish and chips can take hours to affect blood glucose.
+Restaurants, cafes and takeaways with more than 250 employees have to show calories on menus, which helps you compare. If you use insulin, it's worth asking your diabetes team how to plan for takeaway meals, as Diabetes UK says dishes like pizza, curry and fish and chips can take hours to affect blood glucose.
 
 I wrote a longer guide with the sources here: https://blog.simplerlivez.com/healthy-takeaway-options-diabetes/?utm_source=reddit&utm_medium=community

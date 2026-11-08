@@ -6,7 +6,7 @@ category: Eating out
 date: 2026-11-05
 faq:
   - q: "Can I still have a takeaway if I have diabetes?"
-    a: "Yes. Diabetes UK's eating out advice is about choosing portion sizes, cooking methods and sides carefully rather than avoiding takeaways altogether."
+    a: "Yes. Diabetes UK says having diabetes shouldn't stop you enjoying eating out, and its tips focus on choosing portion sizes, cooking methods and sides carefully."
   - q: "What is the healthiest Indian takeaway for diabetes?"
     a: "Diabetes UK suggests tandoori and tikka dishes because they are baked and lower in fat, with boiled or steamed rice and wholemeal chapatti or roti instead of pilau rice and naan."
   - q: "Do takeaways have to show calories?"
@@ -23,9 +23,9 @@ sources:
 
 ## Can you eat takeaways with diabetes?
 
-Yes. Diabetes UK's advice on eating out isn't about cutting takeaways out. It's about choosing portion sizes, toppings and sides carefully.
+Yes. Diabetes UK says having diabetes shouldn't stop you enjoying eating out. Its tips are about choosing portion sizes, toppings and sides carefully.
 
-It helps to know where the fat and salt hide. The British Heart Foundation (BHF) says most shop-bought or restaurant pizzas are high in saturated fat and can be salty too, and creamy curries like korma are likely to be high in saturated fat.
+It helps to know where the fat and salt hide. The British Heart Foundation (BHF) says most shop-bought or restaurant pizzas are high in saturated fat and can be salty too, and that a chicken korma is likely to be high in saturated fat and potentially salt.
 
 The NHS says the average man should eat no more than 30g of saturated fat a day and the average woman no more than 20g, so it is worth knowing which dishes are richest.
 
@@ -36,7 +36,7 @@ Here are the swaps suggested by Diabetes UK, the NHS and the BHF for the most co
 | Takeaway | Better choices | Go easy on |
 | --- | --- | --- |
 | Indian | Tandoori or tikka dishes, dry or tomato-based curries such as madras, boiled rice, chapatti or roti | Creamy curries such as korma, pasanda or masala, pilau rice, naan, poppadoms |
-| Chinese | Steamed fish, chicken chop suey, szechuan prawns, broth-based soups, steamed rice, steamed or stir-fried veg | Fried rice, spring rolls, satays |
+| Chinese | Steamed fish, chicken chop suey, szechuan prawns, broth-based soups, steamed rice | Fried rice, spring rolls, satays |
 | Thai | Stir-fried or steamed dishes with chicken, fish or veg, Thai salad, broth-based soups | Coconut milk curries (leave some of the sauce) |
 | Fish and chips | A smaller portion, thick-cut chips, mushy peas, grilled fish if they offer it | Extra salt, crinkle-cut or curly fries |
 | Pizza | Thin base, vegetable, chicken or seafood toppings, a side salad, sharing | Extra cheese, pepperoni, salami, bacon |
@@ -55,7 +55,7 @@ Diabetes UK has a simple plate tip: fill your plate with salad and a portion of 
 
 The NHS suggests lower-fat Chinese dishes such as steamed fish, chicken chop suey or szechuan prawns. Diabetes UK recommends broth-based soups or a Thai salad as a starter rather than spring rolls or satays, with dressings and dips served on the side.
 
-Choose steamed or fragrant basmati rice over fried rice. Steamed or stir-fried vegetables make a filling side dish.
+Diabetes UK also suggests steamed or fragrant basmati rice rather than fried rice.
 
 For Thai food, the NHS says to try stir-fried or steamed dishes with chicken, fish or vegetables. Curries made with coconut milk are high in saturated fat, so if you choose one, try not to eat all the sauce.
 
@@ -71,17 +71,17 @@ For Thai food, the NHS says to try stir-fried or steamed dishes with chicken, fi
 
 ## Simple habits that help with any takeaway
 
-1. **Check the calories.** Diabetes UK says businesses with more than 250 employees must show calories on their menus, which makes comparing dishes easier.
-2. **Watch the extras.** Poppadoms, naan, spring rolls, samosas and pakoras add up quickly. Diabetes UK suggests soups, veg sticks with dips, chicken tikka or grilled fish as starters instead.
-3. **Swap the drink.** Choose a sugar-free drink with your meal deal. Diabetes UK says plain water is best.
-4. **Share rich dishes and desserts.** Splitting a pizza, a dhal or a dessert keeps portions in check.
+1. **Check the calories.** Diabetes UK says restaurants, cafes and takeaways that employ more than 250 people have to show calories on their menus, which makes comparing dishes easier.
+2. **Watch the extras.** Diabetes UK says to watch out for extras such as poppadoms and naan, and suggests soups, veg sticks with dips, chicken tikka or grilled fish as healthier starters than spring rolls, samosas and pakoras.
+3. **Swap the drink.** Choose a sugar-free drink rather than a sugary one. Diabetes UK says plain water is best.
+4. **Share rich dishes.** Diabetes UK suggests sharing a pizza or a portion of dhal to help manage portion sizes.
 5. **Fit in a walk.** Diabetes UK suggests a brisk walk before or after the meal to help keep blood sugar levels stable.
 
 For more on cutting back on salt, see our guide to [how much salt a day](/how-much-salt-a-day-high-blood-pressure/).
 
 ## If you use insulin
 
-Diabetes UK notes that estimating the carbs in a restaurant or takeaway meal is harder than usual, because you don't know exactly how the dish was made. It also explains that fat slows down how carbs are absorbed, so dishes such as pizza, curry and fish and chips may take hours to affect blood glucose.
+Diabetes UK notes that estimating the carbs in a restaurant or takeaway meal is harder than usual, because you don't know exactly how the dish was made. It also says dishes such as pizza, curry and fried fish and chips may take hours to affect your blood glucose levels.
 
 If you use insulin or other diabetes medication, talk to your GP, diabetes nurse or dietitian about how to plan for takeaways and meals out.
 
