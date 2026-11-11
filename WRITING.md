@@ -65,3 +65,19 @@ Create `content/social/<same file name as the post>.md` with these sections. Pla
 
 - Never invent personal experiences or anecdotes for Emmanuel. Only use the facts he has stated: he built Dietary Insight because he lives with diabetes and high blood pressure.
 - When describing Emmanuel himself, always say "I live with diabetes and high blood pressure" (or "he lives with diabetes..."), never "type 2 diabetes". General educational content about type 2 diabetes as a topic is fine.
+
+## App store links in every social post (Emmanuel, 10 Nov 2026)
+Every social section (facebook, threads, x, instagram, linkedin, pinterest_description) must include BOTH Dietary Insight Cam store links, exactly as below. The App Store link has no country code (never use /us/, /gb/ etc.):
+
+    🍎 App Store: https://apps.apple.com/app/dietary-insight-cam/id6814602853
+    🤖 Google Play: https://play.google.com/store/apps/details?id=com.emergent.dietaryinsightcam.wtjahd
+
+Placement:
+- facebook: after "Read the full guide:" and the blog link, add a line "See what's on your plate with Dietary Insight Cam:" then the two store-link lines (the blog link stays first so it keeps the link preview), then the hashtags.
+- instagram: right after the app mention line, before the hashtags. (These are the only URLs allowed on Instagram.)
+- linkedin: at the end of the post text (the blog link still goes only in linkedin_comment).
+- threads: after the blog link. The whole text must stay under 500 characters; shorten the wording if needed.
+- pinterest_description: inline "App Store: <link> Google Play: <link>" after the blog link. The whole description must stay under 500 characters; shorten if needed.
+- x: blog link plus both store links; shorten the wording to fit.
+- community_answer: no store links (never mention the app there).
+Count lengths with python before saving.
