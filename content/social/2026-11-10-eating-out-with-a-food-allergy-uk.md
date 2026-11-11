@@ -11,16 +11,24 @@ If staff can't answer your questions clearly, the Food Standards Agency says don
 Read the full guide:
 https://blog.simplerlivez.com/eating-out-with-a-food-allergy-uk/?utm_source=facebook&utm_medium=social
 
+See what's on your plate with Dietary Insight Cam:
+🍎 App Store: https://apps.apple.com/app/dietary-insight-cam/id6814602853
+🤖 Google Play: https://play.google.com/store/apps/details?id=com.emergent.dietaryinsightcam.wtjahd
+
 #foodallergy #allergyawareness #eatingout
 
 ## threads
-Eating out with a food allergy? UK food businesses must tell you if any of the 14 major allergens are in their food. Tip: ask about sauces, oils and shared pans too, and check again when the food arrives, because Allergy UK says recipes can change without warning. https://blog.simplerlivez.com/eating-out-with-a-food-allergy-uk/?utm_source=threads&utm_medium=social
+Eating out with a food allergy? UK food businesses must tell you if any of the 14 major allergens are in their food. Tip: ask about sauces, oils and shared pans too, and check again when it arrives. https://blog.simplerlivez.com/eating-out-with-a-food-allergy-uk/?utm_source=threads&utm_medium=social
+
+🍎 App Store: https://apps.apple.com/app/dietary-insight-cam/id6814602853
+🤖 Google Play: https://play.google.com/store/apps/details?id=com.emergent.dietaryinsightcam.wtjahd
 
 ## x
-UK restaurants must tell you if any of the 14 major allergens are in their food. Tip: ask about sauces, oils and shared pans too, every time you order.
+UK restaurants must tell you about the 14 major allergens. Ask about sauces, oils and shared pans too.
 https://blog.simplerlivez.com/eating-out-with-a-food-allergy-uk/?utm_source=x&utm_medium=social
-
-#foodallergy #allergyawareness
+🍎 App Store: https://apps.apple.com/app/dietary-insight-cam/id6814602853
+🤖 Google Play: https://play.google.com/store/apps/details?id=com.emergent.dietaryinsightcam.wtjahd
+#foodallergy
 
 ## instagram
 Eating out with a food allergy? UK restaurants, cafés and takeaways must tell you if any of the 14 major allergens are in their food.
@@ -35,6 +43,8 @@ If staff can't answer your questions clearly, the Food Standards Agency says don
 The full guide is on our blog: tap the link in our bio 👆
 
 Not sure what's on your plate? Snap a photo with Dietary Insight to flag sugar, salt and fat and get a healthier swap.
+🍎 App Store: https://apps.apple.com/app/dietary-insight-cam/id6814602853
+🤖 Google Play: https://play.google.com/store/apps/details?id=com.emergent.dietaryinsightcam.wtjahd
 
 #foodallergy #allergyawareness #eatingout #foodallergyuk #allergyfriendly #anaphylaxisawareness #14allergens #dietaryinsight
 
@@ -47,6 +57,9 @@ The practical side matters just as much. Allergy UK and Anaphylaxis UK suggest p
 
 I built Dietary Insight because I live with diabetes and high blood pressure, and I know how much clear information helps when you're eating food you didn't cook. I've put a plain-English UK guide, including when to call 999, in the comments.
 
+🍎 App Store: https://apps.apple.com/app/dietary-insight-cam/id6814602853
+🤖 Google Play: https://play.google.com/store/apps/details?id=com.emergent.dietaryinsightcam.wtjahd
+
 ## linkedin_comment
 Full guide here: https://blog.simplerlivez.com/eating-out-with-a-food-allergy-uk/?utm_source=linkedin&utm_medium=social
 
@@ -54,7 +67,7 @@ Full guide here: https://blog.simplerlivez.com/eating-out-with-a-food-allergy-uk
 Eating Out with a Food Allergy UK: Questions to Ask Restaurants and Takeaways
 
 ## pinterest_description
-Eating out with a food allergy in the UK: what restaurants, cafés and takeaways must tell you about the 14 major allergens, questions to ask about sauces, oils and cross-contamination, takeaway and delivery allergen rules, what to carry and when to call 999. https://blog.simplerlivez.com/eating-out-with-a-food-allergy-uk/?utm_source=pinterest&utm_medium=social
+Eating out with a food allergy in the UK: what restaurants and takeaways must tell you about the 14 major allergens, what to ask about cross-contamination and when to call 999. https://blog.simplerlivez.com/eating-out-with-a-food-allergy-uk/?utm_source=pinterest&utm_medium=social App Store: https://apps.apple.com/app/dietary-insight-cam/id6814602853 Google Play: https://play.google.com/store/apps/details?id=com.emergent.dietaryinsightcam.wtjahd
 
 ## community_answer
 Where: r/FoodAllergies, or Quora: "How do you eat out at restaurants with a food allergy in the UK?"
