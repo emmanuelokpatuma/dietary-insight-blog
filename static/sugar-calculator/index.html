@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Sugar Calculator UK: How Much Sugar Per Day? | Dietary Insight</title>
+<meta name="description" content="Free UK sugar calculator: see your daily free-sugar limit in grams and teaspoons, and track what you have had today.">
+<link rel="canonical" href="https://blog.simplerlivez.com/sugar-calculator/">
+<meta property="og:title" content="Daily Sugar Calculator UK: How Much Sugar Per Day? | Dietary Insight">
+<meta property="og:description" content="Free UK sugar calculator: see your daily free-sugar limit in grams and teaspoons, and track what you have had today.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://blog.simplerlivez.com/sugar-calculator/">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much sugar should I have per day in the UK?", "acceptedAnswer": {"@type": "Answer", "text": "UK guidance says free sugars should make up no more than 5% of your daily energy. In practice that is about 30 g a day for adults and children aged 11 and over, 24 g for ages 7 to 10, and 19 g for ages 4 to 6."}}, {"@type": "Question", "name": "What counts as free sugars?", "acceptedAnswer": {"@type": "Answer", "text": "Free sugars are sugars added to foods and drinks, plus sugars naturally in honey, syrups and fruit juices. Sugars in whole fruit, vegetables and plain milk are not counted."}}, {"@type": "Question", "name": "How many teaspoons is 30 g of sugar?", "acceptedAnswer": {"@type": "Answer", "text": "Roughly 7 teaspoons, counting one level teaspoon as about 4 g."}}, {"@type": "Question", "name": "I have diabetes. Is this limit right for me?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily. This is general guidance for the public. People with diabetes or prediabetes usually get personal targets from their care team, often focused on total carbohydrate as well as sugar, so follow their advice."}}]}</script>
+<style>
+  :root{--g:#1f7a4d;--g2:#e8f5ee;--ink:#17231c;--mut:#5b6b62;--bd:#d9e3dd;--bg:#f7faf8}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+  .wrap{max-width:600px;margin:0 auto;padding:20px 16px 48px}
+  h1{font-size:1.6rem;line-height:1.2;margin:8px 0 6px}
+  .sub{color:var(--mut);margin:0 0 18px}
+  .card{background:#fff;border:1px solid var(--bd);border-radius:14px;padding:16px;margin-bottom:16px}
+  label{display:block;font-weight:600;margin:12px 0 6px;font-size:.95rem}
+  input,select{width:100%;padding:12px;font-size:1rem;border:1px solid var(--bd);border-radius:10px;background:#fff;color:var(--ink)}
+  .row{display:flex;gap:8px}
+  .row>*{flex:1}
+  .row .unit{flex:0 0 38%}
+  button.calc{width:100%;margin-top:16px;padding:14px;font-size:1.05rem;font-weight:700;color:#fff;background:var(--g);border:0;border-radius:10px;cursor:pointer}
+  button.ghost{padding:10px 14px;font-size:.95rem;font-weight:700;color:var(--g);background:#fff;border:2px solid var(--g);border-radius:10px;cursor:pointer}
+  #result{display:none}
+  .big{font-size:2.6rem;font-weight:800;color:var(--g);margin:0}
+  .big small{font-size:1rem;font-weight:600;color:var(--mut)}
+  .range{color:var(--mut);margin:2px 0 12px}
+  table{width:100%;border-collapse:collapse;margin:8px 0}
+  td{padding:8px 0;border-bottom:1px solid var(--bd)}
+  td:last-child{text-align:right;font-weight:700}
+  ul{padding-left:18px;margin:8px 0}
+  .note{font-size:.85rem;color:var(--mut)}
+  .warn{background:#fff8e6;border:1px solid #f0dca0;border-radius:10px;padding:10px 12px;font-size:.88rem;margin-top:12px}
+  .err{color:#b3261e;font-size:.9rem;margin-top:8px;min-height:1.2em}
+  .cta{background:var(--g2);border:1px solid #bfe0cd;text-align:center}
+  .cta h2{margin:0 0 6px;font-size:1.15rem}
+  .cta p{margin:0 0 12px}
+  .btns{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+  .btns a{flex:1 1 140px;display:block;padding:12px;border-radius:10px;background:var(--g);color:#fff;text-decoration:none;font-weight:700}
+  .btns a.alt{background:#fff;color:var(--g);border:2px solid var(--g)}
+  h2.sec{font-size:1.15rem;margin:22px 0 6px}
+  h3{margin:16px 0 4px;font-size:1.05rem}
+  details{background:#fff;border:1px solid var(--bd);border-radius:10px;padding:10px 12px;margin:8px 0}
+  summary{font-weight:600;cursor:pointer}
+  .more{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .more a{padding:8px 12px;border:1px solid var(--bd);border-radius:999px;background:#fff;color:var(--g);text-decoration:none;font-size:.9rem;font-weight:600}
+  footer{font-size:.8rem;color:var(--mut);text-align:center;margin-top:24px}
+  footer a{color:var(--g)}
+  .item{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--bd)}
+  .item .nm{flex:1;font-size:.95rem}
+  .item .nm small{color:var(--mut);display:block}
+  .qty{display:flex;align-items:center;gap:8px}
+  .qty button{width:36px;height:36px;border-radius:50%;border:2px solid var(--g);background:#fff;color:var(--g);font-size:1.2rem;font-weight:700;cursor:pointer;line-height:1}
+  .qty span{min-width:20px;text-align:center;font-weight:700}
+  .bar{height:14px;background:#e6ece8;border-radius:8px;overflow:hidden;margin:8px 0}
+  .bar>div{height:100%;width:0;background:var(--g);transition:width .2s}
+  .bar>div.over{background:#d4691e}
+  .dish{border-bottom:1px solid var(--bd);padding:10px 0}
+  .dish .row{align-items:center}
+  .dish .gram{flex:0 0 28%}
+  .dish .kc{flex:0 0 22%;text-align:right;font-weight:700;color:var(--g)}
+  .dish .x{flex:0 0 36px;height:36px;border:0;background:#f1f3f2;border-radius:8px;font-size:1.1rem;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>How Much Sugar Per Day? Free Calculator</h1>
+  <p class="sub">Find your daily free-sugar limit in grams and teaspoons, then tap through what you have eaten and drunk to see where you stand. Free, no sign-up.</p>
+
+  <div class="card">
+    <label for="age">Who is it for?</label>
+    <select id="age">
+      <option value="30">Adult or child aged 11+</option>
+      <option value="24">Child aged 7 to 10</option>
+      <option value="19">Child aged 4 to 6</option>
+    </select>
+    <label for="kc">Your daily calories (optional)</label>
+    <input id="kc" type="number" inputmode="numeric" placeholder="e.g. 2000" min="800" max="5000">
+    <p class="note" style="margin:6px 0 0">Add this to see the limit based on your own energy needs. Leave blank to use the standard figure.</p>
+  </div>
+
+  <div class="card">
+    <p class="big"><span id="lim">30</span> <small>g free sugars / day max</small></p>
+    <p class="range" id="tsp"></p>
+    <p class="range" id="own"></p>
+    <h3>Track what you've had today</h3>
+    <p class="note" style="margin-top:0">Tap + for each item. Amounts are typical averages; check the "of which sugars" line on labels.</p>
+    <div id="items"></div>
+    <p style="margin:14px 0 2px"><strong id="tot">0</strong> g of <span id="lim2">30</span> g <span id="pct" class="note"></span></p>
+    <div class="bar"><div id="fill"></div></div>
+    <p id="msg" class="note"></p>
+    <button class="ghost" id="reset" type="button">Reset</button>
+    <div class="warn">Free sugars are sugars added to food and drinks, plus sugars in honey, syrups and fruit juice. They don't include sugars in whole fruit, vegetables or plain milk. This is general UK guidance for the public, not personal medical advice. If you have diabetes or prediabetes, follow your care team's targets, which may differ.</div>
+  </div>
+
+
+  <div class="card cta">
+    <h2>Don't want to guess the sugar in your food?</h2>
+    <p>Snap a photo of your meal and Dietary Insight shows the sugar, salt, calories and cholesterol in seconds, with healthier swaps.</p>
+    <div class="btns">
+      <a href="https://apps.apple.com/app/dietary-insight-cam/id6814602853" target="_blank" rel="noopener">Get it on the App Store</a>
+      <a class="alt" href="https://play.google.com/store/apps/details?id=com.emergent.dietaryinsightcam.wtjahd" target="_blank" rel="noopener">Get it on Google Play</a>
+    </div>
+    <p class="note" style="margin-top:10px">New users get a 7-day free Premium trial.</p>
+  </div>
+
+<h2 class="sec">Common questions</h2><details><summary>How much sugar should I have per day in the UK?</summary><p class="note" style="font-size:.95rem">UK guidance says free sugars should make up no more than 5% of your daily energy. In practice that is about 30 g a day for adults and children aged 11 and over, 24 g for ages 7 to 10, and 19 g for ages 4 to 6.</p></details><details><summary>What counts as free sugars?</summary><p class="note" style="font-size:.95rem">Free sugars are sugars added to foods and drinks, plus sugars naturally in honey, syrups and fruit juices. Sugars in whole fruit, vegetables and plain milk are not counted.</p></details><details><summary>How many teaspoons is 30 g of sugar?</summary><p class="note" style="font-size:.95rem">Roughly 7 teaspoons, counting one level teaspoon as about 4 g.</p></details><details><summary>I have diabetes. Is this limit right for me?</summary><p class="note" style="font-size:.95rem">Not necessarily. This is general guidance for the public. People with diabetes or prediabetes usually get personal targets from their care team, often focused on total carbohydrate as well as sugar, so follow their advice.</p></details>
+<h2 class="sec">More free calculators</h2><div class="more"><a href="/protein-calculator/">Daily Protein Calculator</a><a href="/calorie-calculator-uk/">Calorie & TDEE Calculator (UK)</a><a href="/african-food-calorie-calculator/">African Food Calorie Calculator</a></div>
+  <footer>Made by <a href="https://simplerlivez.com" target="_blank" rel="noopener">SimplerLivez</a> &middot; <a href="/">Dietary Insight blog</a></footer>
+</div>
+<script>
+
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  var ITEMS=[
+    ["Can of cola (330 ml)","about 35 g",35],
+    ["Energy drink (250 ml)","about 27 g",27],
+    ["Glass of fruit juice (150 ml)","about 13 g",13],
+    ["Teaspoon of sugar in tea or coffee","4 g",4],
+    ["Tablespoon of honey or syrup","about 17 g",17],
+    ["Chocolate bar (about 45 g)","about 25 g",25],
+    ["Slice of cake","about 20 g",20],
+    ["Two sweet biscuits","about 10 g",10],
+    ["Bowl of sweetened cereal","about 12 g",12],
+    ["Flavoured yoghurt pot (150 g)","about 12 g",12],
+    ["Two scoops of ice cream","about 15 g",15],
+    ["Tablespoon of jam","about 9 g",9]
+  ];
+  var counts=ITEMS.map(function(){return 0});
+  var box=$('items');
+  ITEMS.forEach(function(it,i){
+    var d=document.createElement('div');d.className='item';
+    var n=document.createElement('div');n.className='nm';n.textContent=it[0];
+    var s=document.createElement('small');s.textContent=it[1];n.appendChild(s);
+    var q=document.createElement('div');q.className='qty';
+    var m=document.createElement('button');m.type='button';m.textContent='-';m.setAttribute('aria-label','Remove one '+it[0]);
+    var c=document.createElement('span');c.textContent='0';c.id='c'+i;
+    var p=document.createElement('button');p.type='button';p.textContent='+';p.setAttribute('aria-label','Add one '+it[0]);
+    m.onclick=function(){if(counts[i]>0){counts[i]--;update()}};
+    p.onclick=function(){counts[i]++;update()};
+    q.appendChild(m);q.appendChild(c);q.appendChild(p);
+    d.appendChild(n);d.appendChild(q);box.appendChild(d);
+  });
+  function limit(){return parseFloat($('age').value)}
+  function update(){
+    var L=limit(), tot=0;
+    ITEMS.forEach(function(it,i){tot+=counts[i]*it[2];$('c'+i).textContent=counts[i]});
+    $('lim').textContent=L;$('lim2').textContent=L;
+    $('tsp').textContent='That is roughly '+({30:7,24:6,19:5}[L])+' teaspoons of sugar.';
+    var kc=parseFloat($('kc').value);
+    if(kc>=800&&kc<=5000){
+      var g=Math.round(kc*0.05/4);
+      $('own').textContent='5% of '+kc+' kcal is about '+g+' g of free sugars a day.';
+    } else {$('own').textContent=''}
+    $('tot').textContent=tot;
+    var pct=Math.round(tot/L*100);
+    $('pct').textContent='('+pct+'% of the limit)';
+    var f=$('fill');f.style.width=Math.min(100,pct)+'%';
+    f.className=tot>L?'over':'';
+    $('msg').textContent=tot===0?'':(tot>L?'You are over the guideline by '+(tot-L)+' g. One day over is not a problem; it is the pattern that matters.':'You have about '+(L-tot)+' g left today.');
+  }
+  $('age').addEventListener('change',update);
+  $('kc').addEventListener('input',update);
+  $('reset').onclick=function(){counts=ITEMS.map(function(){return 0});update()};
+  update();
+})();
+
+</script>
+</body>
+</html>

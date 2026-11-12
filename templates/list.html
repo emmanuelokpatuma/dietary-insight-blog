@@ -18,6 +18,14 @@
       <p class="hero-sub">Practical, UK-focused food guides checked against NHS and Diabetes UK advice, from the team behind the Dietary Insight app.</p>
       <p class="cta-btns"><a class="btn" href="{{ links.play }}" rel="noopener">{% include "play.svg" %}Get it on Google Play</a><a class="btn alt" href="{{ links.ios }}" rel="noopener">{% include "apple.svg" %}Download on the App Store</a></p>
       <ul class="chips">{% for name, url in categories %}<li><a href="{{ url }}">{{ name }}</a></li>{% endfor %}</ul>
+  <p class="calc-h">Free calculators</p>
+  <ul class="chips calcs">
+    <li><a href="/protein-calculator/">Protein</a></li>
+    <li><a href="/sugar-calculator/">Sugar</a></li>
+    <li><a href="/calorie-calculator-uk/">Calories (UK)</a></li>
+    <li><a href="/african-food-calorie-calculator/">African food calories</a></li>
+  </ul>
+
     </div>
     <div class="hero-art" aria-hidden="true">
       <div class="blob"></div>
