@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BMI Calculator UK: Check Your BMI (Metric or Stone/lb) | Dietary Insight</title>
+<meta name="description" content="Free UK BMI calculator in kg/cm or stones/pounds, with NHS ranges and the lower NICE cut-offs for Black, Asian and minority ethnic groups.">
+<link rel="canonical" href="https://blog.simplerlivez.com/bmi-calculator-uk/">
+<meta property="og:title" content="BMI Calculator UK: Check Your BMI (Metric or Stone/lb) | Dietary Insight">
+<meta property="og:description" content="Free UK BMI calculator in kg/cm or stones/pounds, with NHS ranges and the lower NICE cut-offs for Black, Asian and minority ethnic groups.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://blog.simplerlivez.com/bmi-calculator-uk/">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is a healthy BMI in the UK?", "acceptedAnswer": {"@type": "Answer", "text": "For most adults the NHS healthy range is 18.5 to 24.9. Overweight is 25 to 29.9 and obese is 30 or more."}}, {"@type": "Question", "name": "Are the BMI cut-offs different for some ethnic groups?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. NICE advises lower thresholds for people of Black African, African-Caribbean, South Asian, Chinese and Middle Eastern background: overweight from 23 and obese from 27.5."}}, {"@type": "Question", "name": "Is BMI accurate for everyone?", "acceptedAnswer": {"@type": "Answer", "text": "No. It can overestimate for muscular people and underestimate for some older adults. It is a screening guide, not a diagnosis, and it is not for children or pregnancy."}}, {"@type": "Question", "name": "Does weight affect blood sugar and blood pressure?", "acceptedAnswer": {"@type": "Answer", "text": "Carrying extra weight raises the risk of type 2 diabetes and high blood pressure, and even modest weight loss can help. Ask your GP for support that suits you."}}]}</script>
+<style>
+  :root{--g:#1f7a4d;--g2:#e8f5ee;--ink:#17231c;--mut:#5b6b62;--bd:#d9e3dd;--bg:#f7faf8}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+  .wrap{max-width:600px;margin:0 auto;padding:20px 16px 48px}
+  h1{font-size:1.6rem;line-height:1.2;margin:8px 0 6px}
+  .sub{color:var(--mut);margin:0 0 18px}
+  .card{background:#fff;border:1px solid var(--bd);border-radius:14px;padding:16px;margin-bottom:16px}
+  label{display:block;font-weight:600;margin:12px 0 6px;font-size:.95rem}
+  input,select{width:100%;padding:12px;font-size:1rem;border:1px solid var(--bd);border-radius:10px;background:#fff;color:var(--ink)}
+  .row{display:flex;gap:8px}
+  .row>*{flex:1}
+  .row .unit{flex:0 0 38%}
+  button.calc{width:100%;margin-top:16px;padding:14px;font-size:1.05rem;font-weight:700;color:#fff;background:var(--g);border:0;border-radius:10px;cursor:pointer}
+  button.ghost{padding:10px 14px;font-size:.95rem;font-weight:700;color:var(--g);background:#fff;border:2px solid var(--g);border-radius:10px;cursor:pointer}
+  #result{display:none}
+  .big{font-size:2.6rem;font-weight:800;color:var(--g);margin:0}
+  .big small{font-size:1rem;font-weight:600;color:var(--mut)}
+  .range{color:var(--mut);margin:2px 0 12px}
+  table{width:100%;border-collapse:collapse;margin:8px 0}
+  td{padding:8px 0;border-bottom:1px solid var(--bd)}
+  td:last-child{text-align:right;font-weight:700}
+  ul{padding-left:18px;margin:8px 0}
+  .note{font-size:.85rem;color:var(--mut)}
+  .warn{background:#fff8e6;border:1px solid #f0dca0;border-radius:10px;padding:10px 12px;font-size:.88rem;margin-top:12px}
+  .err{color:#b3261e;font-size:.9rem;margin-top:8px;min-height:1.2em}
+  .cta{background:var(--g2);border:1px solid #bfe0cd;text-align:center}
+  .cta h2{margin:0 0 6px;font-size:1.15rem}
+  .cta p{margin:0 0 12px}
+  .btns{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+  .btns a{flex:1 1 140px;display:block;padding:12px;border-radius:10px;background:var(--g);color:#fff;text-decoration:none;font-weight:700}
+  .btns a.alt{background:#fff;color:var(--g);border:2px solid var(--g)}
+  h2.sec{font-size:1.15rem;margin:22px 0 6px}
+  h3{margin:16px 0 4px;font-size:1.05rem}
+  details{background:#fff;border:1px solid var(--bd);border-radius:10px;padding:10px 12px;margin:8px 0}
+  summary{font-weight:600;cursor:pointer}
+  .more{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .more a{padding:8px 12px;border:1px solid var(--bd);border-radius:999px;background:#fff;color:var(--g);text-decoration:none;font-size:.9rem;font-weight:600}
+  footer{font-size:.8rem;color:var(--mut);text-align:center;margin-top:24px}
+  footer a{color:var(--g)}
+  .item{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--bd)}
+  .item .nm{flex:1;font-size:.95rem}
+  .item .nm small{color:var(--mut);display:block}
+  .qty{display:flex;align-items:center;gap:8px}
+  .qty button{width:36px;height:36px;border-radius:50%;border:2px solid var(--g);background:#fff;color:var(--g);font-size:1.2rem;font-weight:700;cursor:pointer;line-height:1}
+  .qty span{min-width:20px;text-align:center;font-weight:700}
+  .bar{height:14px;background:#e6ece8;border-radius:8px;overflow:hidden;margin:8px 0}
+  .bar>div{height:100%;width:0;background:var(--g);transition:width .2s}
+  .bar>div.over{background:#d4691e}
+  .dish{border-bottom:1px solid var(--bd);padding:10px 0}
+  .dish .row{align-items:center}
+  .dish .gram{flex:0 0 28%}
+  .dish .kc{flex:0 0 22%;text-align:right;font-weight:700;color:var(--g)}
+  .dish .x{flex:0 0 36px;height:36px;border:0;background:#f1f3f2;border-radius:8px;font-size:1.1rem;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>BMI Calculator (UK)</h1>
+  <p class="sub">Work out your BMI in metric or stones and pounds, with the NHS ranges and the lower cut-offs used for some ethnic groups. Free, no sign-up.</p>
+
+  <div class="card">
+    <label for="sys">Units</label>
+    <select id="sys"><option value="m">Metric (cm, kg)</option><option value="i">Imperial (ft/in, st/lb)</option></select>
+    <div id="met">
+      <label for="cm">Height (cm)</label><input id="cm" type="number" inputmode="decimal" placeholder="e.g. 175">
+      <label for="kg">Weight (kg)</label><input id="kg" type="number" inputmode="decimal" placeholder="e.g. 80">
+    </div>
+    <div id="imp" style="display:none">
+      <label>Height</label>
+      <div class="row"><input id="ft" type="number" inputmode="numeric" placeholder="ft"><input id="inch" type="number" inputmode="decimal" placeholder="in"></div>
+      <label>Weight</label>
+      <div class="row"><input id="st" type="number" inputmode="numeric" placeholder="st"><input id="lb" type="number" inputmode="decimal" placeholder="lb"></div>
+    </div>
+    <label for="eth">Ethnic background</label>
+    <select id="eth"><option value="0">White or other</option><option value="1">Black African, African-Caribbean, South Asian, Chinese, Middle Eastern</option></select>
+    <p class="note" style="margin:6px 0 0">NICE uses lower BMI cut-offs for these groups, because health risks can start at a lower BMI.</p>
+    <button class="calc" id="go" type="button">Calculate BMI</button>
+    <div class="err" id="err"></div>
+  </div>
+  <div class="card" id="result">
+    <p class="big"><span id="out">-</span> <small>BMI</small></p>
+    <p class="range" id="band"></p>
+    <p class="range" id="rng"></p>
+    <p class="note">BMI is a rough guide for adults 18 and over. It does not account for muscle, age or where fat is carried. Waist size is also useful.</p>
+    <div class="warn">This is general information, not medical advice or a diagnosis. Your own targets may differ, so follow the advice of your GP, nurse or diabetes team.</div>
+  </div>
+
+  <div class="card cta">
+    <h2>Want to eat in a way that supports your weight goals?</h2>
+    <p>Photograph your meal and Dietary Insight shows calories, sugar, salt and cholesterol in seconds.</p>
+    <div class="btns">
+      <a href="https://apps.apple.com/app/dietary-insight-cam/id6814602853" target="_blank" rel="noopener">Get it on the App Store</a>
+      <a class="alt" href="https://play.google.com/store/apps/details?id=com.emergent.dietaryinsightcam.wtjahd" target="_blank" rel="noopener">Get it on Google Play</a>
+    </div>
+    <p class="note" style="margin-top:10px">New users get a 7-day free Premium trial.</p>
+  </div>
+
+<h2 class="sec">Common questions</h2><details><summary>What is a healthy BMI in the UK?</summary><p class="note" style="font-size:.95rem">For most adults the NHS healthy range is 18.5 to 24.9. Overweight is 25 to 29.9 and obese is 30 or more.</p></details><details><summary>Are the BMI cut-offs different for some ethnic groups?</summary><p class="note" style="font-size:.95rem">Yes. NICE advises lower thresholds for people of Black African, African-Caribbean, South Asian, Chinese and Middle Eastern background: overweight from 23 and obese from 27.5.</p></details><details><summary>Is BMI accurate for everyone?</summary><p class="note" style="font-size:.95rem">No. It can overestimate for muscular people and underestimate for some older adults. It is a screening guide, not a diagnosis, and it is not for children or pregnancy.</p></details><details><summary>Does weight affect blood sugar and blood pressure?</summary><p class="note" style="font-size:.95rem">Carrying extra weight raises the risk of type 2 diabetes and high blood pressure, and even modest weight loss can help. Ask your GP for support that suits you.</p></details>
+<h2 class="sec">More free calculators</h2><div class="more"><a href="/protein-calculator/">Daily Protein Calculator</a><a href="/sugar-calculator/">Daily Sugar Calculator</a><a href="/calorie-calculator-uk/">Calorie & TDEE Calculator (UK)</a><a href="/african-food-calorie-calculator/">African Food Calorie Calculator</a><a href="/blood-sugar-converter/">Blood Sugar Converter (mmol/L to mg/dL)</a><a href="/hba1c-calculator/">HbA1c Calculator (% to mmol/mol)</a><a href="/salt-sodium-converter/">Salt to Sodium Converter</a></div>
+  <footer>Made by <a href="https://simplerlivez.com" target="_blank" rel="noopener">SimplerLivez</a> &middot; <a href="/">Dietary Insight blog</a></footer>
+</div>
+<script>
+function $(i){return document.getElementById(i)}
+function num(i){var v=parseFloat($(i).value);return isFinite(v)?v:NaN}
+$('sys').addEventListener('change',function(){var m=this.value==='m';$('met').style.display=m?'':'none';$('imp').style.display=m?'none':''});
+$('go').addEventListener('click',function(){
+  var e=$('err');e.textContent='';var h,w;
+  if($('sys').value==='m'){h=num('cm')/100;w=num('kg')}
+  else{h=((num('ft')||0)*12+(num('inch')||0))*0.0254;w=((num('st')||0)*14+(num('lb')||0))*0.45359237}
+  if(!(h>0.9&&h<2.5&&w>20&&w<400)){e.textContent='Please enter a sensible height and weight.';$('result').style.display='none';return}
+  var bmi=w/(h*h),hi=$('eth').value==='1',ow=hi?23:25,ob=hi?27.5:30,t;
+  if(bmi<18.5)t='Underweight';else if(bmi<ow)t='Healthy weight';else if(bmi<ob)t='Overweight';else t='Obese range';
+  $('out').textContent=bmi.toFixed(1);$('band').textContent=t;
+  var lo=18.5*h*h,up=(ow-0.1)*h*h;
+  $('rng').textContent='Healthy weight range for your height: '+lo.toFixed(0)+' to '+up.toFixed(0)+' kg ('+(lo/6.35029).toFixed(1)+' to '+(up/6.35029).toFixed(1)+' st).';
+  $('result').style.display='block';
+});
+</script>
+</body>
+</html>

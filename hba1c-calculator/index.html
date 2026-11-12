@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HbA1c Converter: % to mmol/mol and Back | Dietary Insight</title>
+<meta name="description" content="Free HbA1c converter: switch between % and mmol/mol, see estimated average glucose and the UK normal, prediabetes and diabetes bands.">
+<link rel="canonical" href="https://blog.simplerlivez.com/hba1c-calculator/">
+<meta property="og:title" content="HbA1c Converter: % to mmol/mol and Back | Dietary Insight">
+<meta property="og:description" content="Free HbA1c converter: switch between % and mmol/mol, see estimated average glucose and the UK normal, prediabetes and diabetes bands.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://blog.simplerlivez.com/hba1c-calculator/">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I convert HbA1c % to mmol/mol?", "acceptedAnswer": {"@type": "Answer", "text": "Subtract 2.15 from the percentage and multiply by 10.929. For example 6.5% is about 48 mmol/mol."}}, {"@type": "Question", "name": "What is a normal HbA1c in the UK?", "acceptedAnswer": {"@type": "Answer", "text": "Below 42 mmol/mol (6.0%) is normal. 42 to 47 mmol/mol is the prediabetes range and 48 mmol/mol (6.5%) or above is in the diabetes range."}}, {"@type": "Question", "name": "What is estimated average glucose?", "acceptedAnswer": {"@type": "Answer", "text": "It is the average blood glucose that a given HbA1c roughly corresponds to over the past 2 to 3 months. It is an estimate and can differ from your meter readings."}}, {"@type": "Question", "name": "Can I lower my HbA1c?", "acceptedAnswer": {"@type": "Answer", "text": "Many people do through food choices, activity, weight loss where advised, and medicines where prescribed. Ask your care team for a plan that suits you."}}]}</script>
+<style>
+  :root{--g:#1f7a4d;--g2:#e8f5ee;--ink:#17231c;--mut:#5b6b62;--bd:#d9e3dd;--bg:#f7faf8}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+  .wrap{max-width:600px;margin:0 auto;padding:20px 16px 48px}
+  h1{font-size:1.6rem;line-height:1.2;margin:8px 0 6px}
+  .sub{color:var(--mut);margin:0 0 18px}
+  .card{background:#fff;border:1px solid var(--bd);border-radius:14px;padding:16px;margin-bottom:16px}
+  label{display:block;font-weight:600;margin:12px 0 6px;font-size:.95rem}
+  input,select{width:100%;padding:12px;font-size:1rem;border:1px solid var(--bd);border-radius:10px;background:#fff;color:var(--ink)}
+  .row{display:flex;gap:8px}
+  .row>*{flex:1}
+  .row .unit{flex:0 0 38%}
+  button.calc{width:100%;margin-top:16px;padding:14px;font-size:1.05rem;font-weight:700;color:#fff;background:var(--g);border:0;border-radius:10px;cursor:pointer}
+  button.ghost{padding:10px 14px;font-size:.95rem;font-weight:700;color:var(--g);background:#fff;border:2px solid var(--g);border-radius:10px;cursor:pointer}
+  #result{display:none}
+  .big{font-size:2.6rem;font-weight:800;color:var(--g);margin:0}
+  .big small{font-size:1rem;font-weight:600;color:var(--mut)}
+  .range{color:var(--mut);margin:2px 0 12px}
+  table{width:100%;border-collapse:collapse;margin:8px 0}
+  td{padding:8px 0;border-bottom:1px solid var(--bd)}
+  td:last-child{text-align:right;font-weight:700}
+  ul{padding-left:18px;margin:8px 0}
+  .note{font-size:.85rem;color:var(--mut)}
+  .warn{background:#fff8e6;border:1px solid #f0dca0;border-radius:10px;padding:10px 12px;font-size:.88rem;margin-top:12px}
+  .err{color:#b3261e;font-size:.9rem;margin-top:8px;min-height:1.2em}
+  .cta{background:var(--g2);border:1px solid #bfe0cd;text-align:center}
+  .cta h2{margin:0 0 6px;font-size:1.15rem}
+  .cta p{margin:0 0 12px}
+  .btns{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+  .btns a{flex:1 1 140px;display:block;padding:12px;border-radius:10px;background:var(--g);color:#fff;text-decoration:none;font-weight:700}
+  .btns a.alt{background:#fff;color:var(--g);border:2px solid var(--g)}
+  h2.sec{font-size:1.15rem;margin:22px 0 6px}
+  h3{margin:16px 0 4px;font-size:1.05rem}
+  details{background:#fff;border:1px solid var(--bd);border-radius:10px;padding:10px 12px;margin:8px 0}
+  summary{font-weight:600;cursor:pointer}
+  .more{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .more a{padding:8px 12px;border:1px solid var(--bd);border-radius:999px;background:#fff;color:var(--g);text-decoration:none;font-size:.9rem;font-weight:600}
+  footer{font-size:.8rem;color:var(--mut);text-align:center;margin-top:24px}
+  footer a{color:var(--g)}
+  .item{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--bd)}
+  .item .nm{flex:1;font-size:.95rem}
+  .item .nm small{color:var(--mut);display:block}
+  .qty{display:flex;align-items:center;gap:8px}
+  .qty button{width:36px;height:36px;border-radius:50%;border:2px solid var(--g);background:#fff;color:var(--g);font-size:1.2rem;font-weight:700;cursor:pointer;line-height:1}
+  .qty span{min-width:20px;text-align:center;font-weight:700}
+  .bar{height:14px;background:#e6ece8;border-radius:8px;overflow:hidden;margin:8px 0}
+  .bar>div{height:100%;width:0;background:var(--g);transition:width .2s}
+  .bar>div.over{background:#d4691e}
+  .dish{border-bottom:1px solid var(--bd);padding:10px 0}
+  .dish .row{align-items:center}
+  .dish .gram{flex:0 0 28%}
+  .dish .kc{flex:0 0 22%;text-align:right;font-weight:700;color:var(--g)}
+  .dish .x{flex:0 0 36px;height:36px;border:0;background:#f1f3f2;border-radius:8px;font-size:1.1rem;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>HbA1c Converter: % to mmol/mol</h1>
+  <p class="sub">Enter your HbA1c in either unit to see the other, your estimated average glucose and where it sits in the UK bands. Free, no sign-up.</p>
+
+  <div class="card">
+    <label for="v">HbA1c result</label>
+    <div class="row"><input id="v" type="number" inputmode="decimal" step="any" placeholder="e.g. 48"><select id="u" class="unit"><option value="mol">mmol/mol</option><option value="pct">%</option></select></div>
+    <div class="err" id="err"></div>
+  </div>
+  <div class="card" id="result">
+    <p class="big"><span id="out">-</span> <small id="outu"></small></p>
+    <p class="range" id="eag"></p>
+    <p class="range" id="band"></p>
+    <h3>UK HbA1c bands</h3>
+    <table>
+      <tr><td>Below 42 mmol/mol (6.0%)</td><td>Normal</td></tr>
+      <tr><td>42 to 47 mmol/mol (6.0 to 6.4%)</td><td>Prediabetes range</td></tr>
+      <tr><td>48 mmol/mol (6.5%) or more</td><td>Diabetes range</td></tr>
+    </table>
+    <p class="note">A diagnosis needs confirming by a clinician. People with diabetes often have an individual target, commonly 48 to 58 mmol/mol.</p>
+    <div class="warn">This is general information, not medical advice or a diagnosis. Your own targets may differ, so follow the advice of your GP, nurse or diabetes team.</div>
+  </div>
+
+  <div class="card cta">
+    <h2>Make everyday food choices easier</h2>
+    <p>Dietary Insight reads the sugar in your meal from a photo and suggests healthier swaps, so your food diary is less guesswork.</p>
+    <div class="btns">
+      <a href="https://apps.apple.com/app/dietary-insight-cam/id6814602853" target="_blank" rel="noopener">Get it on the App Store</a>
+      <a class="alt" href="https://play.google.com/store/apps/details?id=com.emergent.dietaryinsightcam.wtjahd" target="_blank" rel="noopener">Get it on Google Play</a>
+    </div>
+    <p class="note" style="margin-top:10px">New users get a 7-day free Premium trial.</p>
+  </div>
+
+<h2 class="sec">Common questions</h2><details><summary>How do I convert HbA1c % to mmol/mol?</summary><p class="note" style="font-size:.95rem">Subtract 2.15 from the percentage and multiply by 10.929. For example 6.5% is about 48 mmol/mol.</p></details><details><summary>What is a normal HbA1c in the UK?</summary><p class="note" style="font-size:.95rem">Below 42 mmol/mol (6.0%) is normal. 42 to 47 mmol/mol is the prediabetes range and 48 mmol/mol (6.5%) or above is in the diabetes range.</p></details><details><summary>What is estimated average glucose?</summary><p class="note" style="font-size:.95rem">It is the average blood glucose that a given HbA1c roughly corresponds to over the past 2 to 3 months. It is an estimate and can differ from your meter readings.</p></details><details><summary>Can I lower my HbA1c?</summary><p class="note" style="font-size:.95rem">Many people do through food choices, activity, weight loss where advised, and medicines where prescribed. Ask your care team for a plan that suits you.</p></details>
+<h2 class="sec">More free calculators</h2><div class="more"><a href="/protein-calculator/">Daily Protein Calculator</a><a href="/sugar-calculator/">Daily Sugar Calculator</a><a href="/calorie-calculator-uk/">Calorie & TDEE Calculator (UK)</a><a href="/african-food-calorie-calculator/">African Food Calorie Calculator</a><a href="/blood-sugar-converter/">Blood Sugar Converter (mmol/L to mg/dL)</a><a href="/bmi-calculator-uk/">BMI Calculator (UK)</a><a href="/salt-sodium-converter/">Salt to Sodium Converter</a></div>
+  <footer>Made by <a href="https://simplerlivez.com" target="_blank" rel="noopener">SimplerLivez</a> &middot; <a href="/">Dietary Insight blog</a></footer>
+</div>
+<script>
+function $(i){return document.getElementById(i)}
+function num(i){var v=parseFloat($(i).value);return isFinite(v)?v:NaN}
+function go(){
+  var v=num('v'),u=$('u').value,e=$('err');e.textContent='';
+  if(!(v>0)){$('result').style.display='none';return}
+  var mol=u==='mol'?v:(v-2.15)*10.929, pct=u==='pct'?v:v/10.929+2.15;
+  if(mol<15||mol>200){e.textContent='That value looks outside a plausible range. Check the unit.';$('result').style.display='none';return}
+  $('result').style.display='block';
+  if(u==='mol'){$('out').textContent=pct.toFixed(1);$('outu').textContent='% (DCCT)'}
+  else{$('out').textContent=Math.round(mol);$('outu').textContent='mmol/mol (IFCC)'}
+  var eagm=1.59*pct-2.59;
+  $('eag').textContent='Estimated average glucose: about '+eagm.toFixed(1)+' mmol/L ('+Math.round(eagm*18.016)+' mg/dL).';
+  var r=Math.round(mol),t;
+  if(r<42)t='In the normal range.';else if(r<48)t='In the prediabetes range (42 to 47 mmol/mol).';else t='In the diabetes range (48 mmol/mol or more). Speak to your GP or diabetes team about it.';
+  $('band').textContent=t;
+}
+$('v').addEventListener('input',go);$('u').addEventListener('change',go);
+</script>
+</body>
+</html>
