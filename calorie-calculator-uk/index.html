@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calorie Calculator UK: TDEE and Daily Calories | Dietary Insight</title>
+<meta name="description" content="Free UK calorie and TDEE calculator in kg, stone, cm or feet. Get your maintenance calories and a daily target to lose or gain weight.">
+<link rel="canonical" href="https://blog.simplerlivez.com/calorie-calculator-uk/">
+<meta property="og:title" content="Calorie Calculator UK: TDEE and Daily Calories | Dietary Insight">
+<meta property="og:description" content="Free UK calorie and TDEE calculator in kg, stone, cm or feet. Get your maintenance calories and a daily target to lose or gain weight.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://blog.simplerlivez.com/calorie-calculator-uk/">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many calories should I eat a day in the UK?", "acceptedAnswer": {"@type": "Answer", "text": "NHS guidance gives about 2,500 kcal a day for men and 2,000 kcal for women as a rough average, but your own figure depends on your age, size and activity. This calculator estimates yours."}}, {"@type": "Question", "name": "What is TDEE?", "acceptedAnswer": {"@type": "Answer", "text": "Total daily energy expenditure is the number of calories you burn in a day, including your resting energy (BMR) and everything you do. Eating around that number keeps your weight steady."}}, {"@type": "Question", "name": "How is the calculation done?", "acceptedAnswer": {"@type": "Answer", "text": "It uses the Mifflin-St Jeor equation to estimate your resting energy, then multiplies by an activity factor. A deficit of about 500 kcal a day is roughly 0.5 kg of weight loss a week."}}, {"@type": "Question", "name": "Why won't it show a very low calorie target?", "acceptedAnswer": {"@type": "Answer", "text": "Eating below about 1,200 kcal (women) or 1,500 kcal (men) a day is generally only advised under medical supervision, so the target is raised to that floor."}}]}</script>
+<style>
+  :root{--g:#1f7a4d;--g2:#e8f5ee;--ink:#17231c;--mut:#5b6b62;--bd:#d9e3dd;--bg:#f7faf8}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+  .wrap{max-width:600px;margin:0 auto;padding:20px 16px 48px}
+  h1{font-size:1.6rem;line-height:1.2;margin:8px 0 6px}
+  .sub{color:var(--mut);margin:0 0 18px}
+  .card{background:#fff;border:1px solid var(--bd);border-radius:14px;padding:16px;margin-bottom:16px}
+  label{display:block;font-weight:600;margin:12px 0 6px;font-size:.95rem}
+  input,select{width:100%;padding:12px;font-size:1rem;border:1px solid var(--bd);border-radius:10px;background:#fff;color:var(--ink)}
+  .row{display:flex;gap:8px}
+  .row>*{flex:1}
+  .row .unit{flex:0 0 38%}
+  button.calc{width:100%;margin-top:16px;padding:14px;font-size:1.05rem;font-weight:700;color:#fff;background:var(--g);border:0;border-radius:10px;cursor:pointer}
+  button.ghost{padding:10px 14px;font-size:.95rem;font-weight:700;color:var(--g);background:#fff;border:2px solid var(--g);border-radius:10px;cursor:pointer}
+  #result{display:none}
+  .big{font-size:2.6rem;font-weight:800;color:var(--g);margin:0}
+  .big small{font-size:1rem;font-weight:600;color:var(--mut)}
+  .range{color:var(--mut);margin:2px 0 12px}
+  table{width:100%;border-collapse:collapse;margin:8px 0}
+  td{padding:8px 0;border-bottom:1px solid var(--bd)}
+  td:last-child{text-align:right;font-weight:700}
+  ul{padding-left:18px;margin:8px 0}
+  .note{font-size:.85rem;color:var(--mut)}
+  .warn{background:#fff8e6;border:1px solid #f0dca0;border-radius:10px;padding:10px 12px;font-size:.88rem;margin-top:12px}
+  .err{color:#b3261e;font-size:.9rem;margin-top:8px;min-height:1.2em}
+  .cta{background:var(--g2);border:1px solid #bfe0cd;text-align:center}
+  .cta h2{margin:0 0 6px;font-size:1.15rem}
+  .cta p{margin:0 0 12px}
+  .btns{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+  .btns a{flex:1 1 140px;display:block;padding:12px;border-radius:10px;background:var(--g);color:#fff;text-decoration:none;font-weight:700}
+  .btns a.alt{background:#fff;color:var(--g);border:2px solid var(--g)}
+  h2.sec{font-size:1.15rem;margin:22px 0 6px}
+  h3{margin:16px 0 4px;font-size:1.05rem}
+  details{background:#fff;border:1px solid var(--bd);border-radius:10px;padding:10px 12px;margin:8px 0}
+  summary{font-weight:600;cursor:pointer}
+  .more{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .more a{padding:8px 12px;border:1px solid var(--bd);border-radius:999px;background:#fff;color:var(--g);text-decoration:none;font-size:.9rem;font-weight:600}
+  footer{font-size:.8rem;color:var(--mut);text-align:center;margin-top:24px}
+  footer a{color:var(--g)}
+  .item{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--bd)}
+  .item .nm{flex:1;font-size:.95rem}
+  .item .nm small{color:var(--mut);display:block}
+  .qty{display:flex;align-items:center;gap:8px}
+  .qty button{width:36px;height:36px;border-radius:50%;border:2px solid var(--g);background:#fff;color:var(--g);font-size:1.2rem;font-weight:700;cursor:pointer;line-height:1}
+  .qty span{min-width:20px;text-align:center;font-weight:700}
+  .bar{height:14px;background:#e6ece8;border-radius:8px;overflow:hidden;margin:8px 0}
+  .bar>div{height:100%;width:0;background:var(--g);transition:width .2s}
+  .bar>div.over{background:#d4691e}
+  .dish{border-bottom:1px solid var(--bd);padding:10px 0}
+  .dish .row{align-items:center}
+  .dish .gram{flex:0 0 28%}
+  .dish .kc{flex:0 0 22%;text-align:right;font-weight:700;color:var(--g)}
+  .dish .x{flex:0 0 36px;height:36px;border:0;background:#f1f3f2;border-radius:8px;font-size:1.1rem;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Calorie Calculator (UK): Daily Calories & TDEE</h1>
+  <p class="sub">Works in kg, stone or pounds, and cm or feet and inches. Get your maintenance calories and a daily target. Free, no sign-up.</p>
+
+  <div class="card">
+    <div class="row">
+      <div><label for="sex">Sex</label><select id="sex"><option value="m">Male</option><option value="f">Female</option></select></div>
+      <div><label for="age">Age</label><input id="age" type="number" inputmode="numeric" placeholder="e.g. 35" min="18" max="90"></div>
+    </div>
+
+    <label for="hu">Height</label>
+    <div class="row" id="hcm">
+      <input id="h" type="number" inputmode="decimal" placeholder="e.g. 175">
+      <select id="hu" class="unit"><option value="cm">cm</option><option value="ft">ft / in</option></select>
+    </div>
+    <div class="row" id="hft" style="display:none;margin-top:8px">
+      <input id="ft" type="number" inputmode="numeric" placeholder="ft" min="3" max="8">
+      <input id="inch" type="number" inputmode="decimal" placeholder="in" min="0" max="11">
+    </div>
+
+    <label for="w">Weight</label>
+    <div class="row">
+      <input id="w" type="number" inputmode="decimal" placeholder="e.g. 80">
+      <select id="wu" class="unit"><option value="kg">kg</option><option value="lb">lb</option><option value="st">stone</option></select>
+    </div>
+
+    <label for="act">Activity level</label>
+    <select id="act">
+      <option value="1.2">Mostly sitting, little exercise</option>
+      <option value="1.375" selected>Light activity, 1 to 3 days a week</option>
+      <option value="1.55">Moderate, 3 to 5 days a week</option>
+      <option value="1.725">Very active, 6 to 7 days a week</option>
+      <option value="1.9">Hard physical job or training twice a day</option>
+    </select>
+
+    <label for="goal">Your goal</label>
+    <select id="goal">
+      <option value="-500">Lose weight steadily (about 0.5 kg / 1 lb a week)</option>
+      <option value="-250">Lose weight slowly (about 0.25 kg a week)</option>
+      <option value="0" selected>Maintain my weight</option>
+      <option value="250">Gain weight slowly</option>
+    </select>
+    <button class="calc" id="go" type="button">Calculate my calories</button>
+    <div class="err" id="err"></div>
+  </div>
+
+  <div class="card" id="result" aria-live="polite">
+    <p class="big"><span id="tgt">0</span> <small>kcal / day</small></p>
+    <p class="range" id="sum"></p>
+    <table>
+      <tr><td>Resting energy (BMR)</td><td id="bmr"></td></tr>
+      <tr><td>Maintenance calories (TDEE)</td><td id="tdee"></td></tr>
+      <tr><td>Your daily target</td><td id="tg2"></td></tr>
+    </table>
+    <p class="note" id="floor"></p>
+    <p class="note">Next step: work out your <a href="/protein-calculator/">daily protein target</a> too.</p>
+    <div class="warn">This is a general estimate, not medical advice. If you have diabetes, kidney disease, high blood pressure, are pregnant, or take medication, follow the advice of your GP, dietitian or care team.</div>
+  </div>
+
+
+  <div class="card cta">
+    <h2>Hit your number without the maths</h2>
+    <p>Photograph each meal and Dietary Insight estimates the calories for you, so tracking your target takes seconds.</p>
+    <div class="btns">
+      <a href="https://apps.apple.com/app/dietary-insight-cam/id6814602853" target="_blank" rel="noopener">Get it on the App Store</a>
+      <a class="alt" href="https://play.google.com/store/apps/details?id=com.emergent.dietaryinsightcam.wtjahd" target="_blank" rel="noopener">Get it on Google Play</a>
+    </div>
+    <p class="note" style="margin-top:10px">New users get a 7-day free Premium trial.</p>
+  </div>
+
+<h2 class="sec">Common questions</h2><details><summary>How many calories should I eat a day in the UK?</summary><p class="note" style="font-size:.95rem">NHS guidance gives about 2,500 kcal a day for men and 2,000 kcal for women as a rough average, but your own figure depends on your age, size and activity. This calculator estimates yours.</p></details><details><summary>What is TDEE?</summary><p class="note" style="font-size:.95rem">Total daily energy expenditure is the number of calories you burn in a day, including your resting energy (BMR) and everything you do. Eating around that number keeps your weight steady.</p></details><details><summary>How is the calculation done?</summary><p class="note" style="font-size:.95rem">It uses the Mifflin-St Jeor equation to estimate your resting energy, then multiplies by an activity factor. A deficit of about 500 kcal a day is roughly 0.5 kg of weight loss a week.</p></details><details><summary>Why won't it show a very low calorie target?</summary><p class="note" style="font-size:.95rem">Eating below about 1,200 kcal (women) or 1,500 kcal (men) a day is generally only advised under medical supervision, so the target is raised to that floor.</p></details>
+<h2 class="sec">More free calculators</h2><div class="more"><a href="/protein-calculator/">Daily Protein Calculator</a><a href="/sugar-calculator/">Daily Sugar Calculator</a><a href="/african-food-calorie-calculator/">African Food Calorie Calculator</a></div>
+  <footer>Made by <a href="https://simplerlivez.com" target="_blank" rel="noopener">SimplerLivez</a> &middot; <a href="/">Dietary Insight blog</a></footer>
+</div>
+<script>
+
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  function n(id){return parseFloat($(id).value)}
+  $('hu').addEventListener('change',function(){
+    var ft=$('hu').value==='ft';
+    $('h').style.display=ft?'none':'';
+    $('hft').style.display=ft?'flex':'none';
+  });
+  function run(){
+    var err=$('err');err.textContent='';
+    var age=n('age'),sex=$('sex').value,act=parseFloat($('act').value),delta=parseFloat($('goal').value);
+    var w=n('w'),wu=$('wu').value;
+    var kg=wu==='lb'?w*0.45359237:wu==='st'?w*6.35029318:w;
+    var cm;
+    if($('hu').value==='ft'){cm=((n('ft')||0)*12+(n('inch')||0))*2.54}else{cm=n('h')}
+    if(!(age>=18&&age<=90)){err.textContent='This calculator is for adults aged 18 to 90.';return}
+    if(!(cm>=120&&cm<=230)){err.textContent='Please check your height.';return}
+    if(!(kg>=30&&kg<=300)){err.textContent='Please check your weight.';return}
+    var bmr=10*kg+6.25*cm-5*age+(sex==='m'?5:-161);
+    var tdee=bmr*act;
+    var target=tdee+delta;
+    var floor=sex==='m'?1500:1200;
+    var clamped=false;
+    if(target<floor){target=floor;clamped=true}
+    function r(x){return Math.round(x)}
+    $('tgt').textContent=r(target).toLocaleString('en-GB');
+    $('tg2').textContent=r(target).toLocaleString('en-GB')+' kcal';
+    $('bmr').textContent=r(bmr).toLocaleString('en-GB')+' kcal';
+    $('tdee').textContent=r(tdee).toLocaleString('en-GB')+' kcal';
+    var g=delta<0?'to lose weight':delta>0?'to gain weight':'to maintain your weight';
+    $('sum').textContent='Estimated daily calories '+g+'.';
+    $('floor').textContent=clamped?'Your target was raised to '+floor+' kcal, the lowest level generally considered safe without medical supervision.':'';
+    $('result').style.display='block';
+    $('result').scrollIntoView({behavior:'smooth',block:'start'});
+  }
+  $('go').addEventListener('click',run);
+})();
+
+</script>
+</body>
+</html>

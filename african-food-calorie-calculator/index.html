@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>African Food Calorie Calculator: Jollof Rice, Egusi, Fufu & More | Dietary Insight</title>
+<meta name="description" content="Free calorie calculator for African food. Calories in jollof rice, fried rice, egusi soup, pounded yam, eba, moi moi, plantain and more.">
+<link rel="canonical" href="https://blog.simplerlivez.com/african-food-calorie-calculator/">
+<meta property="og:title" content="African Food Calorie Calculator: Jollof Rice, Egusi, Fufu & More | Dietary Insight">
+<meta property="og:description" content="Free calorie calculator for African food. Calories in jollof rice, fried rice, egusi soup, pounded yam, eba, moi moi, plantain and more.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://blog.simplerlivez.com/african-food-calorie-calculator/">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many calories are in jollof rice?", "acceptedAnswer": {"@type": "Answer", "text": "A typical home-style jollof rice has roughly 150 to 170 kcal per 100 g cooked, so a 250 g plate is around 400 kcal before any meat, fish or plantain. The oil used is the biggest variable."}}, {"@type": "Question", "name": "Why do the calories vary so much?", "acceptedAnswer": {"@type": "Answer", "text": "African dishes are cooked to family recipes. The amount of palm or vegetable oil, the cuts of meat, and the size of the plate all change the total, which is why this calculator lets you adjust grams and oil."}}, {"@type": "Question", "name": "Are these numbers exact?", "acceptedAnswer": {"@type": "Answer", "text": "No. They are estimates based on typical recipes and published food data, roughly plus or minus 15%. For a precise figure for your own recipe, you need to weigh the ingredients."}}, {"@type": "Question", "name": "Can I count calories in African food with an app?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Dietary Insight lets you take a photo of your meal and get an estimate of calories, sugar, salt and cholesterol, which is handy for dishes that are missing from most calorie counters."}}]}</script>
+<style>
+  :root{--g:#1f7a4d;--g2:#e8f5ee;--ink:#17231c;--mut:#5b6b62;--bd:#d9e3dd;--bg:#f7faf8}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+  .wrap{max-width:600px;margin:0 auto;padding:20px 16px 48px}
+  h1{font-size:1.6rem;line-height:1.2;margin:8px 0 6px}
+  .sub{color:var(--mut);margin:0 0 18px}
+  .card{background:#fff;border:1px solid var(--bd);border-radius:14px;padding:16px;margin-bottom:16px}
+  label{display:block;font-weight:600;margin:12px 0 6px;font-size:.95rem}
+  input,select{width:100%;padding:12px;font-size:1rem;border:1px solid var(--bd);border-radius:10px;background:#fff;color:var(--ink)}
+  .row{display:flex;gap:8px}
+  .row>*{flex:1}
+  .row .unit{flex:0 0 38%}
+  button.calc{width:100%;margin-top:16px;padding:14px;font-size:1.05rem;font-weight:700;color:#fff;background:var(--g);border:0;border-radius:10px;cursor:pointer}
+  button.ghost{padding:10px 14px;font-size:.95rem;font-weight:700;color:var(--g);background:#fff;border:2px solid var(--g);border-radius:10px;cursor:pointer}
+  #result{display:none}
+  .big{font-size:2.6rem;font-weight:800;color:var(--g);margin:0}
+  .big small{font-size:1rem;font-weight:600;color:var(--mut)}
+  .range{color:var(--mut);margin:2px 0 12px}
+  table{width:100%;border-collapse:collapse;margin:8px 0}
+  td{padding:8px 0;border-bottom:1px solid var(--bd)}
+  td:last-child{text-align:right;font-weight:700}
+  ul{padding-left:18px;margin:8px 0}
+  .note{font-size:.85rem;color:var(--mut)}
+  .warn{background:#fff8e6;border:1px solid #f0dca0;border-radius:10px;padding:10px 12px;font-size:.88rem;margin-top:12px}
+  .err{color:#b3261e;font-size:.9rem;margin-top:8px;min-height:1.2em}
+  .cta{background:var(--g2);border:1px solid #bfe0cd;text-align:center}
+  .cta h2{margin:0 0 6px;font-size:1.15rem}
+  .cta p{margin:0 0 12px}
+  .btns{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+  .btns a{flex:1 1 140px;display:block;padding:12px;border-radius:10px;background:var(--g);color:#fff;text-decoration:none;font-weight:700}
+  .btns a.alt{background:#fff;color:var(--g);border:2px solid var(--g)}
+  h2.sec{font-size:1.15rem;margin:22px 0 6px}
+  h3{margin:16px 0 4px;font-size:1.05rem}
+  details{background:#fff;border:1px solid var(--bd);border-radius:10px;padding:10px 12px;margin:8px 0}
+  summary{font-weight:600;cursor:pointer}
+  .more{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .more a{padding:8px 12px;border:1px solid var(--bd);border-radius:999px;background:#fff;color:var(--g);text-decoration:none;font-size:.9rem;font-weight:600}
+  footer{font-size:.8rem;color:var(--mut);text-align:center;margin-top:24px}
+  footer a{color:var(--g)}
+  .item{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--bd)}
+  .item .nm{flex:1;font-size:.95rem}
+  .item .nm small{color:var(--mut);display:block}
+  .qty{display:flex;align-items:center;gap:8px}
+  .qty button{width:36px;height:36px;border-radius:50%;border:2px solid var(--g);background:#fff;color:var(--g);font-size:1.2rem;font-weight:700;cursor:pointer;line-height:1}
+  .qty span{min-width:20px;text-align:center;font-weight:700}
+  .bar{height:14px;background:#e6ece8;border-radius:8px;overflow:hidden;margin:8px 0}
+  .bar>div{height:100%;width:0;background:var(--g);transition:width .2s}
+  .bar>div.over{background:#d4691e}
+  .dish{border-bottom:1px solid var(--bd);padding:10px 0}
+  .dish .row{align-items:center}
+  .dish .gram{flex:0 0 28%}
+  .dish .kc{flex:0 0 22%;text-align:right;font-weight:700;color:var(--g)}
+  .dish .x{flex:0 0 36px;height:36px;border:0;background:#f1f3f2;border-radius:8px;font-size:1.1rem;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>African Food Calorie Calculator</h1>
+  <p class="sub">Calories in jollof rice, egusi, fufu, eba, moi moi, plantain and 31 dishes in all. Build your plate and adjust the portion. Free, no sign-up.</p>
+
+  <div class="card">
+    <h3 style="margin-top:0">Build your plate</h3>
+    <p class="note" style="margin-top:0">Pick each dish, then adjust the weight in grams (cooked weight). A typical serving is pre-filled.</p>
+    <div id="rows"></div>
+    <div class="row" style="margin-top:12px">
+      <button class="ghost" id="add" type="button">+ Add another dish</button>
+    </div>
+    <label for="oil">How was it cooked?</label>
+    <select id="oil">
+      <option value="0.88">Light on oil</option>
+      <option value="1" selected>Normal (typical home recipe)</option>
+      <option value="1.15">Extra oil or rich recipe</option>
+    </select>
+  </div>
+
+  <div class="card" aria-live="polite">
+    <p class="big"><span id="tot">0</span> <small>kcal (estimate)</small></p>
+    <p class="range" id="share"></p>
+    <p class="note">Estimates use typical home-style recipes. Oil, meat, fish and portion size change the real figure a lot, so treat the answer as roughly plus or minus 15%.</p>
+    <div class="warn">This is a general estimate, not medical advice. If you have diabetes, kidney disease, high blood pressure, are pregnant, or take medication, follow the advice of your GP, dietitian or care team.</div>
+  </div>
+
+
+  <div class="card cta">
+    <h2>Eating something that isn't on the list?</h2>
+    <p>Dietary Insight can estimate calories, sugar, salt and cholesterol from a photo of your plate, including African dishes most calorie counters miss.</p>
+    <div class="btns">
+      <a href="https://apps.apple.com/app/dietary-insight-cam/id6814602853" target="_blank" rel="noopener">Get it on the App Store</a>
+      <a class="alt" href="https://play.google.com/store/apps/details?id=com.emergent.dietaryinsightcam.wtjahd" target="_blank" rel="noopener">Get it on Google Play</a>
+    </div>
+    <p class="note" style="margin-top:10px">New users get a 7-day free Premium trial.</p>
+  </div>
+
+<h2 class="sec">Common questions</h2><details><summary>How many calories are in jollof rice?</summary><p class="note" style="font-size:.95rem">A typical home-style jollof rice has roughly 150 to 170 kcal per 100 g cooked, so a 250 g plate is around 400 kcal before any meat, fish or plantain. The oil used is the biggest variable.</p></details><details><summary>Why do the calories vary so much?</summary><p class="note" style="font-size:.95rem">African dishes are cooked to family recipes. The amount of palm or vegetable oil, the cuts of meat, and the size of the plate all change the total, which is why this calculator lets you adjust grams and oil.</p></details><details><summary>Are these numbers exact?</summary><p class="note" style="font-size:.95rem">No. They are estimates based on typical recipes and published food data, roughly plus or minus 15%. For a precise figure for your own recipe, you need to weigh the ingredients.</p></details><details><summary>Can I count calories in African food with an app?</summary><p class="note" style="font-size:.95rem">Yes. Dietary Insight lets you take a photo of your meal and get an estimate of calories, sugar, salt and cholesterol, which is handy for dishes that are missing from most calorie counters.</p></details>
+<h2 class="sec">More free calculators</h2><div class="more"><a href="/protein-calculator/">Daily Protein Calculator</a><a href="/sugar-calculator/">Daily Sugar Calculator</a><a href="/calorie-calculator-uk/">Calorie & TDEE Calculator (UK)</a></div>
+  <footer>Made by <a href="https://simplerlivez.com" target="_blank" rel="noopener">SimplerLivez</a> &middot; <a href="/">Dietary Insight blog</a></footer>
+</div>
+<script>
+
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  var DATA=[["Rice & grains", [["Jollof rice", 160, 250], ["Fried rice (Nigerian style)", 165, 250], ["White rice, boiled", 130, 200], ["Ugali / sadza", 112, 250], ["Banku", 130, 250]]], ["Swallows & starches", [["Pounded yam", 118, 250], ["Eba (garri)", 135, 250], ["Amala", 115, 250], ["Fufu (cassava)", 145, 250], ["Boiled yam", 118, 200], ["Fried yam", 215, 150], ["Boiled plantain", 122, 150], ["Fried plantain (dodo)", 230, 100]]], ["Soups & stews", [["Egusi soup", 190, 200], ["Efo riro", 130, 200], ["Ogbono soup", 180, 200], ["Okra soup", 100, 200], ["Tomato stew", 120, 120], ["Pepper soup", 75, 300]]], ["Beans & snacks", [["Stewed beans", 130, 250], ["Moi moi", 155, 150], ["Akara (bean cakes)", 280, 80], ["Puff puff", 330, 60], ["Chin chin", 470, 50], ["Meat pie", 290, 130]]], ["Meat, fish & eggs", [["Fried chicken", 250, 150], ["Boiled or grilled chicken", 165, 100], ["Goat meat", 145, 100], ["Suya (grilled beef)", 280, 100], ["Fried fish", 210, 120], ["Boiled egg (1 egg is about 50 g)", 155, 50]]]];
+  var flat=[];DATA.forEach(function(g){g[1].forEach(function(d){flat.push(d)})});
+  var rows=$('rows');
+  function fmt(x){return Math.round(x).toLocaleString('en-GB')}
+  function addRow(idx){
+    var d=document.createElement('div');d.className='dish';
+    var top=document.createElement('div');top.className='row';
+    var sel=document.createElement('select');sel.setAttribute('aria-label','Dish');
+    var k=0;
+    DATA.forEach(function(g){
+      var og=document.createElement('optgroup');og.label=g[0];
+      g[1].forEach(function(dish){var o=document.createElement('option');o.value=k;o.textContent=dish[0];og.appendChild(o);k++});
+      sel.appendChild(og);
+    });
+    sel.value=idx||0;
+    var gram=document.createElement('input');gram.type='number';gram.inputMode='numeric';gram.min='0';gram.max='2000';gram.className='gram';gram.setAttribute('aria-label','Grams');
+    gram.value=flat[sel.value][2];
+    var kc=document.createElement('div');kc.className='kc';kc.textContent='0';
+    var x=document.createElement('button');x.type='button';x.className='x';x.textContent='\u00d7';x.setAttribute('aria-label','Remove dish');
+    top.appendChild(sel);top.appendChild(gram);top.appendChild(kc);top.appendChild(x);
+    d.appendChild(top);
+    var small=document.createElement('div');small.className='note';small.style.marginTop='4px';d.appendChild(small);
+    function upd(){
+      var dish=flat[sel.value];
+      small.textContent=dish[1]+' kcal per 100 g';
+      var g=parseFloat(gram.value)||0;
+      var v=dish[1]*g/100*parseFloat($('oil').value);
+      kc.textContent=fmt(v)+' kcal';
+      kc.dataset.v=v;
+      total();
+    }
+    sel.addEventListener('change',function(){gram.value=flat[sel.value][2];upd()});
+    gram.addEventListener('input',upd);
+    x.onclick=function(){rows.removeChild(d);total()};
+    rows.appendChild(d);
+    d._upd=upd;upd();
+  }
+  function total(){
+    var t=0;
+    Array.prototype.forEach.call(rows.querySelectorAll('.kc'),function(e){t+=parseFloat(e.dataset.v)||0});
+    $('tot').textContent=fmt(t);
+    var f=function(x){return Math.round(t/x*100)};
+    $('share').textContent=t>0?'About '+f(2000)+'% of a typical 2,000 kcal day (women) or '+f(2500)+'% of a 2,500 kcal day (men), NHS reference intakes.':'';
+  }
+  $('oil').addEventListener('change',function(){
+    Array.prototype.forEach.call(rows.children,function(d){d._upd()});
+  });
+  $('add').onclick=function(){addRow(0)};
+  addRow(0);
+})();
+
+</script>
+</body>
+</html>
