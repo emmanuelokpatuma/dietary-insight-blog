@@ -184,7 +184,7 @@ def main():
 
     # sitemap, robots, RSS
     urls = [("/", posts[0]["updated"] if posts else dt.date.today())] + [(p["url"], p["updated"]) for p in posts]
-    urls += [(f"/{c}/", None) for c in ("protein-calculator","sugar-calculator","calorie-calculator-uk","african-food-calorie-calculator")]
+    urls += [(f"/{c}/", None) for c in ("protein-calculator","sugar-calculator","calorie-calculator-uk","african-food-calorie-calculator","blood-sugar-converter","hba1c-calculator","bmi-calculator-uk","salt-sodium-converter")]
     urls += [(c, None) for _, c in ctx["categories"]] + [(f"/{pg.stem}/", None) for pg in (ROOT / "content/pages").glob("*.md")]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for u, d in urls:
