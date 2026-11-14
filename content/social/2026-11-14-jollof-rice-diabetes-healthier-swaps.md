@@ -49,7 +49,7 @@ Jollof rice is one of those dishes people worry they'll have to give up after a 
 
 Diabetes UK publishes its own jollof rice and chicken recipe. It uses brown basmati rice, 2 tsp of rapeseed oil for four servings, a reduced-salt stock cube, and peppers, tomatoes and okra cooked into the pot. Each serving gives 3 portions of fruit and veg and is low in salt.
 
-That matters because, as Diabetes UK points out, people from Black African, African Caribbean and South Asian backgrounds are at risk of type 2 diabetes from the age of 25, compared with 40 for the white population.
+That matters because, as Diabetes UK points out, people from Black African, African Caribbean and South Asian backgrounds are at risk of developing type 2 diabetes from the age of 25, compared with 40 for the white population.
 
 I built Dietary Insight because I live with diabetes and high blood pressure, and knowing what's on my plate makes these choices easier. I've put a plain-English UK guide to healthier jollof swaps in the comments.
 
