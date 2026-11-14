@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Diabetes Meal Planner UK: 7-Day Dinner Plan | Dietary Insight</title>
+<meta name="description" content="Free 7-day dinner planner using real Diabetes UK and NHS recipes, with calories, carbs and salt per serving and one shopping list. No sign-up.">
+<link rel="canonical" href="https://blog.simplerlivez.com/meal-planner/">
+<meta property="og:title" content="Free Diabetes Meal Planner UK: 7-Day Dinner Plan | Dietary Insight">
+<meta property="og:description" content="Free 7-day dinner planner using real Diabetes UK and NHS recipes, with calories, carbs and salt per serving and one shopping list. No sign-up.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://blog.simplerlivez.com/meal-planner/">
+<meta property="og:image" content="https://blog.simplerlivez.com/img/og.png">
+<link rel="icon" href="/img/icon-32.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Where do the recipes come from?","acceptedAnswer":{"@type":"Answer","text":"Every dinner is a published recipe from Diabetes UK or NHS Healthier Families. Each card links to the original recipe, and the calories, carbs and salt shown are the per-serving figures from that recipe page."}},{"@type":"Question","name":"Is this meal plan right for my diabetes?","acceptedAnswer":{"@type":"Answer","text":"It is general healthy-eating inspiration, not a personal plan. How much carbohydrate is right for you depends on you and any medication you take, so talk to your GP, diabetes nurse or dietitian about your own needs."}},{"@type":"Question","name":"Does the planner check for allergens?","acceptedAnswer":{"@type":"Answer","text":"No. If you have a food allergy, read the full recipe and check the label of every ingredient you buy, every time."}}]}</script>
+<style>
+  :root{--g:#1f7a4d;--g2:#e8f5ee;--ink:#17231c;--mut:#5b6b62;--bd:#d9e3dd;--bg:#f7faf8;--acc:#e07a5f}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+  .wrap{max-width:680px;margin:0 auto;padding:20px 16px 48px}
+  .top{font-size:.9rem;margin-bottom:6px}.top a{color:var(--g);text-decoration:none;font-weight:600}
+  h1{font-size:1.7rem;line-height:1.2;margin:8px 0 6px}
+  .sub{color:var(--mut);margin:0 0 18px}
+  .card{background:#fff;border:1px solid var(--bd);border-radius:14px;padding:16px;margin-bottom:16px}
+  label.l{display:block;font-weight:600;margin:14px 0 6px;font-size:.95rem}
+  .seg{display:flex;flex-wrap:wrap;gap:6px}
+  .seg input{position:absolute;opacity:0;pointer-events:none}
+  .seg label{padding:9px 12px;border:1px solid var(--bd);border-radius:999px;background:#fff;cursor:pointer;font-size:.92rem}
+  .seg input:checked+label{background:var(--g);border-color:var(--g);color:#fff;font-weight:600}
+  .seg input:focus-visible+label{outline:2px solid var(--g);outline-offset:2px}
+  button.calc{width:100%;margin-top:18px;padding:14px;font-size:1.05rem;font-weight:700;color:#fff;background:var(--acc);border:0;border-radius:10px;cursor:pointer}
+  button.ghost{padding:9px 12px;font-size:.9rem;font-weight:700;color:var(--g);background:#fff;border:2px solid var(--g);border-radius:10px;cursor:pointer}
+  #plan,#shop{display:none}
+  .day{border:1px solid var(--bd);border-radius:12px;padding:12px;margin:10px 0;background:#fff}
+  .dh{display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .dn{font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--acc)}
+  .dt{font-size:1.08rem;font-weight:700;margin:2px 0 4px}
+  .dt a{color:var(--ink)}
+  .meta{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+  .meta span{font-size:.8rem;background:var(--g2);color:var(--g);border-radius:999px;padding:3px 9px;font-weight:600}
+  .small{font-size:.82rem;color:var(--mut)}
+  .tot{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center;margin-top:8px}
+  .tot div{background:var(--g2);border-radius:10px;padding:8px 4px}.tot b{display:block;font-size:1.2rem;color:var(--g)}
+  h2{font-size:1.2rem;margin:4px 0 8px}
+  h3.cat{font-size:.95rem;margin:16px 0 4px;color:var(--g)}
+  .it{display:flex;gap:10px;align-items:flex-start;padding:6px 0;border-bottom:1px solid var(--bd);font-size:.93rem}
+  .it input{width:18px;height:18px;margin-top:3px;flex:0 0 auto;accent-color:var(--g)}
+  .it.done span{text-decoration:line-through;color:var(--mut)}
+  .it small{color:var(--mut)}
+  .acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+  .warn{background:#fff8e6;border:1px solid #f0dca0;border-radius:10px;padding:10px 12px;font-size:.88rem;margin-top:12px}
+  .cta{background:var(--g2);border:1px solid #bfe0cd;text-align:center}
+  .cta h2{margin:0 0 6px;font-size:1.15rem}.cta p{margin:0 0 12px}
+  .btns{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+  .btns a{flex:1 1 140px;display:block;padding:12px;border-radius:10px;background:var(--g);color:#fff;text-decoration:none;font-weight:700}
+  .btns a.alt{background:#fff;color:var(--g);border:2px solid var(--g)}
+  h2.sec{font-size:1.15rem;margin:22px 0 6px}
+  details{background:#fff;border:1px solid var(--bd);border-radius:10px;padding:10px 12px;margin:8px 0}
+  summary{font-weight:600;cursor:pointer}
+  details.sp{margin-top:16px}details.sp summary{color:var(--g);font-size:.95rem}
+  .note{font-size:.85rem;color:var(--mut)}
+  .more{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .more a{padding:8px 12px;border:1px solid var(--bd);border-radius:999px;background:#fff;color:var(--g);text-decoration:none;font-size:.9rem;font-weight:600}
+  footer{font-size:.8rem;color:var(--mut);text-align:center;margin-top:24px}
+  footer a{color:var(--g)}
+  #toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 16px;border-radius:999px;font-size:.9rem;display:none}
+  @media print{.noprint,.cta,footer,.top,details:not(.sp),h2.sec,.more,#opts{display:none!important}body{background:#fff}.card,.day{border:0;padding:4px 0}#plan,#shop{display:block!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="/">&larr; Dietary Insight blog</a></div>
+  <h1>Free 7-day dinner planner</h1>
+  <p class="sub">Get a week of dinners from real Diabetes UK and NHS recipes, with calories, carbs and salt per serving and one shopping list. No sign-up.</p>
+
+  <div class="card" id="opts">
+    <label class="l">What do you eat?</label>
+    <div class="seg" role="radiogroup" aria-label="Diet">
+      <input type="radio" name="diet" id="d0" value="0" checked><label for="d0">Everything</label>
+      <input type="radio" name="diet" id="d1" value="1"><label for="d1">No red meat</label>
+      <input type="radio" name="diet" id="d2" value="2"><label for="d2">Fish and veggie</label>
+      <input type="radio" name="diet" id="d3" value="3"><label for="d3">Vegetarian</label>
+      <input type="radio" name="diet" id="d4" value="4"><label for="d4">Vegan</label>
+    </div>
+    <label class="l">Flavours</label>
+    <div class="seg" role="radiogroup" aria-label="Flavours">
+      <input type="radio" name="world" id="w0" value="0" checked><label for="w0">A bit of everything</label>
+      <input type="radio" name="world" id="w1" value="1"><label for="w1">Mostly African, Caribbean and South Asian</label>
+    </div>
+    <label class="l">How many dinners?</label>
+    <div class="seg" role="radiogroup" aria-label="Number of dinners">
+      <input type="radio" name="days" id="n5" value="5"><label for="n5">5 (weekdays)</label>
+      <input type="radio" name="days" id="n7" value="7" checked><label for="n7">7</label>
+    </div>
+    <button class="calc" id="go" type="button">Build my free meal plan</button>
+    <p class="small" style="margin:8px 0 0">Choosing from 22 recipes by Diabetes UK and NHS Healthier Families.</p>
+  </div>
+
+  <div class="card" id="plan" aria-live="polite">
+    <h2>Your dinners this week</h2>
+    <div id="days"></div>
+    <div class="tot" id="tot"></div>
+    <p class="small" style="margin-top:8px">Averages are per serving, from each recipe's own figures, and usually don't include side dishes such as rice or bread unless the recipe says so.</p>
+    <div class="acts noprint">
+      <button class="ghost" type="button" id="again">New plan</button>
+      <button class="ghost" type="button" id="print">Print or save as PDF</button>
+    </div>
+  </div>
+
+  <div class="card" id="shop">
+    <h2>Shopping list</h2>
+    <p class="small" style="margin-top:0">Ingredients for each recipe as written, for the number of servings it makes. Check what's already in your cupboards, and look at the full recipe before you shop.</p>
+    <div id="list"></div>
+    <div class="acts noprint">
+      <button class="ghost" type="button" id="copy">Copy list</button>
+    </div>
+    <div class="warn"><strong>Food allergies:</strong> this planner does not check for allergens. Read the full recipe and check the label of every ingredient you buy, every time.</div>
+  </div>
+
+  <div class="card cta">
+    <h2>Eating out or cooking without a recipe?</h2>
+    <p>Snap a photo of your meal and Dietary Insight estimates the sugar, salt, calories and cholesterol in seconds, with healthier swaps.</p>
+    <div class="btns">
+      <a href="https://apps.apple.com/app/dietary-insight-cam/id6814602853" target="_blank" rel="noopener">Get it on the App Store</a>
+      <a class="alt" href="https://play.google.com/store/apps/details?id=com.emergent.dietaryinsightcam.wtjahd" target="_blank" rel="noopener">Get it on Google Play</a>
+    </div>
+    <p class="note" style="margin-top:10px">New users get a 7-day free Premium trial.</p>
+  </div>
+
+  <p class="note">This planner gives general healthy-eating ideas, not personal medical or dietary advice. How much carbohydrate is right for you depends on you and any medication you take, so talk to your GP, diabetes nurse or dietitian about your own needs. Recipes and nutrition figures belong to Diabetes UK and NHS Healthier Families; follow the links for full methods.</p>
+
+<h2 class="sec">Common questions</h2>
+<details><summary>Where do the recipes come from?</summary><p class="note" style="font-size:.95rem">Every dinner is a published recipe from Diabetes UK or NHS Healthier Families. Each card links to the original recipe, and the calories, carbs and salt shown are the per-serving figures from that recipe page.</p></details>
+<details><summary>Is this meal plan right for my diabetes?</summary><p class="note" style="font-size:.95rem">It is general healthy-eating inspiration, not a personal plan. How much carbohydrate is right for you depends on you and any medication you take, so talk to your GP, diabetes nurse or dietitian about your own needs.</p></details>
+<details><summary>Does the planner check for allergens?</summary><p class="note" style="font-size:.95rem">No. If you have a food allergy, read the full recipe and check the label of every ingredient you buy, every time.</p></details>
+<h2 class="sec">More free tools</h2><div class="more"><a href="/sugar-calculator/">Daily Sugar Calculator</a><a href="/salt-sodium-converter/">Salt to Sodium Converter</a><a href="/african-food-calorie-calculator/">African Food Calorie Calculator</a><a href="/calorie-calculator-uk/">Calorie & TDEE Calculator (UK)</a><a href="/hba1c-calculator/">HbA1c Calculator</a><a href="/protein-calculator/">Daily Protein Calculator</a></div>
+  <footer>Made by <a href="https://simplerlivez.com" target="_blank" rel="noopener">SimplerLivez</a> &middot; <a href="/">Dietary Insight blog</a></footer>
+</div>
+<div id="toast" role="status"></div>
+<script>
+(function(){
+  var R=[{"t":"Jollof rice and chicken","u":"https://www.diabetes.org.uk/living-with-diabetes/eating/recipes/jollof-rice-and-chicken","s":"Diabetes UK","v":4,"time":"15 minutes + 30 minutes","k":"377","c":"50.3g","salt":"0.28g","f":"7.1g","fv":3,"note":"Each 393g serving (excludes serving suggestion)","d":1,"w":true,"cu":"West African","p":"chicken","i":[["2 tsp rapeseed oil","Spices, oils and sauces"],["1 large onion (170g), chopped","Fruit, veg and fresh herbs"],["350g skinless, boneless chicken breast, cut into chunks","Meat and fish"],["1 large red pepper (170g), chopped","Fruit, veg and fresh herbs"],["1 large yellow pepper (170g), chopped","Fruit, veg and fresh herbs"],["2 garlic cloves, crushed","Fruit, veg and fresh herbs"],["3cm fresh ginger root, finely chopped","Fruit, veg and fresh herbs"],["half -1 Scotch Bonnet chilli, chopped","Fruit, veg and fresh herbs"],["2 tbsp tomato purée","Cupboard: tins, grains and pulses"],["1 reduced salt chicken stock cube dissolved in 450 ml water","Cupboard: tins, grains and pulses"],["1 x 400g can chopped tomatoes","Cupboard: tins, grains and pulses"],["100g okra, chopped into 2cm pieces","Fruit, veg and fresh herbs"],["2 tbsp roughly chopped coriander","Fruit, veg and fresh herbs"]]},{"t":"Jerk chicken","u":"https://www.diabetes.org.uk/guide-to-diabetes/recipes/jerk-chicken","s":"Diabetes UK","v":4,"time":"15 minutes + 6 hours to marinate + 25 minutes","k":"272","c":"6.9g","salt":"0.67g","f":"1.3g","fv":0,"note":"Each 219g serving (excludes serving suggestion)","d":1,"w":true,"cu":"Caribbean","p":"chicken","i":[["4 spring onions, chopped","Fruit, veg and fresh herbs"],["2 Scotch Bonnet chillies, finely chopped","Fruit, veg and fresh herbs"],["1 tsp freshly ground black pepper","Spices, oils and sauces"],["half tsp cinnamon","Spices, oils and sauces"],["half tsp ground nutmeg","Spices, oils and sauces"],["1 tsp ground allspice","Spices, oils and sauces"],["2 tsp dark brown sugar","Spices, oils and sauces"],["2 cloves garlic, crushed","Fruit, veg and fresh herbs"],["3 cm fresh ginger root, grated","Fruit, veg and fresh herbs"],["1 tbsp fresh thyme leaves or 1 tsp dried thyme","Spices, oils and sauces"],["1 tbsp reduced-salt soy sauce","Spices, oils and sauces"],["grated zest and juice 1 lime","Fruit, veg and fresh herbs"],["juice 1 orange","Fruit, veg and fresh herbs"],["1 tbsp wine vinegar","Spices, oils and sauces"],["4 chicken drumsticks and 4 chicken thighs (1 kilo), excess skin trimmed","Meat and fish"]]},{"t":"Murgh salun (chicken curry)","u":"https://www.diabetes.org.uk/guide-to-diabetes/recipes/murgh-salun-chicken-curry","s":"Diabetes UK","v":6,"time":"15 minutes + 20 minutes","k":"328","c":"8.9g","salt":"0.39g","f":"2.3g","fv":1,"note":"Each 311g serving (excludes serving suggestion)","d":1,"w":true,"cu":"South Asian","p":"chicken","i":[["1 tbsp olive oil","Spices, oils and sauces"],["2 large onions, chopped","Fruit, veg and fresh herbs"],["4 cloves garlic, chopped","Fruit, veg and fresh herbs"],["1 tbsp fresh ginger, chopped","Fruit, veg and fresh herbs"],["8 tomatoes, chopped","Fruit, veg and fresh herbs"],["3 green chillies, finely chopped","Fruit, veg and fresh herbs"],["1.5 tsp chilli powder","Spices, oils and sauces"],["12 small chicken thighs (75g each)","Meat and fish"],["1.5 tsp garam masala","Spices, oils and sauces"],["4 tbsp natural low-fat yogurt","Dairy and eggs"]]},{"t":"Lemon and herb chicken with chickpeas","u":"https://www.diabetes.org.uk/guide-to-diabetes/recipes/lemon-and-herb-chicken-chickpeas","s":"Diabetes UK","v":2,"time":"15 minutes + 15 minutes","k":"390","c":"22.1g","salt":"0.22g","f":"8.6g","fv":1,"note":"Each 326g serving (excludes serving suggestion)","d":1,"w":false,"cu":"other","p":"chicken","i":[["2 boneless, skinless chicken breasts, approx 125g each","Meat and fish"],["grated rind and juice 1 lemon","Fruit, veg and fresh herbs"],["1 clove garlic, crushed","Fruit, veg and fresh herbs"],["1 tsp olive oil","Spices, oils and sauces"],["1 tsp black mustard seeds","Spices, oils and sauces"],["1 tsp cumin seeds","Spices, oils and sauces"],["4 spring onions, chopped","Fruit, veg and fresh herbs"],["400g chickpeas, drained and rinsed","Cupboard: tins, grains and pulses"],["3 tbsps mixed fresh herbs, chopped","Fruit, veg and fresh herbs"],["pinch turmeric","Spices, oils and sauces"],["2 tbsps half-fat crème fraiche","Dairy and eggs"],["freshly ground black pepper","Spices, oils and sauces"]]},{"t":"Turkey and mushroom mince","u":"https://www.diabetes.org.uk/guide-to-diabetes/recipes/turkey-and-mushroom-mince","s":"Diabetes UK","v":6,"time":"5 minutes + 15 minutes","k":"223","c":"11.6g","salt":"0.64g","f":"4.2g","fv":2,"note":"Each 214g serving (excludes serving suggestion)","d":1,"w":false,"cu":"British","p":"turkey","i":[["1 tsp sunflower oil","Spices, oils and sauces"],["3 onions, finely chopped","Fruit, veg and fresh herbs"],["3 carrots, finely diced","Fruit, veg and fresh herbs"],["500g turkey thigh mince","Meat and fish"],["250g mushrooms, sliced","Fruit, veg and fresh herbs"],["1 stick celery, finely diced","Fruit, veg and fresh herbs"],["1 heaped tbsp plain flour","Cupboard: tins, grains and pulses"],["1 low-salt chicken stock cube dissolved in 500ml boiling water","Cupboard: tins, grains and pulses"],["good pinch white pepper","Spices, oils and sauces"],["2 tsp reduced-salt soy sauce","Spices, oils and sauces"]]},{"t":"Mexican turkey meatballs","u":"https://www.diabetes.org.uk/living-with-diabetes/eating/recipes/mexican-turkey-meatballs","s":"Diabetes UK","v":4,"time":"10 minutes + 20 minutes","k":"325","c":"27.0g","salt":"0.8g","f":"9.6g","fv":2,"note":"Each 465g serving (excludes serving suggestion)","d":1,"w":false,"cu":"Mexican","p":"turkey","i":[["500g turkey breast mince","Meat and fish"],["50g bread, whizzed into coarse breadcrumbs","Cupboard: tins, grains and pulses"],["1tbsp mild chilli powder","Spices, oils and sauces"],["1tsp smoked paprika","Spices, oils and sauces"],["1/2tsp ground cinnamon","Spices, oils and sauces"],["1/2tsp ground cumin","Spices, oils and sauces"],["1/2tsp garlic powder","Spices, oils and sauces"],["1/2tsp dried oregano","Spices, oils and sauces"],["Calorie-controlled cooking spray","Spices, oils and sauces"],["1 onion, finely sliced","Fruit, veg and fresh herbs"],["2 x 400g tins chopped tomatoes","Cupboard: tins, grains and pulses"],["400g can kidney beans in water, rinsed and drained","Cupboard: tins, grains and pulses"],["Fresh coriander leaves, to serve","Fruit, veg and fresh herbs"],["2tbsp 0% fat natural Greek yogurt, to serve","Dairy and eggs"]]},{"t":"Mackerel rundown","u":"https://diabetes.org.uk/living-with-diabetes/eating/recipes/mackerel-rundown","s":"Diabetes UK","v":4,"time":"15 minutes + 35 minutes","k":"302","c":"21.2g","salt":"0.31g","f":"4.1g","fv":2,"note":"Each 349g serving","d":2,"w":true,"cu":"Caribbean","p":"fish","i":[["1tsp olive oil","Spices, oils and sauces"],["1 large onion, peeled and diced","Fruit, veg and fresh herbs"],["2 fat garlic cloves, peeled and crushed","Fruit, veg and fresh herbs"],["1tsp fresh thyme leaves","Fruit, veg and fresh herbs"],["1tsp paprika","Spices, oils and sauces"],["1tsp ground cumin","Spices, oils and sauces"],["200ml light coconut milk","Cupboard: tins, grains and pulses"],["2 ripe tomatoes, chopped","Fruit, veg and fresh herbs"],["1 red pepper, cored, deseeded and cut into chunks","Fruit, veg and fresh herbs"],["1 yellow pepper, cored, deseeded and cut into chunks","Fruit, veg and fresh herbs"],["1 scotch bonnet chilli","Fruit, veg and fresh herbs"],["3 mackerel fillets (about 90g each)","Meat and fish"],["Small handful fresh flatleaf parsley (optional)","Fruit, veg and fresh herbs"]]},{"t":"Salmon in broccoli and leek sauce","u":"https://www.diabetes.org.uk/guide-to-diabetes/recipes/salmon-broccoli-and-leek-sauce","s":"Diabetes UK","v":4,"time":"15 minutes + 25 minutes","k":"332","c":"10.4g","salt":"0.44g","f":"4.8g","fv":1,"note":"","d":2,"w":false,"cu":"British","p":"fish","i":[["1 low-salt fish stock cube, dissolved in 200ml boiling water","Cupboard: tins, grains and pulses"],["320g broccoli, in florets","Fruit, veg and fresh herbs"],["150g leeks, chopped","Fruit, veg and fresh herbs"],["175ml semi-skimmed milk","Dairy and eggs"],["1 tbsp cornflour, dissolved in 25ml semi-skimmed milk","Cupboard: tins, grains and pulses"],["1 tsp Dijon mustard","Spices, oils and sauces"],["good pinch white pepper","Spices, oils and sauces"],["15g Parmesan cheese","Dairy and eggs"],["400g salmon, cubed","Meat and fish"],["1 tbsp reduced-fat cream cheese","Dairy and eggs"],["10g fresh parsley, chopped","Fruit, veg and fresh herbs"]]},{"t":"All-in-one Asian salmon and broccoli traybake","u":"https://www.diabetes.org.uk/guide-to-diabetes/recipes/all-one-asian-salmon-and-broccoli-traybake","s":"Diabetes UK","v":4,"time":"5 minutes (plus marinating time) + 22 - 25 minutes","k":"339","c":"4.0g","salt":"0.41g","f":"3.6g","fv":1,"note":"","d":2,"w":false,"cu":"East Asian","p":"fish","i":[["5cm piece of fresh root ginger, peeled and grated","Fruit, veg and fresh herbs"],["1 red chilli, deseeded, halved and thinly sliced","Fruit, veg and fresh herbs"],["4 skinless salmon fillets (480g total weight)","Meat and fish"],["400g tenderstem broccoli","Fruit, veg and fresh herbs"],["8 spring onions, trimmed and each cut into 3 pieces","Fruit, veg and fresh herbs"],["3 garlic cloves, crushed","Fruit, veg and fresh herbs"],["2tsp reduced salt soy sauce","Spices, oils and sauces"],["1tbsp rice wine vinegar","Cupboard: tins, grains and pulses"],["1 cal oil spray","Spices, oils and sauces"]]},{"t":"Cod and salmon burgers","u":"https://www.diabetes.org.uk/guide-to-diabetes/recipes/cod-and-salmon-burgers","s":"Diabetes UK","v":4,"time":"15 minutes + 10 minutes","k":"343","c":"28.7g","salt":"0.77g","f":"6.2g","fv":1,"note":"","d":2,"w":false,"cu":"British","p":"fish","i":[["200g boneless, skinless cod fillet","Meat and fish"],["200g boneless, skinless salmon","Meat and fish"],["1 medium egg","Dairy and eggs"],["juice half lemon, with wedges to serve","Fruit, veg and fresh herbs"],["4 spring onions, finely chopped","Fruit, veg and fresh herbs"],["10g dill, with sprigs to serve","Fruit, veg and fresh herbs"],["quality ground pepper","Spices, oils and sauces"],["4 wholemeal burger baps, 65g each","Cupboard: tins, grains and pulses"],["12 little gem lettuce leaves","Fruit, veg and fresh herbs"],["2 large tomatoes (160g), sliced","Fruit, veg and fresh herbs"],["1 red onion (160g), thinly sliced","Fruit, veg and fresh herbs"],["6cm cucumber, thinly sliced","Fruit, veg and fresh herbs"]]},{"t":"Bengali fish curry (macher jhol)","u":"https://www.nhs.uk/healthier-families/recipes/macher-jhol-bengali-fish-curry/","s":"NHS Healthier Families","v":4,"time":"20 mins + 20 mins","k":"213","c":"1g","salt":"0.32g","f":"0.4g","fv":null,"note":"Per serving","d":2,"w":true,"cu":"South Asian","p":"fish","i":[["4 fish steaks (unsalted)","Meat and fish"],["0.5 teaspoon turmeric powder","Spices, oils and sauces"],["0.5 teaspoon salt (optional)","Spices, oils and sauces"],["4 medium tomatoes, finely chopped","Fruit, veg and fresh herbs"],["3 garlic cloves, finely chopped","Fruit, veg and fresh herbs"],["4 green chillies, finely chopped","Fruit, veg and fresh herbs"],["1 tablespoon powdered mustard seeds","Spices, oils and sauces"],["1 teaspoon onion seeds (kalonji)","Spices, oils and sauces"],["4 tablespoons mustard oil","Spices, oils and sauces"]]},{"t":"Ethiopian beef stew","u":"https://www.diabetes.org.uk/guide-to-diabetes/recipes/ethiopian-beef-stew","s":"Diabetes UK","v":4,"time":"20 minutes + 1.5-2 hours","k":"428","c":"46.5g","salt":"0.34g","f":"10.2g","fv":3,"note":"Each 477g serving (excludes serving suggestion)","d":0,"w":true,"cu":"East African","p":"beef","i":[["2 tsp sunflower oil","Spices, oils and sauces"],["500g stewing beef, cut into cubes","Meat and fish"],["2 onions, chopped","Fruit, veg and fresh herbs"],["3 cardamom pods","Spices, oils and sauces"],["1 tsp coriander seeds","Spices, oils and sauces"],["2 whole cloves","Spices, oils and sauces"],["2 tsp cumin seeds","Spices, oils and sauces"],["2 green chillies, chopped","Fruit, veg and fresh herbs"],["4 cloves garlic, sliced","Fruit, veg and fresh herbs"],["1 tsp ground cinnamon","Spices, oils and sauces"],["1 tsp ground turmeric","Spices, oils and sauces"],["2 green peppers, chopped","Fruit, veg and fresh herbs"],["1 x 400g tin chopped tomatoes","Cupboard: tins, grains and pulses"],["2 carrots, chopped large chunks","Fruit, veg and fresh herbs"],["2 potatoes (200g each), cut into chunks","Fruit, veg and fresh herbs"],["100g red lentils","Cupboard: tins, grains and pulses"]]},{"t":"Lamb dhansak","u":"https://www.diabetes.org.uk/guide-to-diabetes/recipes/lamb-dhansak","s":"Diabetes UK","v":4,"time":"15 minutes + 1 hour 30 minutes","k":"417","c":"46.3g","salt":"0.59g","f":"10.6g","fv":4,"note":"Each 421g serving","d":0,"w":true,"cu":"South Asian","p":"lamb","i":[["2 tsp rapeseed oil","Spices, oils and sauces"],["1 onion, chopped","Fruit, veg and fresh herbs"],["350g diced lambs leg","Meat and fish"],["2 carrots, chopped","Fruit, veg and fresh herbs"],["4 cloves garlic, crushed","Fruit, veg and fresh herbs"],["3cm fresh ginger root, grated","Fruit, veg and fresh herbs"],["100g red lentils","Cupboard: tins, grains and pulses"],["1 low-salt lamb or chicken stock cube in 400ml boiling water","Cupboard: tins, grains and pulses"],["1 x 400g tin chopped tomatoes","Cupboard: tins, grains and pulses"],["1 tbsp mild curry paste","Spices, oils and sauces"],["1-2 sweet potatoes, (400g) peeled and chopped","Fruit, veg and fresh herbs"],["1 aubergine, chopped","Fruit, veg and fresh herbs"],["20g fresh coriander, roughly chopped","Fruit, veg and fresh herbs"]]},{"t":"Beef goulash","u":"https://www.diabetes.org.uk/guide-to-diabetes/recipes/beef-goulash","s":"Diabetes UK","v":2,"time":"15 minutes + 2 hours","k":"372","c":"35.0g","salt":"0.8g","f":"7.0g","fv":2,"note":"Each 554g serving","d":0,"w":false,"cu":"Central European","p":"beef","i":[["250g lean braising steak, cubed","Meat and fish"],["250g new potatoes","Fruit, veg and fresh herbs"],["2 tsp seasoned wholemeal flour","Cupboard: tins, grains and pulses"],["1 tsp oil","Spices, oils and sauces"],["1 onion, chopped","Fruit, veg and fresh herbs"],["half red pepper, chopped","Fruit, veg and fresh herbs"],["1 clove garlic, crushed","Fruit, veg and fresh herbs"],["1 tsp paprika","Spices, oils and sauces"],["1 x 200g can chopped tomatoes","Cupboard: tins, grains and pulses"],["1 tbsp tomato puree","Cupboard: tins, grains and pulses"],["150ml (quarter pint) reduced salt beef stock","Cupboard: tins, grains and pulses"]]},{"t":"Channa dahl","u":"https://www.diabetes.org.uk/guide-to-diabetes/recipes/channa-dahl","s":"Diabetes UK","v":4,"time":"10 minutes + 2 hours to soak lentils + 1 hour","k":"224","c":"34.6g","salt":"0.12g","f":"5.9g","fv":1,"note":"","d":4,"w":true,"cu":"South Asian","p":"vegan","i":[["225g yellow lentils, washed and soaked for 2 hours","Cupboard: tins, grains and pulses"],["half tsp red chilli powder","Spices, oils and sauces"],["2 cloves garlic, peeled and chopped","Fruit, veg and fresh herbs"],["quarter tsp turmeric","Spices, oils and sauces"],["1 tsp olive/sunflower oil","Spices, oils and sauces"],["1 large onion, sliced","Fruit, veg and fresh herbs"],["1 green chilli, finely chopped","Fruit, veg and fresh herbs"],["half tsp garam masala powder","Spices, oils and sauces"],["1 tbsp fresh coriander, chopped","Fruit, veg and fresh herbs"]]},{"t":"Potato and lentil curry","u":"https://www.diabetes.org.uk/guide-to-diabetes/recipes/potato-and-lentil-curry","s":"Diabetes UK","v":4,"time":"15 minutes + 40-45 minutes","k":"282","c":"52.9g","salt":"1.0g","f":"8.4g","fv":1,"note":"","d":4,"w":true,"cu":"South Asian","p":"vegan","i":[["1 tsp sunflower oil","Spices, oils and sauces"],["1 onion, chopped","Fruit, veg and fresh herbs"],["1 tsp mustard seeds","Spices, oils and sauces"],["2cm fresh ginger, peeled and grated","Fruit, veg and fresh herbs"],["1 tsp chilli powder","Spices, oils and sauces"],["1 tsp ground coriander","Spices, oils and sauces"],["pinch turmeric","Spices, oils and sauces"],["6 tbsp fresh coriander, leaves and finely chopped stalks","Fruit, veg and fresh herbs"],["200g chopped tomatoes","Fruit, veg and fresh herbs"],["2 tbsp tomato purée","Cupboard: tins, grains and pulses"],["125g yellow lentils, washed and drained","Cupboard: tins, grains and pulses"],["600ml vegetable stock","Cupboard: tins, grains and pulses"],["900g floury potatoes, peeled and cubed","Cupboard: tins, grains and pulses"],["fresh coriander leaves, to serve","Fruit, veg and fresh herbs"]]},{"t":"Aubergine and chickpea curry","u":"https://diabetes.org.uk/guide-to-diabetes/recipes/aubergine-chickpea-curry","s":"Diabetes UK","v":4,"time":"15 minutes + 40 minutes","k":"433","c":"63.0g","salt":"0.92g","f":"14.0g","fv":null,"note":"Each 568g serving (excludes serving suggestion)","d":3,"w":true,"cu":"South Asian","p":"vegetarian","i":[["Calorie-controlled cooking spray","Spices, oils and sauces"],["1 red onion, finely sliced","Fruit, veg and fresh herbs"],["3 garlic cloves, crushed","Fruit, veg and fresh herbs"],["1tbsp grated fresh ginger","Fruit, veg and fresh herbs"],["1/2tbsp ground coriander","Spices, oils and sauces"],["3 cardamom pods, crushed","Spices, oils and sauces"],["1 star anise","Spices, oils and sauces"],["1tbsp tomato purée","Cupboard: tins, grains and pulses"],["2 aubergines, cut into 3cm chunks","Fruit, veg and fresh herbs"],["500g passata","Cupboard: tins, grains and pulses"],["300ml veg stock, made with 1/2 reduced salt stock cube","Cupboard: tins, grains and pulses"],["2 x 400g tins chickpeas, drained and rinsed","Cupboard: tins, grains and pulses"],["50g fat-free natural yogurt, plus 2tbsp to serve","Dairy and eggs"],["Finely grated zest and juice of half a lime, plus wedges to serve","Fruit, veg and fresh herbs"],["2tbsp finely chopped fresh coriander, plus extra to serve","Fruit, veg and fresh herbs"],["2 x 250g pouches microwave brown basmati rice","Cupboard: tins, grains and pulses"]]},{"t":"Roasted cauliflower, paneer and chickpea curry","u":"https://www.diabetes.org.uk/living-with-diabetes/recipes/roasted-cauliflower-paneer-and-chickpea-curry","s":"Diabetes UK","v":4,"time":"20 minutes + 25 minutes","k":"352","c":"38.9g","salt":"0.3g","f":"12.5g","fv":4,"note":"Each 504g serving (excludes serving suggestion)","d":3,"w":true,"cu":"South Asian","p":"vegetarian","i":[["2 tsp oil","Spices, oils and sauces"],["500g cauliflower, in small florets","Fruit, veg and fresh herbs"],["2 tsp turmeric","Spices, oils and sauces"],["2 onions, chopped","Fruit, veg and fresh herbs"],["1 large sweet potato, cubed (300g)","Fruit, veg and fresh herbs"],["1 red pepper, chopped","Fruit, veg and fresh herbs"],["3 cloves garlic, crushed","Fruit, veg and fresh herbs"],["1 tsp ground cumin","Spices, oils and sauces"],["1 tbsp medium curry powder paste","Spices, oils and sauces"],["1 low-salt vegetable stock cube, dissolved in 400ml water","Cupboard: tins, grains and pulses"],["100g paneer","Dairy and eggs"],["240g chickpeas, drained","Cupboard: tins, grains and pulses"],["80g frozen peas, defrosted","Fruit, veg and fresh herbs"],["2 tbsp 0% fat yoghurt","Dairy and eggs"]]},{"t":"Vegetable chilli","u":"https://www.diabetes.org.uk/living-with-diabetes/eating/recipes/vegetable-chilli","s":"Diabetes UK","v":8,"time":"15 minutes + 1 hour","k":"129","c":"18.3g","salt":"0.14g","f":"6.5g","fv":3,"note":"","d":4,"w":false,"cu":"Mexican","p":"vegan","i":[["2 tsp rapeseed oil","Spices, oils and sauces"],["2-3 onions, finely chopped","Fruit, veg and fresh herbs"],["1 red pepper, finely chopped","Fruit, veg and fresh herbs"],["150g carrots, finely chopped","Fruit, veg and fresh herbs"],["1 courgette, finely chopped","Fruit, veg and fresh herbs"],["100g mushrooms, finely chopped","Fruit, veg and fresh herbs"],["1-2 tsp chilli powder (mild or hot, according to your taste)","Spices, oils and sauces"],["1 tsp ground cumin","Spices, oils and sauces"],["1 tsp oregano","Spices, oils and sauces"],["800g tin chopped tomatoes","Cupboard: tins, grains and pulses"],["400g tin lentils in unsalted water","Cupboard: tins, grains and pulses"],["400g tin cannellini beans in unsalted water","Cupboard: tins, grains and pulses"],["1 tbsp tomato ketchup","Cupboard: tins, grains and pulses"],["coriander, to garnish","Fruit, veg and fresh herbs"]]},{"t":"Vegetable and chickpea tagine","u":"https://www.diabetes.org.uk/guide-to-diabetes/recipes/vegetable-and-chickpea-tagine","s":"Diabetes UK","v":4,"time":"20 minutes + 20 minutes","k":"215","c":"27.7g","salt":"0.17g","f":"10.0g","fv":4,"note":"","d":4,"w":true,"cu":"North African","p":"vegan","i":[["1 tbsp oil","Spices, oils and sauces"],["2 cloves garlic, crushed","Fruit, veg and fresh herbs"],["quarter tsp ground cumin","Spices, oils and sauces"],["quarter tsp ground ginger","Spices, oils and sauces"],["half tsp chilli powder","Spices, oils and sauces"],["450g mixed vegetables cut into bite-sized pieces - one large courgette, two medium carrots and one medium aubergine","Fruit, veg and fresh herbs"],["100ml low-salt vegetable stock","Cupboard: tins, grains and pulses"],["400g tin chickpeas, drained and rinsed","Cupboard: tins, grains and pulses"],["100g ( approx. 12) dried apricots","Cupboard: tins, grains and pulses"],["400g tin chopped tomatoes","Cupboard: tins, grains and pulses"],["1 tsp harissa paste","Spices, oils and sauces"],["2 tbsp fresh coriander, chopped, to garnish","Fruit, veg and fresh herbs"],["freshly ground black pepper","Spices, oils and sauces"]]},{"t":"Sweet potato, chickpea and carrot tagine with couscous","u":"https://www.diabetes.org.uk/guide-to-diabetes/recipes/sweet-potato-chickpea-and-carrot-tagine-couscous","s":"Diabetes UK","v":4,"time":"10 minutes + 40 minutes","k":"348","c":"55.4g","salt":"0.58g","f":"12.2g","fv":3,"note":"Each 424g serving (excludes serving suggestion)","d":4,"w":true,"cu":"North African","p":"vegan","i":[["2 tsp olive oil","Spices, oils and sauces"],["1 onion, finely chopped","Fruit, veg and fresh herbs"],["2 garlic cloves, finely chopped","Fruit, veg and fresh herbs"],["2 tsp ras-el-hanout, Moroccan spice mix","Spices, oils and sauces"],["2 tsp smoked paprika","Spices, oils and sauces"],["1/2 tsp ground cinnamon","Spices, oils and sauces"],["1 sweet potato, peeled and diced (250g)","Fruit, veg and fresh herbs"],["4 large carrots, peeled and diced (500g)","Fruit, veg and fresh herbs"],["200g/7oz can chickpeas, drained and rinsed","Cupboard: tins, grains and pulses"],["400 g/14 oz canned chopped tomatoes","Cupboard: tins, grains and pulses"],["1 tbsp ground almonds","Cupboard: tins, grains and pulses"],["freshly ground black pepper","Spices, oils and sauces"],["120 g/6 oz couscous","Cupboard: tins, grains and pulses"],["2 tbsp flat-leaf parsley, chopped","Fruit, veg and fresh herbs"]]},{"t":"Vegetarian Jamaican rundown","u":"https://www.nhs.uk/healthier-families/recipes/vegetarian-jamaican-rundown/","s":"NHS Healthier Families","v":4,"time":"20 mins + 25 mins","k":"248","c":"25g","salt":"Trace amounts","f":"13g","fv":null,"note":"Per serving (1/4 recipe)","d":3,"w":true,"cu":"Caribbean","p":"vegetarian","i":[["vegetable oil spray","Spices, oils and sauces"],["1 small onion, chopped","Fruit, veg and fresh herbs"],["3 medium spring onions, cut into strips","Fruit, veg and fresh herbs"],["3 cloves garlic, finely chopped","Fruit, veg and fresh herbs"],["3 sprigs fresh thyme","Fruit, veg and fresh herbs"],["1 teaspoon all-spice powder","Spices, oils and sauces"],["1 teaspoon curry powder","Spices, oils and sauces"],["100g aubergine, chopped into cubes","Fruit, veg and fresh herbs"],["100g butternut squash, deseeded and cut into cubes","Fruit, veg and fresh herbs"],["1 small red bell pepper, cut into strips","Fruit, veg and fresh herbs"],["90g broccoli florets, thinly chopped","Fruit, veg and fresh herbs"],["2 tins kidney beans in water, drained","Cupboard: tins, grains and pulses"],["90g carrots, peeled and cut into strips","Fruit, veg and fresh herbs"],["50g baby corn, cut into strips","Fruit, veg and fresh herbs"],["80g cho cho, cut into strips","Fruit, veg and fresh herbs"],["80g green beans","Cupboard: tins, grains and pulses"],["400ml low-fat coconut milk","Cupboard: tins, grains and pulses"],["half a teaspoon black pepper","Spices, oils and sauces"],["1 teaspoon salt (optional)","Spices, oils and sauces"]]}];
+  var DAYS=['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+  var CATS=['Fruit, veg and fresh herbs','Meat and fish','Dairy and eggs','Cupboard: tins, grains and pulses','Spices, oils and sauces'];
+  var $=function(i){return document.getElementById(i)};
+  var plan=[],opts={};
+  function val(n){var e=document.querySelector('input[name="'+n+'"]:checked');return e?+e.value:0}
+  function pool(){return R.map(function(r,i){return i}).filter(function(i){return R[i].d>=opts.diet})}
+  function weight(i){return (opts.world&&R[i].w)?4:1}
+  function pick(cands,avoid){
+    var c=cands.filter(function(i){return avoid.indexOf(i)<0});
+    if(!c.length)c=cands.slice();
+    var tot=0;c.forEach(function(i){tot+=weight(i)});
+    var x=Math.random()*tot;
+    for(var k=0;k<c.length;k++){x-=weight(c[k]);if(x<=0)return c[k]}
+    return c[c.length-1];
+  }
+  function build(){
+    opts={diet:val('diet'),world:val('world'),days:val('days')||7};
+    var p=pool();plan=[];
+    for(var d=0;d<opts.days;d++)plan.push(pick(p,plan));
+    save();render();
+    $('plan').scrollIntoView({behavior:'smooth',block:'start'});
+  }
+  function swap(d){var p=pool();plan[d]=pick(p,plan);save();render()}
+  function num(s){var m=String(s||'').match(/[\d.]+/);return m?parseFloat(m[0]):null}
+  function esc(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML}
+  function render(){
+    var h='',k=0,c=0,s=0,nk=0,nc=0,ns=0;
+    plan.forEach(function(i,d){
+      var r=R[i];
+      var meta=[];
+      if(r.k)meta.push(r.k+' kcal');
+      if(r.c)meta.push(r.c+' carbs');
+      if(r.salt)meta.push(/trace/i.test(r.salt)?'salt: trace':r.salt+' salt');
+      if(r.fv)meta.push(r.fv+' of your 5 A Day');
+      h+='<div class="day"><div class="dh"><div><div class="dn">'+DAYS[d]+'</div>'+
+        '<div class="dt"><a href="'+r.u+'" target="_blank" rel="noopener">'+esc(r.t)+'</a></div></div>'+
+        '<button class="ghost noprint" type="button" data-swap="'+d+'" aria-label="Swap '+esc(r.t)+'">Swap</button></div>'+
+        '<div class="meta">'+meta.map(function(m){return '<span>'+esc(m)+'</span>'}).join('')+'</div>'+
+        '<div class="small">Per serving'+(r.note&&/\d+g/.test(r.note)?' ('+esc(r.note.replace(/^Each /,'').replace(/ serving.*/,''))+')':'')+' &middot; serves '+r.v+(r.time?' &middot; '+esc(r.time):'')+' &middot; '+esc(r.s)+' recipe &middot; <a href="'+r.u+'" target="_blank" rel="noopener">view recipe</a></div></div>';
+      var a=num(r.k),b=num(r.c),e=/trace/i.test(r.salt||'')?0:num(r.salt);
+      if(a!=null){k+=a;nk++} if(b!=null){c+=b;nc++} if(e!=null){s+=e;ns++}
+    });
+    var pl=pool().length;
+    if(pl<plan.length)h='<p class="small">We have '+pl+' recipes for this choice so far, so some dinners repeat. More are on the way.</p>'+h;
+    $('days').innerHTML=h;
+    $('tot').innerHTML='<div><b>'+(nk?Math.round(k/nk):'-')+'</b><span class="small">avg kcal</span></div>'+
+      '<div><b>'+(nc?(c/nc).toFixed(1)+'g':'-')+'</b><span class="small">avg carbs</span></div>'+
+      '<div><b>'+(ns?(s/ns).toFixed(2)+'g':'-')+'</b><span class="small">avg salt</span></div>';
+    Array.prototype.forEach.call(document.querySelectorAll('[data-swap]'),function(b){b.onclick=function(){swap(+b.getAttribute('data-swap'))}});
+    renderList();
+    $('plan').style.display='block';$('shop').style.display='block';
+  }
+  function listItems(){
+    var by={};CATS.forEach(function(c){by[c]=[]});
+    plan.forEach(function(i,d){R[i].i.forEach(function(x){by[x[1]].push([x[0],DAYS[d].slice(0,3)])})});
+    return by;
+  }
+  function renderList(){
+    var by=listItems(),h='',n=0;
+    CATS.forEach(function(c){
+      if(!by[c].length)return;
+      var sp=c.indexOf('Spices')===0;
+      h+=sp?'<details class="sp"><summary>'+c+' ('+by[c].length+', you may have many already)</summary>':'<h3 class="cat">'+c+'</h3>';
+      by[c].forEach(function(x){var id='i'+(n++);
+        h+='<label class="it" for="'+id+'"><input type="checkbox" id="'+id+'"><span>'+esc(x[0])+' <small>('+x[1]+')</small></span></label>'});
+      if(sp)h+='</details>';
+    });
+    $('list').innerHTML=h;
+    Array.prototype.forEach.call($('list').querySelectorAll('input'),function(cb){cb.onchange=function(){cb.parentNode.classList.toggle('done',cb.checked)}});
+  }
+  function toast(t){var e=$('toast');e.textContent=t;e.style.display='block';setTimeout(function(){e.style.display='none'},2200)}
+  function copy(){
+    var by=listItems(),t='My dinners this week:\n';
+    plan.forEach(function(i,d){t+=DAYS[d]+': '+R[i].t+' - '+R[i].u+'\n'});
+    t+='\nShopping list:\n';
+    CATS.forEach(function(c){if(!by[c].length)return;t+='\n'+c+'\n';by[c].forEach(function(x){t+='- '+x[0]+' ('+x[1]+')\n'})});
+    t+='\nMade with the free planner at https://blog.simplerlivez.com/meal-planner/\n';
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){toast('Shopping list copied')},function(){fallback(t)})}else fallback(t);
+  }
+  function fallback(t){var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy');toast('Shopping list copied')}catch(e){}document.body.removeChild(a)}
+  function save(){try{localStorage.setItem('di_plan',JSON.stringify({p:plan.map(function(i){return R[i].u}),o:opts}))}catch(e){}}
+  function load(){try{var s=JSON.parse(localStorage.getItem('di_plan')||'null');if(!s)return;
+    var idx=s.p.map(function(u){for(var i=0;i<R.length;i++)if(R[i].u===u)return i;return -1});
+    if(idx.some(function(i){return i<0}))return;
+    opts=s.o;plan=idx;
+    ['diet','world','days'].forEach(function(n){var e=document.querySelector('input[name="'+n+'"][value="'+opts[n]+'"]');if(e)e.checked=true});
+    render();}catch(e){}}
+  $('go').onclick=build;$('again').onclick=build;$('print').onclick=function(){window.print()};$('copy').onclick=copy;
+  load();
+})();
+</script>
+</body>
+</html>
