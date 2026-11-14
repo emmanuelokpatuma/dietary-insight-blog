@@ -47,7 +47,7 @@ Not sure what's on your plate? Snap a photo with Dietary Insight to flag sugar, 
 ## linkedin
 How much sugar a day is too much? The NHS answer is clear: adults should have no more than 30g of free sugars a day, roughly 7 sugar cubes.
 
-The useful part is knowing what "free sugars" means. It covers sugar added to food and drinks, honey, syrups, and fruit juice and smoothies, even unsweetened ones. It doesn't include the sugar naturally in whole fruit, vegetables or milk. That's why a plain yoghurt can show 8g of sugar on its label without any of it counting.
+The useful part is knowing what "free sugars" means. It covers sugar added to food and drinks, honey, syrups, and fruit juice and smoothies, even unsweetened ones. It doesn't include the sugar naturally in whole fruit, vegetables or milk. That's why a plain yoghurt can have as much as 8g of sugar per serving on its label without any of it counting.
 
 A single can of cola can have as much as 9 cubes, more than the whole adult limit.
 

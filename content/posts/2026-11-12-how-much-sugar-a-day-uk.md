@@ -92,12 +92,12 @@ For more on reading the whole label, see our guide to [reading food labels with 
 
 The NHS suggests small swaps that add up:
 
-- Drink water, lower-fat milk, or sugar-free, diet or no-added-sugar drinks instead of sugary fizzy drinks.
-- Gradually cut the sugar you add to tea, coffee or cereal.
-- Top cereal or plain yoghurt with sliced banana instead of sugar or a sugary spread.
+- Drink water, lower-fat milk, or sugar-free, diet or no-added-sugar drinks instead of sugary fizzy drinks or squash.
+- If you take sugar in hot drinks or add it to breakfast cereal, gradually reduce the amount.
+- Try sliced banana on toast in place of high-sugar spreads.
 - Choose unsweetened wholegrain breakfast cereals that are not frosted.
 - Buy tinned fruit in juice rather than syrup.
-- Reduce the sugar in recipes when you bake, except for jam, meringues and ice cream.
+- Try reducing the sugar in your recipes. The NHS says it works for most things except jam, meringues and ice cream.
 - Keep sweets and treats to mealtimes to help protect teeth.
 
 If you have diabetes and want help with how sugar and carbohydrates fit into your meals, talk to your GP, diabetes nurse or dietitian.
