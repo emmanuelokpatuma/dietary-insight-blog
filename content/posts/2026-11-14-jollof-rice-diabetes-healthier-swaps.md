@@ -24,6 +24,8 @@ sources:
     url: https://www.nhs.uk/live-well/eat-well/food-types/salt-in-your-diet/
   - title: "NHS: Starchy foods and carbohydrates"
     url: https://www.nhs.uk/live-well/eat-well/food-types/starchy-foods-and-carbohydrates/
+  - title: "Diabetes UK: Ethnicity and type 2 diabetes"
+    url: https://www.diabetes.org.uk/about-diabetes/type-2-diabetes/diabetes-ethnicity
 ---
 **Can you eat jollof rice with diabetes?** Yes. Jollof rice can still be part of a healthy diet when you have diabetes, and a few swaps make a real difference: brown basmati instead of white rice, a reduced-salt stock cube, a measured spoon of oil, plenty of vegetables and a sensible portion. Diabetes UK even has its own jollof rice and chicken recipe built around these ideas.
 
