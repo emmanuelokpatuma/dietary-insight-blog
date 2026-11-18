@@ -95,4 +95,4 @@ Don't change any medicine or insulin on your own. Talk to your GP, diabetes nurs
 
 ## Keeping track of what you eat
 
-Your HbA1c reflects months of everyday meals, so small, steady changes add up. If a meal has no label, the Dietary Insight app can estimate its sugar, salt and fat from a photo and suggest a healthier swap. It gives an estimate, so use it alongside your healthcare team's advice.
+Your HbA1c reflects your blood sugar over 2 to 3 months, and Diabetes UK lists a healthy, balanced diet among the ways to help bring it down. If a meal has no label, the Dietary Insight app can estimate its sugar, salt and fat from a photo and suggest a healthier swap. It gives an estimate, so use it alongside your healthcare team's advice.

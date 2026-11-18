@@ -55,7 +55,7 @@ It's a simple blood test that shows your average blood sugar over the last 2 to 
 
 Diabetes UK says people with diabetes are entitled to the test at least once a year, and that being unwell, stress and some medicines can all change the result.
 
-I built Dietary Insight because I live with diabetes and high blood pressure, and everyday meals are where that number is shaped. I've put a plain-English UK guide in the comments.
+I built Dietary Insight because I live with diabetes and high blood pressure, and knowing what's on my plate makes everyday choices easier. I've put a plain-English UK guide in the comments.
 
 🍎 App Store: https://apps.apple.com/app/dietary-insight-cam/id6814602853
 🤖 Google Play: https://play.google.com/store/apps/details?id=com.emergent.dietaryinsightcam.wtjahd
