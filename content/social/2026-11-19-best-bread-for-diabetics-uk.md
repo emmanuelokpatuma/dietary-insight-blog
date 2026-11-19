@@ -49,7 +49,7 @@ Not sure what's on your plate? Snap a photo with Dietary Insight to flag sugar, 
 #diabetes #bread #lowgi #bloodsugar #diabetesuk #type2diabetes #healthyeating #dietaryinsight
 
 ## linkedin
-Bread is one of the questions I hear most about eating with diabetes, and the label doesn't always make it easy.
+Choosing bread with diabetes isn't always easy, and the label doesn't always help.
 
 Diabetes UK suggests choosing granary, pumpernickel or rye bread instead of white and wholemeal, as they tend to raise blood sugar more slowly. Wholemeal, seeded and multi-grain breads add fibre, and adults should aim for 30g a day. Brown bread isn't as high in fibre as wholemeal, and granary isn't always made from wholemeal flour.
 
