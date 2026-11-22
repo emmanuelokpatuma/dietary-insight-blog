@@ -39,7 +39,7 @@ Diabetes UK also says people with diabetes are more likely to be affected by hig
 
 More than most people expect. The BHF gives the example of one slice of thick, wholemeal bread containing as much as 2g of salt, which is one third of an adult's daily limit.
 
-This isn't a reason to give up bread. It's a reason to compare labels before you buy. The BHF suggests comparing labels and looking for "low sodium" or "reduced salt" on the packaging.
+This isn't a reason to give up bread. The BHF suggests comparing labels and looking for "low sodium" or "reduced salt" on the packaging.
 
 If you have diabetes and want to choose bread for blood sugar too, our guide to the [best bread for diabetics in the UK](/best-bread-for-diabetics-uk/) covers granary, rye and wholegrain options.
 
@@ -80,7 +80,7 @@ For the full picture on daily limits and other salty foods, see our guide on [ho
 
 ## What are good lower-salt swaps?
 
-Small changes at breakfast and lunch add up over a week. Ideas based on the BHF's advice:
+A few ideas based on the BHF's advice:
 
 1. **Start with a salt-free wholegrain cereal.** The BHF suggests wheat biscuits, some types of muesli or porridge oats.
 2. **Choose porridge.** The BHF says plain oats have no added sugar or salt.
