@@ -8,7 +8,7 @@ faq:
   - q: "How much pasta should I eat if I have diabetes?"
     a: "Diabetes UK gives a guide portion of boiled pasta as about the amount that would fit in two hands cupped together (180g). It says this is a guide for an average healthy adult, and your dietitian can advise on portions that are right for you."
   - q: "Is wholewheat pasta better than white pasta for diabetes?"
-    a: "Diabetes UK suggests choosing brown or wholewheat pasta instead of white. Wholegrain foods tend to have a lower GI and more fibre, but they are still carbohydrates, so portion size still matters."
+    a: "Diabetes UK says wholegrain foods are usually better for managing blood glucose because they tend to have a lower GI, and it suggests wholewheat pasta cooked al dente as a swap. They are still carbohydrates, so portion size still matters."
   - q: "Does cooling pasta change how it affects blood sugar?"
     a: "Diabetes UK says that when starchy foods are cooled, their structure changes and gut enzymes can't break them down as easily. It suggests cooked and cooled pasta in a pasta salad as a swap for hot pasta with sauce."
 sources:
@@ -50,7 +50,7 @@ Pasta can be tricky to measure at first. Diabetes UK suggests using the same con
 
 ## Is wholewheat pasta better than white pasta?
 
-Diabetes UK suggests choosing brown or wholewheat pasta instead of white. The NHS also recommends higher fibre or wholegrain varieties, such as wholewheat pasta, because they contain more fibre than white or refined starchy carbohydrates and can help you feel full for longer.
+The NHS recommends higher fibre or wholegrain varieties, such as wholewheat pasta, because they contain more fibre than white or refined starchy carbohydrates and can help you feel full for longer.
 
 According to Diabetes UK, wholegrain foods are usually better for managing blood glucose levels because they tend to have a lower glycaemic index (GI). It also says that adults should be aiming for 30g of fibre a day, and many of us don't get that much.
 
@@ -79,7 +79,7 @@ Diabetes UK says protein, fat and fibre slow down the digestion and absorption o
 A few practical ideas based on that guidance:
 
 1. **Fill up on vegetables.** Diabetes UK suggests piling your plate with vegetables, as they're naturally low in calories and high in fibre.
-2. **Add some protein.** Beans, lentils, chicken or fish help slow the absorption of the pasta's carbohydrate.
+2. **Add some protein.** Diabetes UK says protein lowers the GI of a food, so try adding beans, lentils, chicken or fish.
 3. **Go lighter on creamy sauces.** Use them as an occasional choice rather than every time.
 4. **Check the salt in jars.** The NHS says about three-quarters of the salt we eat is already in food when we buy it, including sauces.
 
@@ -91,4 +91,4 @@ Diabetes UK also says eating more carbohydrate than usual can cause blood glucos
 
 For a similar look at another staple, see our guide on [whether rice is bad for diabetes](/is-rice-bad-for-diabetes/).
 
-Restaurant and takeaway pasta often comes in bigger portions than you'd serve at home. The Dietary Insight app can estimate the carbs, sugar, salt and fat in a plate from a photo and suggest a lighter swap. It's an estimate, so use it alongside your healthcare team's advice.
+Restaurant and takeaway pasta doesn't come with a label. The Dietary Insight app can estimate the carbs, sugar, salt and fat in a plate from a photo and suggest a lighter swap. It's an estimate, so use it alongside your healthcare team's advice.

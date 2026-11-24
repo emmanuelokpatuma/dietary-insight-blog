@@ -45,9 +45,9 @@ Not sure what's on your plate? Snap a photo with Dietary Insight to flag sugar, 
 ## linkedin
 Pasta is one of the foods people with diabetes ask about most, and the answer is more reassuring than many expect.
 
-Diabetes UK says the total amount of carbohydrate you eat has the biggest effect on blood sugar after a meal, and its guide portion of boiled pasta is about what fits in two hands cupped together. It also suggests choosing wholewheat instead of white, and points out that GI alone doesn't tell the whole story: portion size matters more. The NHS adds that creamy sauces are what push up the calories.
+Diabetes UK says the total amount of carbohydrate you eat has the biggest effect on blood sugar after a meal, and its guide portion of boiled pasta is about what fits in two hands cupped together. It also says wholegrains tend to have a lower GI, and points out that GI alone doesn't tell the whole story: portion size matters more. The NHS adds that creamy sauces are what push up the calories.
 
-I built Dietary Insight because I live with diabetes and high blood pressure, and portions are the part that's hardest to judge on a busy evening. The full UK guide is in the comments.
+I built Dietary Insight because I live with diabetes and high blood pressure, and knowing what's on my plate helps. The full UK guide is in the comments.
 
 🍎 App Store: https://apps.apple.com/app/dietary-insight-cam/id6814602853
 🤖 Google Play: https://play.google.com/store/apps/details?id=com.emergent.dietaryinsightcam.wtjahd
@@ -66,7 +66,7 @@ Where: r/diabetes_t2, or Quora: "Is pasta OK to eat if you have diabetes?"
 
 Pasta can be part of a healthy diet with diabetes. Diabetes UK says the total amount of carbohydrate you eat has the biggest effect on your blood sugar after eating, so the portion matters more than anything else. Its guide portion of boiled pasta is about what fits in two hands cupped together (180g), though it says this is a guide for an average adult and a dietitian can advise on what's right for you.
 
-Diabetes UK suggests choosing brown or wholewheat pasta instead of white, because wholegrains tend to have a lower GI and more fibre. They are still carbs, so portion size still counts. It also notes that GI doesn't account for how much you eat: pasta has a lower GI than watermelon but more carbs, so similar amounts of pasta have a bigger effect on blood sugar.
+Diabetes UK says wholegrain foods are usually better for managing blood glucose because they tend to have a lower GI, and it suggests wholewheat pasta cooked al dente as a swap. They are still carbs, so portion size still counts. It also notes that GI doesn't account for how much you eat: pasta has a lower GI than watermelon but more carbs, so similar amounts of pasta have a bigger effect on blood sugar.
 
 Cooling helps a little too. Diabetes UK says cooled starchy foods are harder for gut enzymes to break down, and suggests cooked and cooled pasta in a salad as a swap for hot pasta with sauce.
 
