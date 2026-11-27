@@ -68,7 +68,7 @@ Alcohol and type 2 diabetes: UK unit limits, units in wine and beer, hypo risk a
 ## community_answer
 Where: r/diabetes_t2, or Quora: "Can you drink alcohol if you have type 2 diabetes?"
 
-Many people with type 2 diabetes do drink, but it's worth planning. The NHS lists drinking a lot of alcohol, particularly without eating, as a cause of low blood sugar (a hypo, usually below 4mmol/L). It also says insulin and some other diabetes medicines, such as gliclazide and glimepiride, can make blood sugar go too low, so ask your GP or diabetes nurse whether your treatment puts you at risk.
+If you have type 2 diabetes and drink, it's worth planning ahead. The NHS lists drinking a lot of alcohol, particularly without eating, as a cause of low blood sugar (a hypo, usually below 4mmol/L). It also says insulin and some other diabetes medicines, such as gliclazide and glimepiride, can make blood sugar go too low, so ask your GP or diabetes nurse whether your treatment puts you at risk.
 
 The NHS low-risk guideline is no more than 14 units a week, spread over 3 or more days, with several drink-free days. For scale: a standard 175ml glass of 12% wine is 2.1 units, a large 250ml glass is 3 units, and a pint of 5.2% lager is about 3 units.
 
